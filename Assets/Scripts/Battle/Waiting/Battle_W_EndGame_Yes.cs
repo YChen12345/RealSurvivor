@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Battle_W_EndGame_Yes : MonoBehaviour
 {
+    public GameObject loadingPage;
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(EndGame);
@@ -11,6 +12,7 @@ public class Battle_W_EndGame_Yes : MonoBehaviour
     void EndGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadSceneAsync("Lose");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";
     }
 }

@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
-using UnityEngine.InputSystem.XR;
 
 public class Battle_PlayerWeapon : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class Battle_PlayerWeapon : MonoBehaviour
     float timer;
     public int index;
     public int weaponID;
+    public int kind;
     public WeaponData wd;
     GameObject player;
     Vector2 dir;
@@ -20,15 +20,24 @@ public class Battle_PlayerWeapon : MonoBehaviour
     {
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
-        avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("PlayerWeapon", weaponID);
+        if (kind == 0)
+        {
+            avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("PlayerWeapon", weaponID);
+        }
+        else if(kind == 1) 
+        {
+            avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Card", weaponID);
+        }
+       
         player = data.bd.player;
+        wd.Init();
     }
 
     // Update is called once per frame
     void Update()
     {
         Attack();
-        wd.Init();
+        player.GetComponent<Battle_Player>().weapon_cd[index] = Mathf.Min(timer / wd.atkgap,1);
     }
     void Attack()
     {

@@ -5,6 +5,7 @@ using UnityEngine.InputSystem.HID;
 using System.Security.Cryptography;
 public class Battle_W_Restart_Yes : MonoBehaviour
 {
+    public GameObject loadingPage;
     IUF uf;
     BattleData bd;
     int hid;
@@ -28,6 +29,7 @@ public class Battle_W_Restart_Yes : MonoBehaviour
         bd.weaponID = wid;
         bd.levelID = lid;
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
-        SceneManager.LoadSceneAsync("Battle");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "Battle";
     }
 }

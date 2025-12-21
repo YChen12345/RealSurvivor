@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class HeroChoose_Back : MonoBehaviour
 {
+    public GameObject loadingPage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +13,7 @@ public class HeroChoose_Back : MonoBehaviour
 
     void Back()
     {
-        SceneManager.LoadSceneAsync("StartScreen");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "StartScreen";
     }
 }

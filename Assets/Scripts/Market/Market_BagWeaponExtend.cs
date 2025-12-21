@@ -25,6 +25,7 @@ public class Market_BagWeaponExtend : MonoBehaviour
         {
             button_buy.SetActive(false);
             tip_sellout.SetActive(true);
+            this.gameObject.SetActive(false);///
         }
     }
     void Buy()

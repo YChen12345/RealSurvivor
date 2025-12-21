@@ -34,7 +34,7 @@ public class WeaponChoose_BuyWeapon : MonoBehaviour
             {
                 state = 1;
                 eft.mode = 1;
-                tips.text = "";
+                tips.text = "待解锁";
             }
         }
         else
@@ -43,7 +43,7 @@ public class WeaponChoose_BuyWeapon : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "";
+                tips.text = "金币不足";
             }
         }
         if (pd.weaponList.Contains(weaponID))
@@ -59,7 +59,7 @@ public class WeaponChoose_BuyWeapon : MonoBehaviour
             {
                 state = 1;
                 eft.mode = 1;
-                tips.text = "";
+                tips.text = "待解锁";
             }
         }
         else
@@ -68,7 +68,7 @@ public class WeaponChoose_BuyWeapon : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "";
+                tips.text = "金币不足";
             }
         }
     }

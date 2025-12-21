@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class WeaponChoose_Weapon : MonoBehaviour
 {
+    public GameObject loadingPage;
     public int index;
     int weaponID;
     IUF uf;
@@ -29,6 +30,7 @@ public class WeaponChoose_Weapon : MonoBehaviour
     {
         bd.weaponID = weaponID;
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
-        SceneManager.LoadSceneAsync("LevelChoose");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "LevelChoose";
     }
 }

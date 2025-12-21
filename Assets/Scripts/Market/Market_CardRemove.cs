@@ -7,14 +7,14 @@ public class Market_CardRemove : MonoBehaviour
     public GameObject removePlace;
     public GameObject removePage;
     public Market_Info data;
-    Vector3 originScaling;
+   
     Vector3 originPosition;
+    int state;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         data = GameObject.Find("Market").GetComponent<Market_Info>();
-        originScaling=removePlace.transform.localScale;
         originPosition = transform.position;
     }
 
@@ -22,7 +22,11 @@ public class Market_CardRemove : MonoBehaviour
     void Update()
     {
         if (uf.InArea(this.transform.position, uf.Area(removePlace))){
-            removePlace.transform.localScale = originScaling*1.1f;
+            if (state == 0)
+            {
+                state = 1;
+                removePlace.GetComponent<Market_RemovePlace>().state++;
+            }       
             if (Input.GetMouseButtonUp(0))
             {
                 GameObject r = GameObject.Instantiate(removePage, canvas.transform);
@@ -33,7 +37,11 @@ public class Market_CardRemove : MonoBehaviour
         }
         else
         {
-            removePlace.transform.localScale = originScaling;
+            if(state == 1)
+            {
+                state = 0;
+                removePlace.GetComponent<Market_RemovePlace>().state--;
+            }
         }
     }
 }

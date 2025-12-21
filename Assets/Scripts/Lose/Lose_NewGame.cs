@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 public class Lose_NewGame : MonoBehaviour
 {
+    public GameObject loadingPage;
     IUF uf;
     BattleData bd;
     void Start()
@@ -17,6 +18,7 @@ public class Lose_NewGame : MonoBehaviour
     {
         bd.Init();
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
-        SceneManager.LoadSceneAsync("HeroChoose");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "HeroChoose";
     }
 }

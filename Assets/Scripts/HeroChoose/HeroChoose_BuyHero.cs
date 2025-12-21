@@ -29,7 +29,7 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 1;
                 eft.mode = 1;
-                tips.text = "";
+                tips.text = "待解锁";
             }           
         }
         else
@@ -38,7 +38,7 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "";
+                tips.text = "金币不足";
             }
         }
         if (pd.heroList.Contains(heroID))
@@ -54,7 +54,7 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 1;
                 eft.mode = 1;
-                tips.text = "";
+                tips.text = "待解锁";
             }
         }
         else
@@ -63,7 +63,7 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "";
+                tips.text = "金币不足";
             }
         }
     }

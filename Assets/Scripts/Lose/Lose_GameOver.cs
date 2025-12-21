@@ -18,6 +18,6 @@ public class Lose_GameOver : MonoBehaviour
 
     void Reward()
     {
-        pd.money += bd.currentLevel * 10;
+        pd.money += bd.wave * 10;
     }
 }

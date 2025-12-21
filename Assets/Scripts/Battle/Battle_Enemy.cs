@@ -8,9 +8,10 @@ public class Battle_Enemy : MonoBehaviour
     public GameObject avatar;
     public GameObject bullet;
     public GameObject warning;
+    public GameObject display;
     GameObject player;
     Battle_Info data;
-    Enemy enemyfigure;
+    public Enemy enemyfigure;
     public Enemy enemy;
     IUF uf;
     float t;
@@ -23,7 +24,8 @@ public class Battle_Enemy : MonoBehaviour
         avatar.GetComponent<SpriteRenderer>().sprite= uf.LoadResource<Sprite>("Emy", eid);
         float height = uf.Area(avatar).height / 2;
         avatar.transform.localPosition = new Vector2(0, height * avatar.transform.localScale.y);
-        warning.transform.localPosition = new Vector2(0, 2.4f*height * avatar.transform.localScale.y);
+        warning.transform.localPosition = new Vector2(0, 3.0f*height * avatar.transform.localScale.y);
+        display.transform.localPosition = new Vector2(0, 2.2f*height * avatar.transform.localScale.y);
         enemyfigure.Init();
         enemy = enemyfigure;
         warning.SetActive(false);
@@ -140,6 +142,7 @@ public class Battle_Enemy : MonoBehaviour
             d.GetComponent<Battle_Drop>().did = enemy.dropid;
             d.SetActive(true);
             data.bd.emyList.Remove(this.gameObject);
+            data.bd.exp++;
             Destroy(this.gameObject);
         }
     }

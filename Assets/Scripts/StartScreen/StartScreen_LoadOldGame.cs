@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class StartScreen_LoadOldGame : MonoBehaviour
 {
+    public GameObject loadingPage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,6 +18,7 @@ public class StartScreen_LoadOldGame : MonoBehaviour
     // Update is called once per frame
     void LoadOldGame()
     {
-        SceneManager.LoadSceneAsync("CardScreen");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "CardScreen";
     }
 }

@@ -28,6 +28,7 @@ public class Market_MarketCard : MonoBehaviour
             data.bd.cardList_Weapon.Add(cid);
             button_buy.SetActive(false);
             tip_sellout.SetActive(true);
+            this.gameObject.SetActive(false);///
         }
     }
 }

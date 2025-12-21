@@ -15,9 +15,9 @@ public struct Enemy
     public int dropid;
     public void Init()
     {
-        blood = 1;
+        blood = 3;
         speed = 1;
-        defence = 0;
+        defence = 3;
         atkgap = 1;
         attack = 0;
         trans = 0;

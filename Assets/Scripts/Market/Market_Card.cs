@@ -7,6 +7,7 @@ public class Market_Card : MonoBehaviour
     public GameObject canvas;
     Vector2 originPos;
     IUF uf = new UIFunctions();
+    IUITools tools_Card = new UITools();
     IUITools tools_Trigger = new UITools();
     public GameObject avatar;
     public GameObject front;
@@ -28,6 +29,7 @@ public class Market_Card : MonoBehaviour
         tools_Trigger.AddExitEvent(trigger);
         tools_Trigger.AddButtonClick(trigger);
         originPos = transform.position;
+        tools_Card.RecordSiblingIndex(this.gameObject);
     }
 
     // Update is called once per frame
@@ -36,7 +38,7 @@ public class Market_Card : MonoBehaviour
         if (moveState == 0)
         {
             offset = uf.GetOffsetOfMouse(this.gameObject);
-            uf.ObjMoveTo(this.gameObject, originPos, 10);
+            uf.ObjMoveTo(this.gameObject, originPos, 15);
             avatar.transform.forward = Vector3.forward;
             if (tools_Trigger.Entry())
             {
@@ -52,20 +54,23 @@ public class Market_Card : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 moveState = 1;
+                tools_Card.SetAsLastSibling(this.gameObject);
             }
         }
         if (Input.GetMouseButtonUp(0))
         {
             moveState = 0;
+            tools_Card.SetSiblingBack(this.gameObject);
         }
         if (moveState == 1)
         {
-            uf.MoveByMouse(this.gameObject, offset, 9);
+            uf.MoveByMouse(this.gameObject, offset, 30);
             uf.ObjRotateByCenterByMouse(this.gameObject, avatar, 30, 3);
         }
         if (tools_Trigger.ButtonClicked())
         {
             click_state = 1;
+            click_timer = 0;
         }
         if (click_state == 1)
         {
@@ -77,10 +82,13 @@ public class Market_Card : MonoBehaviour
             }
             if (Input.GetMouseButtonDown(0))
             {
-                click_state = 0;
-                GameObject d = GameObject.Instantiate(detail,canvas.transform);
-                d.GetComponent<Market_CardDetail>().cid = cid;
-                d.SetActive(true);
+                if (uf.Distance2(this.gameObject, originPos) < 0.5f)
+                {
+                    click_state = 0;
+                    GameObject d = GameObject.Instantiate(detail, canvas.transform);
+                    d.GetComponent<Market_CardDetail>().cid = cid;
+                    d.SetActive(true);
+                }              
             }
         }
     }

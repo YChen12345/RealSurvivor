@@ -37,10 +37,10 @@ public struct HeroData
     }
     public void init()
     {
-        blood = 0;
+        blood = 10;
         mana = 0;
-        speed = 0;
-        defence = 0;
+        speed = 3;
+        defence = 3;
         atkspeed = 0;
         phurt = 0;
         mhurt = 0;

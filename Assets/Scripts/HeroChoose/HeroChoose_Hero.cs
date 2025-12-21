@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class HeroChoose_Hero : MonoBehaviour
 {
+    public GameObject loadingPage;
     public int heroID;
     GameObject image;
     IUF uf;
@@ -28,6 +29,7 @@ public class HeroChoose_Hero : MonoBehaviour
         bd.Init();
         bd.heroID = heroID;
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
-        SceneManager.LoadSceneAsync("WeaponChoose");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "WeaponChoose";
     }
 }

@@ -25,6 +25,10 @@ public class Battle_PlayerBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (data.state == 1)
+        {
+            Destroy(this.gameObject);
+        }
         if (state == 0)
         {
             s += GetComponent<Rigidbody2D>().linearVelocity.magnitude*Time.deltaTime;
@@ -40,6 +44,7 @@ public class Battle_PlayerBullet : MonoBehaviour
                     if (uf.Distance2(this.gameObject, data.bd.emyList[i]) < playerBullet.range)
                     {
                         data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
+                        data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
                         cross++;
                         break;
                     }

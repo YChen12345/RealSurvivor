@@ -6,7 +6,7 @@ public struct BattleData
     public int heroID;
     public int weaponID;
     public int levelID;
-    public int currentLevel;
+    public int wave;
     public int round;
     public int heroLev;
     public int exp;
@@ -34,7 +34,7 @@ public struct BattleData
         heroID = 0;
         weaponID = 0;
         levelID = 0;
-        currentLevel = 0;
+        wave = 0;
         round = 0;
         heroLev = 1;
         exp = 0;

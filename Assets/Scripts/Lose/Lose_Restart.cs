@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 public class Lose_Restart : MonoBehaviour
 {
+    public GameObject loadingPage;
     IUF uf;
     BattleData bd;
     int hid;
@@ -26,6 +27,7 @@ public class Lose_Restart : MonoBehaviour
         bd.weaponID = wid;
         bd.levelID = lid;
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
-        SceneManager.LoadSceneAsync("Battle");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "Battle";
     }
 }

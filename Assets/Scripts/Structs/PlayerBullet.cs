@@ -14,14 +14,14 @@ public struct PlayerBullet
 
     public void Init()
     {
-        attack = 0;
-        trans = 0;
-        distance = 1;
-        speed = 1;
+        attack = 1;
+        trans = 1;
+        distance = 3;
+        speed = 6;
         across = 0;
-        range = 1;
+        range = 0.2f;
         atkgap = 1;
-        lasttime = 1;
+        lasttime = 0;
         maxaim = 1;
     }
     public void Set(WeaponData wd)

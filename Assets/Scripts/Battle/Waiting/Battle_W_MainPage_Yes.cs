@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class Battle_W_MainPage_Yes : MonoBehaviour
 {
+    public GameObject loadingPage;
     void Start()
     {
         GetComponent<Button>().onClick.AddListener(BackToMain);
@@ -11,6 +12,7 @@ public class Battle_W_MainPage_Yes : MonoBehaviour
     void BackToMain()
     {
         Time.timeScale = 1;
-        SceneManager.LoadSceneAsync("StartScreen");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "StartScreen";
     }
 }

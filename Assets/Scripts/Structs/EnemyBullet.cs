@@ -10,10 +10,10 @@ public struct EnemyBullet
 
     public void Init()
     {
-        attack = 0;
-        trans = 0;
-        distance = 1;
-        speed = 1;
+        attack = 3;
+        trans = 1;
+        distance = 3;
+        speed = 2;
         range = 0.3f;
     }
 }

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class LevelChoose_Level : MonoBehaviour
 {
+    public GameObject loadingPage;
     public int levelID;
     IUF uf;
     BattleData bd;
@@ -26,6 +27,7 @@ public class LevelChoose_Level : MonoBehaviour
         bd.levelID = levelID;
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
         uf.SaveStructToJson<HeroData>(hd, "Data/HeroData");
-        SceneManager.LoadSceneAsync("Battle");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "Battle";
     }
 }

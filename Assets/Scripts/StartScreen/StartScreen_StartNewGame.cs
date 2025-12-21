@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class StartScreen_StartNewGame : MonoBehaviour
 {
+    public GameObject loadingPage;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,6 +12,7 @@ public class StartScreen_StartNewGame : MonoBehaviour
     }
     void StartNewGame()
     {
-        SceneManager.LoadSceneAsync("HeroChoose");
+        loadingPage.SetActive(true);
+        loadingPage.GetComponent<LoadingPage>().sceneName = "HeroChoose";
     }
 }
