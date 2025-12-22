@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public struct CardScreen
 {
+    public List<int> remainCard;
     public List<int> handCard;
     public List<int> emylist;
     public int boss;
@@ -10,6 +11,7 @@ public struct CardScreen
 
     public void Init()
     {
+        remainCard = new List<int>();
         handCard = new List<int>();
         emylist = new List<int>();
         boss = 0;

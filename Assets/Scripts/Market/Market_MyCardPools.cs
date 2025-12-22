@@ -52,6 +52,7 @@ public class Market_MyCardPools : MonoBehaviour
             {
                 GameObject p = GameObject.Instantiate(cardpool_locked, cardpool_locked.transform.parent);
                 p.transform.position = template[i].transform.position;
+                p.GetComponent<Market_LockedCardPool>().pid = i;
                 pools.Add(p);
                 p.SetActive(true);
             }         

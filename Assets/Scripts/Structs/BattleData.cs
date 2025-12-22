@@ -55,7 +55,10 @@ public struct BattleData
         emyList = new List<GameObject>();
         
         player = null;
-    }
+        marketLevel=0;
+        weaponLimit=2;
+        itemLimit=2;
+}
     public void NewBattle()
     {
         awardNum = 0;
@@ -64,6 +67,7 @@ public struct BattleData
         seedList = new List<GameObject>();
         emyList = new List<GameObject>();
         player = null;
+        cardList_Used = new List<int>();
     }
 }
 

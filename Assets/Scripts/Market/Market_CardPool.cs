@@ -9,6 +9,7 @@ public class Market_CardPool : MonoBehaviour
     public int cost;
     public GameObject canvas;
     public GameObject icon;
+    public GameObject detail;
     public TextMeshProUGUI text_name;
     public GameObject button_buy;
     //public GameObject tip_sellout;
@@ -22,6 +23,7 @@ public class Market_CardPool : MonoBehaviour
         button_buy.GetComponent<Button>().onClick.AddListener(Buy);
         icon.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("CardPool", pid);
         text_name.text = "卡池";
+        detail.GetComponent<Market_CardPoolDetail>().pid = pid;
     }
     void Buy()
     {
