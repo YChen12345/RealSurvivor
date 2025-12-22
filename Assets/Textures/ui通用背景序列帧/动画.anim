@@ -250,9 +250,9 @@ AnimationClip:
       value: {fileID: 21300000, guid: fb7b9a3a65e8e4b499f1cda218e066ad, type: 3}
     - time: 6.133333
       value: {fileID: 21300000, guid: 84f0c546511907e42a51af7fc447152a, type: 3}
-    - time: 6.2166667
-      value: {fileID: 21300000, guid: edca803d802553d43824b4450fb2dacb, type: 3}
     - time: 6.233333
+      value: {fileID: 21300000, guid: edca803d802553d43824b4450fb2dacb, type: 3}
+    - time: 6.25
       value: {fileID: 21300000, guid: f53719c5fa7baa5459f0c9efb56e1264, type: 3}
     - time: 6.3
       value: {fileID: 21300000, guid: 63678c9ba4d2a5e4082b28263fc28ee2, type: 3}

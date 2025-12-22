@@ -3,8 +3,120 @@
   "WorkspaceRootPath": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|c:\\survivorlike\\realsurvivorgame\\sg\\assets\\scripts\\battle\\battle_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_drawcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_drawcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|c:\\survivorlike\\realsurvivorgame\\sg\\assets\\scripts\\market\\market_cardpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_cardpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\treasure\\battle_t_treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\treasure\\battle_t_treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\loadingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|c:\\survivorlike\\realsurvivorgame\\sg\\assets\\scripts\\ui_background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui_background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|c:\\survivorlike\\realsurvivorgame\\sg\\assets\\scripts\\startscreen\\startscreen_background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startscreen\\startscreen_background.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\tools\\uianimationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tools\\uianimationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_battledatadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_battledatadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\tools\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tools\\animationplayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\tools\\interface\\ianim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tools\\interface\\ianim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_wavetext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_wavetext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_startbattle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_startbattle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\structs\\battledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structs\\battledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_bagweaponextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_bagweaponextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_cardremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_cardremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_mycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_mycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\effect\\effect_popupnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effect\\effect_popupnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_featuredetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_featuredetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscrenn_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscrenn_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_featuredetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_featuredetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_startbattle_no.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_next_yes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_next_yes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_startbattle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardscreen\\cardscreen_startbattle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_next.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +137,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\structs\\cardscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structs\\cardscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\structs\\battledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structs\\battledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\cardscreen\\cardscreen_info.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,14 +219,6 @@
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startscreen\\startscreen_startnewgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\loadingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadingpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_manager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\initcanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\initcanvas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -131,16 +227,8 @@
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\structs\\herodata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_battledatadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_battledatadisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\treasure\\battle_t_treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\treasure\\battle_t_treasure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_gift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -149,10 +237,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_carddisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_carddisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_drawcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_drawcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_award.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -171,16 +255,8 @@
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_bagitemextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_bagweaponextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_bagweaponextend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_marketcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_marketcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_mymarketcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -191,32 +267,8 @@
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_removeplace.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_cardremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_cardremove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_removepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_removepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\market\\market_mycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\market\\market_mycard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\effect\\effect_popupnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\effect\\effect_popupnew.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofeature.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofigure_v.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\award\\battle_a_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\award\\battle_a_herofigure_h.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_playerbullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -225,10 +277,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_enemybullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battle_player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EF04924-C45A-FA83-5161-2BDD1B5BAF39}|Assembly-CSharp.csproj|C:\\SurvivorLike\\RealSurvivorGame\\SG\\assets\\scripts\\battle\\battle_heroskilldisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -258,37 +306,355 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Battle_Info.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Info.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Info.cs",
               "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Info.cs",
               "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_Info.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T14:44:36.026Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CardScreen_StartBattle_No.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Title": "Market_CardPool.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardPool.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_CardPool.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardPool.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_CardPool.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAABYAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T23:23:59.939Z"
+              "WhenOpened": "2025-12-22T12:11:04.195Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
+              "Title": "UI_BackGround.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\UI_BackGround.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI_BackGround.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\UI_BackGround.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI_BackGround.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:39:36.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Market_Card.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Card.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Card.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Card.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_Card.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:12:04.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Market_DrawCard.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_DrawCard.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_DrawCard.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_DrawCard.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_DrawCard.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T19:54:23.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Battle_T_Treasure.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwCgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T19:55:47.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StartScreen_BackGround.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\StartScreen\\StartScreen_BackGround.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen\\StartScreen_BackGround.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\StartScreen\\StartScreen_BackGround.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StartScreen\\StartScreen_BackGround.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T11:25:43.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIAnimationPlayer.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\UIAnimationPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tools\\UIAnimationPlayer.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\UIAnimationPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tools\\UIAnimationPlayer.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAQwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T02:05:02.257Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AnimationPlayer.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\AnimationPlayer.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tools\\AnimationPlayer.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\AnimationPlayer.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tools\\AnimationPlayer.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAUwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T01:18:44.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Battle_Manager.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Manager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Manager.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Manager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_Manager.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAswJEAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T21:33:45.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoadingPage.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LoadingPage.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadingPage.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LoadingPage.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadingPage.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T22:01:17.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAnim.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\Interface\\IAnim.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Tools\\Interface\\IAnim.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Tools\\Interface\\IAnim.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Tools\\Interface\\IAnim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T10:51:39.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Battle_Player.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Player.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_Player.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwDUAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T15:10:27.741Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Battle_BattleDataDisplay.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwB0AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T13:25:36.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CardScreen_WaveText.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_WaveText.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_WaveText.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_WaveText.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_WaveText.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T01:45:43.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CardScreen_StartBattle.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wAwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T23:02:48.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BattleData.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\BattleData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Structs\\BattleData.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\BattleData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Structs\\BattleData.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAzwAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:45:18.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Market_BagWeaponExtend.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T18:28:57.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Market_CardRemove.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardRemove.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_CardRemove.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardRemove.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_CardRemove.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:17:09.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Market_Mycard.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Mycard.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Mycard.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Mycard.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_Mycard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:11:29.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CardScrenn_HeroFigure_V.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScrenn_HeroFigure_V.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScrenn_HeroFigure_V.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScrenn_HeroFigure_V.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScrenn_HeroFigure_V.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAwC8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T00:38:05.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CardScreen_HeroFeature.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_HeroFeature.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_HeroFeature.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_HeroFeature.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_HeroFeature.cs",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAkwBYAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T00:34:24.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Battle_A_HeroFigure_V.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwEQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:05:50.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CardScreen_FeatureDetail.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_FeatureDetail.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_FeatureDetail.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_FeatureDetail.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_FeatureDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T00:32:35.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Effect_PopUpNew.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwCkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:07:26.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CardScreen_HeroFigure_H.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_HeroFigure_H.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_HeroFigure_H.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_HeroFigure_H.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_HeroFigure_H.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T00:30:51.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Battle_A_HeroFeature.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAkwKcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T17:06:29.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Market_FeatureDetail.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_FeatureDetail.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_FeatureDetail.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_FeatureDetail.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_FeatureDetail.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T00:33:04.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "CardScreen_Info.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_Info.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_Info.cs",
@@ -300,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 30,
               "Title": "Market_Next_Yes.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Next_Yes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Next_Yes.cs",
@@ -312,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 33,
               "Title": "CardScreen.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\CardScreen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Structs\\CardScreen.cs",
@@ -324,19 +690,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CardScreen_StartBattle.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
-              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAwwBsAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "Battle_A_HeroFigure_H.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T23:02:48.884Z"
+              "WhenOpened": "2025-12-21T17:04:48.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
+              "Title": "CardScreen_StartBattle_No.cs",
+              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
+              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardScreen\\CardScreen_StartBattle_No.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T23:23:59.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "Battle_W_MainPage_Yes.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Waiting\\Battle_W_MainPage_Yes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Waiting\\Battle_W_MainPage_Yes.cs",
@@ -348,19 +726,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BattleData.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\BattleData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Structs\\BattleData.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\BattleData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Structs\\BattleData.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:45:18.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 31,
               "Title": "Market_Next.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Next.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Next.cs",
@@ -372,7 +738,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 35,
               "Title": "Market_Info.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Info.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Info.cs",
@@ -384,7 +750,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 37,
               "Title": "Battle_W_Restart_Yes.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Waiting\\Battle_W_Restart_Yes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Waiting\\Battle_W_Restart_Yes.cs",
@@ -396,7 +762,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 38,
               "Title": "Lose_StartScreen.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Lose\\Lose_StartScreen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lose\\Lose_StartScreen.cs",
@@ -408,7 +774,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 36,
               "Title": "Battle_W_EndGame_Yes.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Waiting\\Battle_W_EndGame_Yes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Waiting\\Battle_W_EndGame_Yes.cs",
@@ -420,7 +786,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 39,
               "Title": "Lose_Restart.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Lose\\Lose_Restart.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lose\\Lose_Restart.cs",
@@ -432,7 +798,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 40,
               "Title": "Lose_NewGame.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Lose\\Lose_NewGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lose\\Lose_NewGame.cs",
@@ -444,7 +810,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 41,
               "Title": "Win_NewGame.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Win\\Win_NewGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\Win_NewGame.cs",
@@ -456,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 42,
               "Title": "Win_Restart.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Win\\Win_Restart.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\Win_Restart.cs",
@@ -468,7 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 43,
               "Title": "Win_StartScreen.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Win\\Win_StartScreen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\Win_StartScreen.cs",
@@ -480,7 +846,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 45,
               "Title": "Win_Victory.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Win\\Win_Victory.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Win\\Win_Victory.cs",
@@ -492,7 +858,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 44,
               "Title": "LevelChoose_Level.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LevelChoose\\LevelChoose_Level.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelChoose\\LevelChoose_Level.cs",
@@ -504,7 +870,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 46,
               "Title": "LevelChoose_Back.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LevelChoose\\LevelChoose_Back.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LevelChoose\\LevelChoose_Back.cs",
@@ -516,7 +882,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 47,
               "Title": "WeaponChoose_Weapon.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\WeaponChoose\\WeaponChoose_Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponChoose\\WeaponChoose_Weapon.cs",
@@ -528,7 +894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 48,
               "Title": "WeaponChoose_Back.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\WeaponChoose\\WeaponChoose_Back.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponChoose\\WeaponChoose_Back.cs",
@@ -540,7 +906,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 49,
               "Title": "HeroChoose_Back.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\HeroChoose\\HeroChoose_Back.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HeroChoose\\HeroChoose_Back.cs",
@@ -552,7 +918,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 52,
               "Title": "StartScreen_ExitGame.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\StartScreen\\StartScreen_ExitGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen\\StartScreen_ExitGame.cs",
@@ -564,7 +930,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 51,
               "Title": "StartScreen_LoadOldGame.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\StartScreen\\StartScreen_LoadOldGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen\\StartScreen_LoadOldGame.cs",
@@ -576,7 +942,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 53,
               "Title": "StartScreen_StartNewGame.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\StartScreen\\StartScreen_StartNewGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StartScreen\\StartScreen_StartNewGame.cs",
@@ -588,7 +954,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 50,
               "Title": "HeroChoose_Hero.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\HeroChoose\\HeroChoose_Hero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HeroChoose\\HeroChoose_Hero.cs",
@@ -600,19 +966,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "LoadingPage.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LoadingPage.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadingPage.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\LoadingPage.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LoadingPage.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAgwD0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T22:01:17.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 54,
               "Title": "InitCanvas.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\InitCanvas.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InitCanvas.cs",
@@ -624,31 +978,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Battle_T_Treasure.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Treasure\\Battle_T_Treasure.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAIwFcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T19:55:47.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Battle_Manager.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Manager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Manager.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Manager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_Manager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwCIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T21:33:45.043Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 56,
               "Title": "Battle_Enemy.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Enemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Enemy.cs",
@@ -660,19 +990,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Battle_BattleDataDisplay.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_BattleDataDisplay.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T13:25:36.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 55,
               "Title": "HeroData.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Structs\\HeroData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Structs\\HeroData.cs",
@@ -684,7 +1002,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 57,
               "Title": "Battle_A_Gift.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_Gift.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_Gift.cs",
@@ -696,7 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 58,
               "Title": "Market_CardDisplay.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_CardDisplay.cs",
@@ -708,19 +1026,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Market_DrawCard.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_DrawCard.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_DrawCard.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_DrawCard.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_DrawCard.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwDYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T19:54:23.259Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 59,
               "Title": "Battle_A_Award.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_Award.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_Award.cs",
@@ -732,7 +1038,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 60,
               "Title": "Battle_T_CardDisplay.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Treasure\\Battle_T_CardDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Treasure\\Battle_T_CardDisplay.cs",
@@ -744,7 +1050,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 61,
               "Title": "Market_MarketLevelUp.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_MarketLevelUp.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_MarketLevelUp.cs",
@@ -756,7 +1062,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 62,
               "Title": "Market_BagItemExtend.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_BagItemExtend.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_BagItemExtend.cs",
@@ -768,19 +1074,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Market_BagWeaponExtend.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_BagWeaponExtend.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBsAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T18:28:57.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 63,
               "Title": "Market_MarketCard.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_MarketCard.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_MarketCard.cs",
@@ -792,7 +1086,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 64,
               "Title": "Market_MyMarketCards.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_MyMarketCards.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_MyMarketCards.cs",
@@ -804,7 +1098,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 65,
               "Title": "Market_RemovePlace.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_RemovePlace.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_RemovePlace.cs",
@@ -816,31 +1110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Market_CardRemove.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardRemove.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_CardRemove.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_CardRemove.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_CardRemove.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAwwBwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:17:09.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Market_Card.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Card.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Card.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Card.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_Card.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAYwFQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:12:04.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 66,
               "Title": "Market_RemovePage.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_RemovePage.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_RemovePage.cs",
@@ -852,67 +1122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "Market_Mycard.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Mycard.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Market\\Market_Mycard.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Market\\Market_Mycard.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Market\\Market_Mycard.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:11:29.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "Effect_PopUpNew.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Effect\\Effect_PopUpNew.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAA3wCkAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:07:26.725Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Battle_A_HeroFeature.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFeature.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAgwBYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:06:29.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Battle_A_HeroFigure_V.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_V.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:05:50.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Battle_A_HeroFigure_H.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Award\\Battle_A_HeroFigure_H.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T17:04:48.57Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 68,
               "Title": "Battle_EnemyBullet.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_EnemyBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_EnemyBullet.cs",
@@ -924,7 +1134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 67,
               "Title": "Battle_PlayerBullet.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_PlayerBullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_PlayerBullet.cs",
@@ -936,19 +1146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Battle_Player.cs",
-              "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Player.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_Player.cs",
-              "ToolTip": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_Player.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Battle_Player.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwDYAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T15:10:27.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 69,
               "Title": "Battle_HeroSkillDisplay.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_HeroSkillDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_HeroSkillDisplay.cs",
@@ -960,7 +1158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 70,
               "Title": "Battle_HeroSkill.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Battle\\Battle_HeroSkill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Battle_HeroSkill.cs",
@@ -972,7 +1170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 71,
               "Title": "WeaponChoose_BuyWeapon.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\WeaponChoose\\WeaponChoose_BuyWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponChoose\\WeaponChoose_BuyWeapon.cs",
@@ -984,7 +1182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 72,
               "Title": "HeroChoose_BuyHero.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\HeroChoose\\HeroChoose_BuyHero.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HeroChoose\\HeroChoose_BuyHero.cs",
@@ -996,7 +1194,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 73,
               "Title": "Lose_GameOver.cs",
               "DocumentMoniker": "C:\\SurvivorLike\\RealSurvivorGame\\SG\\Assets\\Scripts\\Lose\\Lose_GameOver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Lose\\Lose_GameOver.cs",

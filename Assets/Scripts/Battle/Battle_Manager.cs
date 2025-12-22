@@ -59,7 +59,7 @@ public class Battle_Manager : MonoBehaviour
         }
         else
         {
-            data.bd.emyList.RemoveAt(0);
+            //data.bd.emyList.RemoveAt(0);
         }
     }
     void EndControl()
@@ -143,6 +143,7 @@ public class Battle_Manager : MonoBehaviour
                 if (data.page_state == 0)
                 {
                     settlement_state = 2;
+                    data.bd.wave++;
                     loadingPage.SetActive(true);
                     loadingPage.GetComponent<LoadingPage>().sceneName = "Market";
                 }             

@@ -6,6 +6,7 @@ using TMPro;
 
 public class Market_DrawCard : MonoBehaviour
 {
+    public int pid;
     public int cid;
     public GameObject anim;
     public GameObject cover;
@@ -27,6 +28,7 @@ public class Market_DrawCard : MonoBehaviour
         button_no.SetActive(false);
         card.GetComponent<Market_CardDisplay>().cid= cid;
         card.SetActive(true);
+        cover.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("Cover/CardPool", pid);
         cover.SetActive(true);
     }
 

@@ -29,6 +29,8 @@ public class LoadingPage : MonoBehaviour
         loading.SetActive(false);
         state = 0;
         x = Camera.main.pixelWidth;
+        maskLeft.GetComponent<RectTransform>().sizeDelta = new Vector2(Camera.main.pixelWidth - x, Camera.main.pixelHeight);
+        maskRight.GetComponent<RectTransform>().sizeDelta = new Vector2(Camera.main.pixelWidth - x, Camera.main.pixelHeight);
     }
 
     // Update is called once per frame

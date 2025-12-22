@@ -27,12 +27,17 @@ public class Battle_BattleDataDisplay : MonoBehaviour
     {
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         player = data.bd.player;
+        WaveText();
     }
 
     // Update is called once per frame
     void Update()
     {
         Display();
+    }
+    void WaveText()
+    {
+        waveNum.text = "第" + (data.bd.wave + 1) + "波";
     }
     void Display()
     {
@@ -65,7 +70,6 @@ public class Battle_BattleDataDisplay : MonoBehaviour
         {
             tip_levelUp.SetActive(false);
         }
-        waveNum.text = "第" + (data.bd.wave+1)+"波";
         countBack.text = "" +(int)(data.clock - data.totaltime);
         heroGold.text = "金币:" + data.bd.gold;
         heroLev.text = "LV" + data.bd.heroLev;

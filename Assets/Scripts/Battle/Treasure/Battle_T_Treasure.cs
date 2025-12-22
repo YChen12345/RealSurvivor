@@ -34,6 +34,8 @@ public class Battle_T_Treasure : MonoBehaviour
         button_gain.SetActive(false);
         button_discard.SetActive(false);
         button_skip.SetActive(false);
+        cover.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("Cover/Treasure", 0);
+        cover.SetActive(true);
     }
     void Update()
     {

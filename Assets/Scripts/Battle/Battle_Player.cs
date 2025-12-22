@@ -6,6 +6,7 @@ public class Battle_Player : MonoBehaviour
 {
     Battle_Info data;
     IUF uf;
+    IAnim animplayer = new AnimationPlayer();
     public GameObject displayPage;
     public GameObject avatar;
     public GameObject weaponCenter;
@@ -21,6 +22,10 @@ public class Battle_Player : MonoBehaviour
         dis = 0.5f;
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
+        animplayer.SetFrameTime(0.05f);
+        string rootRoute = "RoleAnim/" + data.bd.heroID+"/";
+        animplayer.SetSprites(rootRoute + "Stay");
+        animplayer.SetSprites(rootRoute + "Move");
         avatar.GetComponent<SpriteRenderer>().sprite= uf.LoadResource<Sprite>("Role", data.bd.heroID);
         float height = uf.Area(avatar).height/2;
         avatar.transform.localPosition = new Vector2(0, height* avatar.transform.localScale.y);
@@ -44,6 +49,14 @@ public class Battle_Player : MonoBehaviour
         uf.MoveByKey(this.gameObject, hd_.speed, uf.GetKeyState());
         uf.MoveLimitation(this.gameObject, data.map_width, data.map_height, Vector2.zero);
         uf.FaceToMoveDir(this.gameObject,avatar,1);
+        if (GetComponent<Rigidbody2D>().linearVelocity.magnitude < 0.01f)
+        {
+            animplayer.AnimPlay(avatar, 0, Time.deltaTime);
+        }
+        else
+        {
+            animplayer.AnimPlay(avatar, 1, Time.deltaTime);
+        }     
     }
     void initWeapon()
     {
