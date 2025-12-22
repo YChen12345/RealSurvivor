@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class Market_Next : MonoBehaviour
 {
+    IUF uf = new UIFunctions();
     public GameObject loadingPage;
     public GameObject confirm;
     public Market_Info data;
@@ -17,6 +18,7 @@ public class Market_Next : MonoBehaviour
     // Update is called once per frame
     void Next()
     {
+        uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
         if (data.bd.gold < data.market.draw_cost[0])
         {
             loadingPage.SetActive(true);

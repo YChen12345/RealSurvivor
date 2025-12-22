@@ -13,6 +13,7 @@ public class Battle_Manager : MonoBehaviour
     int stop;
     float generateGapClock;
     public int settlement_state;
+    public int win;
     void Start()
     {       
         stop = 0;
@@ -38,6 +39,7 @@ public class Battle_Manager : MonoBehaviour
         PlayerLV();
         EndControl();
         Stop();
+        GameOver();
         if (settlement_state == 1)
         {
             SettlementControl();
@@ -81,6 +83,10 @@ public class Battle_Manager : MonoBehaviour
                 else
                 {
                     data.settlement = 3;
+                }
+                if (data.bd.wave == 19)
+                {
+                    data.settlement = 4;
                 }
             }
         }
@@ -144,10 +150,33 @@ public class Battle_Manager : MonoBehaviour
                 {
                     settlement_state = 2;
                     data.bd.wave++;
+                    uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
                     loadingPage.SetActive(true);
                     loadingPage.GetComponent<LoadingPage>().sceneName = "Market";
                 }             
                 break;
+            case 4:
+                if (data.page_state == 0)
+                {
+                    settlement_state = 2;
+                    uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
+                    loadingPage.SetActive(true);
+                    loadingPage.GetComponent<LoadingPage>().sceneName = "Win";
+                }
+                break;
+        }
+    }
+    void GameOver()
+    {
+        if (data.dead == 1)
+        {
+            if (settlement_state == 0)
+            {
+                settlement_state = 2;
+                uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
+                loadingPage.SetActive(true);
+                loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";
+            }           
         }
     }
 }

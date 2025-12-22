@@ -22,6 +22,9 @@ public struct BattleData
     public List<int> WeaponCardList;
     public List<int> ItemCardList;
     public List<int> ScrollCardList;
+    public List<int> market_Card;
+    public List<int> market_sellCard_state;
+    public int market_lockCard_state;
     public GameObject boss;
     public List<GameObject> seedList;
     public List<GameObject> emyList;
@@ -58,7 +61,10 @@ public struct BattleData
         marketLevel=0;
         weaponLimit=2;
         itemLimit=2;
-}
+        market_lockCard_state = 0;
+        market_sellCard_state = new List<int>() { 0, 0, 0 };
+        market_Card = new List<int>() { 0, 0, 0 };
+    }
     public void NewBattle()
     {
         awardNum = 0;

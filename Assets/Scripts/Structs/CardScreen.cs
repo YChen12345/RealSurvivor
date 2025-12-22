@@ -13,7 +13,7 @@ public struct CardScreen
     {
         remainCard = new List<int>();
         handCard = new List<int>();
-        emylist = new List<int>();
+        emylist = new List<int>() { 0, 0, 0 };
         boss = 0;
         cardUsed_thisRound = 0;
     }

@@ -6,12 +6,16 @@ public class Battle_Enemy : MonoBehaviour
     public GameObject seed;
     public GameObject drop;
     public GameObject avatar;
+    public GameObject avatar_fade;
+    public GameObject blood_hurt;
+    public GameObject blood_dead;
     public GameObject bullet;
     public GameObject warning;
     public GameObject display;
     GameObject player;
     Battle_Info data;
     public Enemy enemyfigure;
+    public Enemy enemy_last;
     public Enemy enemy;
     IUF uf;
     float t;
@@ -21,13 +25,15 @@ public class Battle_Enemy : MonoBehaviour
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         player = data.bd.player;
-        avatar.GetComponent<SpriteRenderer>().sprite= uf.LoadResource<Sprite>("Emy", eid);
+        avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Emy", eid);
+        avatar_fade.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Emy", eid);
         float height = uf.Area(avatar).height / 2;
         avatar.transform.localPosition = new Vector2(0, height * avatar.transform.localScale.y);
         warning.transform.localPosition = new Vector2(0, 3.0f*height * avatar.transform.localScale.y);
         display.transform.localPosition = new Vector2(0, 2.2f*height * avatar.transform.localScale.y);
         enemyfigure.Init();
         enemy = enemyfigure;
+        enemy_last = enemy;
         warning.SetActive(false);
     }
 
@@ -136,8 +142,16 @@ public class Battle_Enemy : MonoBehaviour
 
     void Dead()
     {
-        if (enemy.blood <= 0)
+        if (data.state == 1)
         {
+            Effect_Fade();
+            data.bd.emyList.Remove(this.gameObject);
+            Destroy(this.gameObject);
+        }
+        else if (enemy.blood <= 0)
+        {
+            Effect_Fade();
+            Effect_blood_dead();
             GameObject d = GameObject.Instantiate(drop, this.transform.position, Quaternion.identity);
             d.GetComponent<Battle_Drop>().did = enemy.dropid;
             d.SetActive(true);
@@ -145,5 +159,23 @@ public class Battle_Enemy : MonoBehaviour
             data.bd.exp++;
             Destroy(this.gameObject);
         }
+    }
+    void Effect_Fade()
+    {
+        avatar_fade.transform.position = avatar.transform.position;
+        avatar_fade.transform.parent = null;
+        avatar_fade.SetActive(true);
+    }
+    void Effect_blood_hurt()
+    {
+        GameObject b = GameObject.Instantiate(blood_hurt,this.gameObject.transform.position,Quaternion.identity);
+        b.transform.parent = null;
+        b.SetActive(true);
+    }
+    void Effect_blood_dead()
+    {
+        GameObject b = GameObject.Instantiate(blood_dead, this.gameObject.transform.position, Quaternion.identity);
+        b.transform.parent = null;
+        b.SetActive(true);
     }
 }

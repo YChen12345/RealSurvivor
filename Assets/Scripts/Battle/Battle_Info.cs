@@ -15,6 +15,7 @@ public class Battle_Info : MonoBehaviour
     public int state;
     public int page_state;
     public int settlement;
+    public int dead;
     void Awake()
     {
         clock = 20;
@@ -23,6 +24,7 @@ public class Battle_Info : MonoBehaviour
         uf = new Functions();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
         hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
+        bd.NewBattle();
         bd.player = GameObject.Find("Player");
         map_width = 10.35f * 2;
         map_height = 7.54f * 2;

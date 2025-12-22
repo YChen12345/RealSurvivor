@@ -32,5 +32,10 @@ public class Battle_EnemySeed : MonoBehaviour
             data.bd.seedList.Remove(this.gameObject);
             Destroy(this.gameObject);
         }
+        if (data.state == 1)
+        {
+            data.bd.seedList.Remove(this.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }

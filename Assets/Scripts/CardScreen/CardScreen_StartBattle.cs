@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using static System.Net.Mime.MediaTypeNames;
 public class CardScreen_StartBattle : MonoBehaviour
 {
+    IUF uf = new UIFunctions();
     public GameObject loadingPage;
     public GameObject confirm;
     public CardScreen_Info data;
@@ -17,6 +18,7 @@ public class CardScreen_StartBattle : MonoBehaviour
     // Update is called once per frame
     void StartBattle()
     {
+        uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
         if (data.hd.mana <=1)
         {
             loadingPage.SetActive(true);

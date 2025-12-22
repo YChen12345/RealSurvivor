@@ -81,7 +81,8 @@ public class Battle_Player : MonoBehaviour
     {
         if (hd_.blood <= 0)
         {
-            SceneManager.LoadSceneAsync("Lose");
+            data.dead = 1;
+            hd_.speed = 0;
         }
     }
 }

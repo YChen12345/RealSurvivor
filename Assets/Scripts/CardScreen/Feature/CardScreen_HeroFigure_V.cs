@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class CardScrenn_HeroFigure_V : MonoBehaviour
+public class CardScreen_HeroFigure_V : MonoBehaviour
 {
     public List<GameObject> template_v;
     public GameObject feature_v;

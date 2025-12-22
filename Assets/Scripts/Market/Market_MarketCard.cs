@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class Market_MarketCard : MonoBehaviour
 {
+    public int index;
     public int cid;
     public int cost;
     public GameObject button_buy;
@@ -26,6 +27,7 @@ public class Market_MarketCard : MonoBehaviour
             data.bd.gold -= cost;
             data.bd.cardList_Total.Add(cid);
             data.bd.cardList_Weapon.Add(cid);
+            data.bd.market_sellCard_state[index] = 1;
             button_buy.SetActive(false);
             tip_sellout.SetActive(true);
             this.gameObject.SetActive(false);///
