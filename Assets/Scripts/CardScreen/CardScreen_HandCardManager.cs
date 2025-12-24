@@ -9,15 +9,24 @@ public class CardScreen_HandCardManager : MonoBehaviour
     public List<GameObject> template;
     public List<GameObject> display_list = new List<GameObject>();
     public GameObject handcard;
+    public GameObject button_refresh;
     public CardScreen_Info data;
     IUF uf = new UIFunctions();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
+        button_refresh.GetComponent<Button>().onClick.AddListener(ReSetHandCard);
         SetHandCard();
     }
 
+    private void Update()
+    {
+        if (data.cardScreen.remainCard.Count == 0)
+        {
+            button_refresh.SetActive(false);
+        }
+    }
     // Update is called once per frame
     public void SetHandCard()
     {
@@ -32,14 +41,65 @@ public class CardScreen_HandCardManager : MonoBehaviour
         data.cardScreen.handCard.Clear();
         for (int i = 0; i < template.Count; i++)
         {
-            int cid = 0;
-            GameObject c = GameObject.Instantiate(handcard, handcard.transform.parent);
-            c.transform.position = template[i].transform.position;
-            c.GetComponent<CardScreen_HandCard>().index = i;
-            c.GetComponent<CardScreen_HandCard>().cid = cid;
-            data.cardScreen.handCard.Add(cid);
-            display_list.Add(c);
-            c.SetActive(true);
+            if(i<data.cardScreen.remainCard.Count)
+            {
+                int cid = data.cardScreen.remainCard[i];
+                GameObject c = GameObject.Instantiate(handcard, handcard.transform.parent);
+                c.transform.position = template[i].transform.position;
+                c.GetComponent<CardScreen_HandCard>().index = i;
+                c.GetComponent<CardScreen_HandCard>().cid = cid;
+                data.cardScreen.handCard.Add(cid);
+                display_list.Add(c);
+                c.SetActive(true);
+            }         
+        }
+        for(int i = 0; i < template.Count; i++)
+        {
+            if (data.cardScreen.remainCard.Count > 0)
+            {
+                data.cardScreen.remainCard.RemoveAt(0);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+    public void ReSetHandCard()
+    {
+        for (int i = 0; i < display_list.Count; i++)
+        {
+            if (display_list[i] != null)
+            {
+                Destroy(display_list[i]);
+            }
+        }
+        display_list.Clear();
+        data.cardScreen.handCard.Clear();
+        for (int i = 0; i < template.Count; i++)
+        {
+            if (i < data.cardScreen.remainCard.Count)
+            {
+                int cid = data.cardScreen.remainCard[i];
+                GameObject c = GameObject.Instantiate(handcard, handcard.transform.parent);
+                c.transform.position = template[i].transform.position;
+                c.GetComponent<CardScreen_HandCard>().index = i;
+                c.GetComponent<CardScreen_HandCard>().cid = cid;
+                data.cardScreen.handCard.Add(cid);
+                display_list.Add(c);
+                c.SetActive(true);
+            }
+        }
+        for (int i = 0; i < template.Count; i++)
+        {
+            if (data.cardScreen.remainCard.Count > 0)
+            {
+                data.cardScreen.remainCard.RemoveAt(0);
+            }
+            else
+            {
+                break;
+            }
         }
     }
 }

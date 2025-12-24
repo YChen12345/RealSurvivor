@@ -34,8 +34,9 @@ public class Battle_A_Gift : MonoBehaviour
         }
         else
         {
-            data.settlement = 2;
+            data.bd.awardNum--;
             data.page_state = 0;
+            data.settlement = 3;
         }
         Destroy(page);
     }

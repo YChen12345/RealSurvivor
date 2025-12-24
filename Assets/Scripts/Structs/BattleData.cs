@@ -75,5 +75,12 @@ public struct BattleData
         player = null;
         cardList_Used = new List<int>();
     }
+    public void ResetUsedCard()
+    {
+        cardList_Used = new List<int>();
+        WeaponCardList = new List<int>();
+        ItemCardList = new List<int>();
+        ScrollCardList = new List<int>();
+    }
 }
 

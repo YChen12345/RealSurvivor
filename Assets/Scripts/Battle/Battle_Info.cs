@@ -16,6 +16,7 @@ public class Battle_Info : MonoBehaviour
     public int page_state;
     public int settlement;
     public int dead;
+    public int settlement_state;
     void Awake()
     {
         clock = 20;

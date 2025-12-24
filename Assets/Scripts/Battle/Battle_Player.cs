@@ -9,10 +9,12 @@ public class Battle_Player : MonoBehaviour
     IAnim animplayer = new AnimationPlayer();
     public GameObject displayPage;
     public GameObject avatar;
+    public GameObject effectFigure;
     public GameObject weaponCenter;
     public GameObject weapon;
     public HeroData hd;
     public HeroData hd_;
+    public HeroData hd_last;
 
     float dis;
     
@@ -29,11 +31,13 @@ public class Battle_Player : MonoBehaviour
         avatar.GetComponent<SpriteRenderer>().sprite= uf.LoadResource<Sprite>("Role", data.bd.heroID);
         float height = uf.Area(avatar).height/2;
         avatar.transform.localPosition = new Vector2(0, height* avatar.transform.localScale.y);
+        effectFigure.transform.localPosition = new Vector2(0, 2.2f*height * avatar.transform.localScale.y);
         weaponCenter.transform.localPosition = avatar.transform.localPosition;
         weaponCenter.SetActive(true);
         hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
         hd.init();////////////////////
         hd_ = hd;
+        hd_last = hd_;
         initWeapon();
         displayPage.SetActive(true);
     }
@@ -43,6 +47,8 @@ public class Battle_Player : MonoBehaviour
     {
         Move();
         Dead();
+        BeHurt();
+        BeHeal();
     }
     void Move()
     {
@@ -57,6 +63,31 @@ public class Battle_Player : MonoBehaviour
         {
             animplayer.AnimPlay(avatar, 1, Time.deltaTime);
         }     
+    }
+    void BeHurt()
+    {
+        if (hd_last.blood > hd_.blood)
+        {
+            int hurtvlaue = hd_last.blood - hd_.blood;
+            hd_last.blood = hd_.blood;
+            GameObject f = GameObject.Instantiate(effectFigure, effectFigure.transform.position, Quaternion.identity);
+            f.transform.parent = null;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.SetActive(true);
+        }
+    }
+
+    void BeHeal()
+    {
+        if (hd_last.blood < hd_.blood)
+        {
+            int hurtvlaue = hd_last.blood - hd_.blood;
+            hd_last.blood = hd_.blood;
+            GameObject f = GameObject.Instantiate(effectFigure, effectFigure.transform.position, Quaternion.identity);
+            f.transform.parent = null;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.SetActive(true);
+        }
     }
     void initWeapon()
     {

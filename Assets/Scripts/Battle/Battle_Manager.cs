@@ -12,7 +12,6 @@ public class Battle_Manager : MonoBehaviour
     IUF uf;
     int stop;
     float generateGapClock;
-    public int settlement_state;
     public int win;
     void Start()
     {       
@@ -40,7 +39,7 @@ public class Battle_Manager : MonoBehaviour
         EndControl();
         Stop();
         GameOver();
-        if (settlement_state == 1)
+        if (data.settlement_state == 1)
         {
             SettlementControl();
         }
@@ -68,9 +67,9 @@ public class Battle_Manager : MonoBehaviour
     {
         if (data.totaltime > data.clock)
         {
-            if (settlement_state == 0)
+            if (data.settlement_state == 0)
             {
-                settlement_state = 1;
+                data.settlement_state = 1;
                 data.state = 1;
                 if (data.bd.treasureNum > 0)
                 {
@@ -121,6 +120,7 @@ public class Battle_Manager : MonoBehaviour
         {
             data.bd.exp = 0;
             data.bd.heroLev++;
+            data.bd.awardNum++;
         }
     }
     void SettlementControl()
@@ -148,8 +148,9 @@ public class Battle_Manager : MonoBehaviour
             case 3:
                 if (data.page_state == 0)
                 {
-                    settlement_state = 2;
+                    data.settlement_state = 2;
                     data.bd.wave++;
+                    data.bd.ResetUsedCard();
                     uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
                     loadingPage.SetActive(true);
                     loadingPage.GetComponent<LoadingPage>().sceneName = "Market";
@@ -158,7 +159,7 @@ public class Battle_Manager : MonoBehaviour
             case 4:
                 if (data.page_state == 0)
                 {
-                    settlement_state = 2;
+                    data.settlement_state = 2;
                     uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
                     loadingPage.SetActive(true);
                     loadingPage.GetComponent<LoadingPage>().sceneName = "Win";
@@ -170,9 +171,9 @@ public class Battle_Manager : MonoBehaviour
     {
         if (data.dead == 1)
         {
-            if (settlement_state == 0)
+            if (data.settlement_state == 0)
             {
-                settlement_state = 2;
+                data.settlement_state = 2;
                 uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
                 loadingPage.SetActive(true);
                 loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";

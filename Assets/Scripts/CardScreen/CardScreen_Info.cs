@@ -13,5 +13,6 @@ public class CardScreen_Info : MonoBehaviour
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
         hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
         cardScreen.Init();
+        cardScreen.remainCard = new List<int>(bd.cardList_Total);
     }
 }

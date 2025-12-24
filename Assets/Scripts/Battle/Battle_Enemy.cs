@@ -12,21 +12,28 @@ public class Battle_Enemy : MonoBehaviour
     public GameObject bullet;
     public GameObject warning;
     public GameObject display;
+    public GameObject effectFigure;
     GameObject player;
     Battle_Info data;
     public Enemy enemyfigure;
     public Enemy enemy_last;
     public Enemy enemy;
+    Sprite avatarSprite_normal;
+    Sprite avatarSprite_hurt;
     IUF uf;
     float t;
     int atk_state;
+    float hurt_timer;
+    int behurt;
     void Start()
     {
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         player = data.bd.player;
-        avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Emy", eid);
-        avatar_fade.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Emy", eid);
+        avatarSprite_normal = uf.LoadResource<Sprite>("Emy/Emy", eid);
+        avatarSprite_hurt = uf.LoadResource<Sprite>("Emy/EmyHurt", eid);
+        avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
+        avatar_fade.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
         float height = uf.Area(avatar).height / 2;
         avatar.transform.localPosition = new Vector2(0, height * avatar.transform.localScale.y);
         warning.transform.localPosition = new Vector2(0, 3.0f*height * avatar.transform.localScale.y);
@@ -41,6 +48,8 @@ public class Battle_Enemy : MonoBehaviour
     void Update()
     {     
         Move();
+        BeHurt();
+        BeHeal();
         if(uf.Distance2(this.gameObject, player) < enemy.atkdistance||atk_state==1)
         {
             t += Time.deltaTime;
@@ -138,6 +147,46 @@ public class Battle_Enemy : MonoBehaviour
         p.GetComponent<Battle_EnemyBullet>().bid = eid;
         p.GetComponent<Battle_EnemyBullet>().dir = dir;
         p.SetActive(true);
+    }
+    void BeHurt()
+    {
+        if (behurt == 1)
+        {
+            hurt_timer += Time.deltaTime;
+            avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_hurt;
+            if (hurt_timer > 0.3f)
+            {
+                hurt_timer = 0;
+                behurt = 0;
+            }
+        }
+        else
+        {
+            avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
+        }
+        if (enemy_last.blood > enemy.blood)
+        {
+            int hurtvlaue = enemy_last.blood - enemy.blood;
+            enemy_last.blood = enemy.blood;
+            behurt = 1;
+            Effect_blood_hurt();
+            GameObject f = GameObject.Instantiate(effectFigure, display.transform.position, Quaternion.identity);
+            f.transform.parent = null;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.SetActive(true);
+        }
+    }
+    void BeHeal()
+    {
+        if (enemy_last.blood < enemy.blood)
+        {
+            int hurtvlaue = enemy_last.blood - enemy.blood;
+            enemy_last.blood = enemy.blood;
+            GameObject f = GameObject.Instantiate(effectFigure, display.transform.position, Quaternion.identity);
+            f.transform.parent = null;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.SetActive(true);
+        }
     }
 
     void Dead()

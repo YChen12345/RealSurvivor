@@ -77,7 +77,7 @@ public class Battle_T_Treasure : MonoBehaviour
         data.bd.cardList_Scroll.Add(cid);
         if (data.bd.treasureNum <= 0)
         {
-            data.settlement = 3;
+            data.settlement = 2;
         }
         Destroy(page);
     }
@@ -86,7 +86,7 @@ public class Battle_T_Treasure : MonoBehaviour
         data.page_state = 0;
         if (data.bd.treasureNum <= 0)
         {
-            data.settlement = 3;
+            data.settlement = 2;
         }
         Destroy(page);
     }
