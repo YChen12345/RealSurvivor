@@ -14,7 +14,8 @@ public class Market_Mycard_NextPage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GetComponent<Market_Mycard>().pageNum * 9 >= data.bd.cardList_Total.Count - 9)
+        if (GetComponent<Market_Mycard>().pageNum * GetComponent<Market_Mycard>().template.Count 
+            >= data.bd.cardList_Total.Count - GetComponent<Market_Mycard>().template.Count)
         {
             button.SetActive(false);
         }

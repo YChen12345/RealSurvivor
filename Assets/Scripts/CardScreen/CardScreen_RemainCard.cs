@@ -28,7 +28,7 @@ public class CardScreen_RemainCard : MonoBehaviour
         if (currentPage != pageNum || current_state != state)
         {
             currentPage = pageNum;
-            cards = new List<int>(data.bd.cardList_Total);
+            cards = new List<int>(data.cardScreen.remainCard);
             current_state = state;
             switch (state)
             {
@@ -64,7 +64,7 @@ public class CardScreen_RemainCard : MonoBehaviour
             {
                 GameObject c = GameObject.Instantiate(card, card.transform.parent);
                 c.transform.position = template[i].transform.position;
-                c.GetComponent<Market_Card>().cid = data.cardScreen.remainCard[index];
+                c.GetComponent<CardScreen_RemainCard_Card>().cid = data.cardScreen.remainCard[index];
                 displayList.Add(c);
                 c.SetActive(true);
             }
@@ -91,7 +91,7 @@ public class CardScreen_RemainCard : MonoBehaviour
             {
                 GameObject c = GameObject.Instantiate(card, card.transform.parent);
                 c.transform.position = template[i].transform.position;
-                c.GetComponent<Market_Card>().cid = data.cardScreen.remainCard_weapon[index];
+                c.GetComponent<CardScreen_RemainCard_Card>().cid = data.cardScreen.remainCard_weapon[index];
                 displayList.Add(c);
                 c.SetActive(true);
             }
@@ -118,7 +118,7 @@ public class CardScreen_RemainCard : MonoBehaviour
             {
                 GameObject c = GameObject.Instantiate(card, card.transform.parent);
                 c.transform.position = template[i].transform.position;
-                c.GetComponent<Market_Card>().cid = data.cardScreen.remainCard_item[index];
+                c.GetComponent<CardScreen_RemainCard_Card>().cid = data.cardScreen.remainCard_item[index];
                 displayList.Add(c);
                 c.SetActive(true);
             }
@@ -145,7 +145,7 @@ public class CardScreen_RemainCard : MonoBehaviour
             {
                 GameObject c = GameObject.Instantiate(card, card.transform.parent);
                 c.transform.position = template[i].transform.position;
-                c.GetComponent<Market_Card>().cid = data.cardScreen.remainCard_scroll[index];
+                c.GetComponent<CardScreen_RemainCard_Card>().cid = data.cardScreen.remainCard_scroll[index];
                 displayList.Add(c);
                 c.SetActive(true);
             }
