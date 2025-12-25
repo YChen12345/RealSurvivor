@@ -1,4 +1,3 @@
-using System.Data;
 using UnityEngine;
 
 public class Battle_Camera : MonoBehaviour

@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.InputSystem.HID;
-using System.Security.Cryptography;
 public class Battle_W_Restart_Yes : MonoBehaviour
 {
     public GameObject loadingPage;
