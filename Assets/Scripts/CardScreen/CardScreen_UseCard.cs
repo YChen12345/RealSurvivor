@@ -30,7 +30,7 @@ public class CardScreen_UseCard : MonoBehaviour
             if (Input.GetMouseButtonUp(0))
             {
                 data.cardScreen.cardUsed_thisRound++;
-                data.cardScreen.handCard.RemoveAt(GetComponent<CardScreen_HandCard>().index);
+                data.cardScreen.handCard[GetComponent<CardScreen_HandCard>().index] = -1;
                 data.bd.cardList_Used.Add(GetComponent<CardScreen_HandCard>().cid);
                 data.bd.WeaponCardList.Add(GetComponent<CardScreen_HandCard>().cid);
                 data.bd.ItemCardList.Add(GetComponent<CardScreen_HandCard>().cid);

@@ -1,9 +1,9 @@
-using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
+using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class CardScreen_RemainCard_Card : MonoBehaviour
+public class CardScreen_EquippedCard : MonoBehaviour
 {
     public int cid;
     public GameObject canvas;
@@ -16,7 +16,6 @@ public class CardScreen_RemainCard_Card : MonoBehaviour
     public GameObject detail;
     int click_state;
     float click_timer;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         front.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("Card", cid);
