@@ -21,6 +21,7 @@ public class Battle_Enemy : MonoBehaviour
     Sprite avatarSprite_normal;
     Sprite avatarSprite_hurt;
     IUF uf;
+    IAnim animplayer = new AnimationPlayer();
     float t;
     int atk_state;
     float hurt_timer;
@@ -30,6 +31,11 @@ public class Battle_Enemy : MonoBehaviour
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         player = data.bd.player;
+        animplayer.SetFrameTime(0.05f);
+        string rootRoute = "Emy/EmyAnim/" + eid + "/";
+        animplayer.SetSprites(rootRoute + "Stay");
+        animplayer.SetSprites(rootRoute + "Move");
+        animplayer.SetSprites(rootRoute + "Atk");
         avatarSprite_normal = uf.LoadResource<Sprite>("Emy/Emy", eid);
         avatarSprite_hurt = uf.LoadResource<Sprite>("Emy/EmyHurt", eid);
         avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
@@ -38,7 +44,7 @@ public class Battle_Enemy : MonoBehaviour
         avatar.transform.localPosition = new Vector2(0, height * avatar.transform.localScale.y);
         warning.transform.localPosition = new Vector2(0, 3.0f*height * avatar.transform.localScale.y);
         display.transform.localPosition = new Vector2(0, 2.2f*height * avatar.transform.localScale.y);
-        enemyfigure.Init();
+        enemyfigure = data.enemies.enemies[eid];
         enemy = enemyfigure;
         enemy_last = enemy;
         warning.SetActive(false);
@@ -48,9 +54,15 @@ public class Battle_Enemy : MonoBehaviour
     void Update()
     {     
         Move();
+        Anim();
         BeHurt();
         BeHeal();
-        if(uf.Distance2(this.gameObject, player) < enemy.atkdistance||atk_state==1)
+        WarningAndAtk();
+        Dead();
+    }
+    void WarningAndAtk()
+    {
+        if (uf.Distance2(this.gameObject, player) < enemy.atkdistance || atk_state == 1)
         {
             t += Time.deltaTime;
             if (t > enemy.atkgap - 0.5f)
@@ -62,7 +74,7 @@ public class Battle_Enemy : MonoBehaviour
                 atk_state = 0;
             }
         }
-        else if(atk_state!=1)
+        else if (atk_state != 1)
         {
             t = 0;
             atk_state = 0;
@@ -73,7 +85,7 @@ public class Battle_Enemy : MonoBehaviour
             atk_state = 0;
             Attack();
         }
-        if (atk_state==1)
+        if (atk_state == 1)
         {
             warning.SetActive(true);
         }
@@ -81,7 +93,24 @@ public class Battle_Enemy : MonoBehaviour
         {
             warning.SetActive(false);
         }
-        Dead();
+    }
+    void Anim()
+    {
+        if(atk_state == 1)
+        {
+            animplayer.AnimPlay(avatar, 2, Time.deltaTime);
+        }
+        else
+        {
+            if (GetComponent<Rigidbody2D>().linearVelocity.magnitude < 0.01f)
+            {
+                animplayer.AnimPlay(avatar, 0, Time.deltaTime);
+            }
+            else
+            {
+                animplayer.AnimPlay(avatar, 1, Time.deltaTime);
+            }
+        }
     }
     void Move()
     {
@@ -153,7 +182,8 @@ public class Battle_Enemy : MonoBehaviour
         if (behurt == 1)
         {
             hurt_timer += Time.deltaTime;
-            avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_hurt;
+            //avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_hurt;
+            avatar.GetComponent<SpriteRenderer>().color = Color.red;
             if (hurt_timer > 0.3f)
             {
                 hurt_timer = 0;
@@ -162,7 +192,8 @@ public class Battle_Enemy : MonoBehaviour
         }
         else
         {
-            avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
+            //avatar.GetComponent<SpriteRenderer>().sprite = avatarSprite_normal;
+            avatar.GetComponent<SpriteRenderer>().color = Color.white;
         }
         if (enemy_last.blood > enemy.blood)
         {

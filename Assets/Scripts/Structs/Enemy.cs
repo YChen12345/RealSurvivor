@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public struct Enemy
 {
+    public int id;
     public int blood;
     public float speed;
     public int defence;

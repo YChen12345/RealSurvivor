@@ -4,6 +4,7 @@ using UnityEngine;
 public class Battle_Info : MonoBehaviour
 {
     IUF uf;
+    public Config_Enemy enemies;
     public BattleData bd;
     public HeroData hd;
     public float totaltime;
@@ -25,6 +26,7 @@ public class Battle_Info : MonoBehaviour
         uf = new Functions();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
         hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
+        enemies = uf.LoadStructFromJson<Config_Enemy>("Config/Config_Enemy");
         bd.NewBattle();
         bd.player = GameObject.Find("Player");
         map_width = 10.35f * 2;
