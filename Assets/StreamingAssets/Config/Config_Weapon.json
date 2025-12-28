@@ -1,0 +1,34 @@
+{
+  "weapons": [
+    {
+      "id": 0,
+      "atkgap": 1.0,
+      "triggerdistance": 5.0,
+      "mode": 0,
+      "hurt": 0,
+      "trans": 0,
+      "speed": 0.0,
+      "flydistance": 5.0,
+      "lasttime": 0.0,
+      "hurtgap": 1.0,
+      "atkrange": 0.0,
+      "maxaim": 0,
+      "maxcross": 0
+    },
+    {
+      "id": 1,
+      "atkgap": 1.0,
+      "triggerdistance": 9.0,
+      "mode": 0,
+      "hurt": 0,
+      "trans": 0,
+      "speed": 0.0,
+      "flydistance": 9.0,
+      "lasttime": 0.0,
+      "hurtgap": 1.0,
+      "atkrange": 0.0,
+      "maxaim": 0,
+      "maxcross": 0
+    }
+  ]
+}

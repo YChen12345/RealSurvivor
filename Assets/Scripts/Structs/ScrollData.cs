@@ -1,16 +1,20 @@
+using System.Collections.Generic;
 using UnityEngine;
-
-public class ScrollData : MonoBehaviour
+[System.Serializable]
+public struct ScrollData
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public int blood;
+    public int mana;
+    public float speed;
+    public int defence;
+    public float atkspeed;
+    public int phurt;
+    public int mhurt;
+    public int trans;
+    public float critical;
+    public float dodge;
+    public int extramoney;
+    public int extraexp;
+    public int repel;
+    public float extrahurt;
 }

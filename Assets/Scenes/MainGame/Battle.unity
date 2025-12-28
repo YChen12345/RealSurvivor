@@ -4615,6 +4615,7 @@ MonoBehaviour:
   weaponID: 0
   kind: 0
   wd:
+    id: 0
     atkgap: 0
     triggerdistance: 0
     mode: 0
@@ -18450,6 +18451,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 682de0b2fe39f854a812dd6438a702ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemies:
+    enemies: []
+  weapons:
+    weapons: []
+  cards:
+    cards: []
+  heros:
+    heros: []
+  levels:
+    levels: []
   bd:
     heroID: 0
     weaponID: 0
@@ -33515,6 +33526,7 @@ MonoBehaviour:
   display: {fileID: 1315796433}
   effectFigure: {fileID: 80390729}
   enemyfigure:
+    id: 0
     blood: 0
     speed: 0
     defence: 0
@@ -33526,6 +33538,7 @@ MonoBehaviour:
     atkdistance: 0
     dropid: 0
   enemy_last:
+    id: 0
     blood: 0
     speed: 0
     defence: 0
@@ -33537,6 +33550,7 @@ MonoBehaviour:
     atkdistance: 0
     dropid: 0
   enemy:
+    id: 0
     blood: 0
     speed: 0
     defence: 0

@@ -5,4 +5,8 @@ using UnityEngine;
 public struct Config_Enemy
 {
     public List<Enemy> enemies;
+    public void Init()
+    {
+        enemies = new List<Enemy>();
+    }
 }

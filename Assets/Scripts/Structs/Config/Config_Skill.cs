@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
 
-public struct Config_Hero
+public struct Config_Skill
 {
-    public List<HeroData> heros;
+    public List<Skill> skills;
+
     public void Init()
     {
-       heros = new List<HeroData>();
+        skills = new List<Skill>();
     }
 }

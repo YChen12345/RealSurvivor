@@ -1,16 +1,13 @@
+using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
 
-public class Config_Weapon : MonoBehaviour
+public struct Config_Weapon
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public List<WeaponData> weapons;
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        weapons = new List<WeaponData>();
     }
 }

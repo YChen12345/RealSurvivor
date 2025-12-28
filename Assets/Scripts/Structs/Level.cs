@@ -1,16 +1,18 @@
+using System.Collections.Generic;
 using UnityEngine;
-
-public class Level : MonoBehaviour
+[System.Serializable]
+public struct Level
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int id;
+    public int difficulty;
+    public float totaltime;
+    public int bossid;
+    public List<int> enemyid;
+    public List<int> enemynum;
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        enemyid = new List<int>();
+        enemynum = new List<int>();
     }
 }

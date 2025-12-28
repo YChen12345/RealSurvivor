@@ -31,7 +31,7 @@ public class Battle_Enemy : MonoBehaviour
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         player = data.bd.player;
-        animplayer.SetFrameTime(0.05f);
+        animplayer.SetFrameTime(0.1f);
         string rootRoute = "Emy/EmyAnim/" + eid + "/";
         animplayer.SetSprites(rootRoute + "Stay");
         animplayer.SetSprites(rootRoute + "Move");
@@ -104,7 +104,7 @@ public class Battle_Enemy : MonoBehaviour
         {
             if (GetComponent<Rigidbody2D>().linearVelocity.magnitude < 0.01f)
             {
-                animplayer.AnimPlay(avatar, 0, Time.deltaTime);
+                animplayer.AnimPlay(avatar, 1, Time.deltaTime);
             }
             else
             {

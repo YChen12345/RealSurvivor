@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public struct WeaponData
 {
+    public int id;
     public float atkgap;
     public float triggerdistance;
     public int mode;

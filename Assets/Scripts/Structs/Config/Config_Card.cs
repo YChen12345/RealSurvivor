@@ -1,16 +1,12 @@
+using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
 
-public class Config_Card : MonoBehaviour
+public struct Config_Card
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public List<Card> cards;
+    public void Init()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        cards = new List<Card>();
     }
 }

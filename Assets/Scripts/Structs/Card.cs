@@ -1,16 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
+[System.Serializable]
 
-public class Card : MonoBehaviour
+public struct Card
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public int id;
+    public int kind;
+    public int rare;
+    public int cost;
+    public WeaponData weapondata;
+    public ItemData itemdata;
+    public ScrollData scrolldata;
 
-    // Update is called once per frame
-    void Update()
+    public void Init()
     {
-        
+        id = 0;
+        kind = 0;
+        rare = 0;
+        cost = 0;
     }
 }
