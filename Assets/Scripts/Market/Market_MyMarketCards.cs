@@ -39,7 +39,8 @@ public class Market_MyMarketCards : MonoBehaviour
             data.bd.market_sellCard_state.Clear();
             for (int i = 0; i < template.Count; i++)
             {
-                data.bd.market_Card.Add(0);
+                int cid = Random.Range(0, data.cards.cards.Count);///////////////////////
+                data.bd.market_Card.Add(cid);//////////////////////////
                 data.bd.market_sellCard_state.Add(0);
             }
         }
@@ -47,10 +48,11 @@ public class Market_MyMarketCards : MonoBehaviour
         {
             for (int i = 0; i < template.Count; i++)
             {
+                int cid = Random.Range(0, data.cards.cards.Count);////////////////////////
                 if (data.bd.market_sellCard_state[i] != 0)
                 {
-                    data.bd.market_sellCard_state[i] = 0;
-                    data.bd.market_Card[i] = 0;
+                    data.bd.market_Card[i] = cid;//////////////////////////
+                    data.bd.market_sellCard_state[i] = 0;                 
                 }
             }
         }

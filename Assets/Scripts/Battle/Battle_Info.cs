@@ -31,7 +31,7 @@ public class Battle_Info : MonoBehaviour
         clock = 20;
         totaltime = 0;
         generation_t = 0;
-        Save();
+        //Save();
         LoadConfig();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");     
         bd.NewBattle();

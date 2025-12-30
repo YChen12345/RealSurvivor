@@ -65,6 +65,7 @@ public class Battle_T_Treasure : MonoBehaviour
     // Update is called once per frame
     void SetTreasure()
     {
+        cid = Random.Range(0, data.cards.cards.Count);
         card.GetComponent<Battle_T_CardDisplay>().cid = cid;
         card.SetActive(true);
     }

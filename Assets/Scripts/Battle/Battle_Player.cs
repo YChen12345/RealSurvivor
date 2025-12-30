@@ -34,8 +34,9 @@ public class Battle_Player : MonoBehaviour
         effectFigure.transform.localPosition = new Vector2(0, 2.2f*height * avatar.transform.localScale.y);
         weaponCenter.transform.localPosition = avatar.transform.localPosition;
         weaponCenter.SetActive(true);
-        hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
-        hd.init();////////////////////
+        //hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
+        //hd.init();////////////////////
+        hd = data.hd;
         hd_ = hd;
         hd_last = hd_;
         initWeapon();

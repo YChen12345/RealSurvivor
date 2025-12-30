@@ -42,7 +42,7 @@ public class CardScreen_HeroFeature : MonoBehaviour
                     break;
                 case 1:
                     feature_name.text = "能量";
-                    feature_value.text = "" + data.hd.mana;
+                    feature_value.text = "" + data.bd.mana;
                     break;
             }
         }

@@ -37,6 +37,11 @@ public class CardScreen_HandCard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Move();
+        SeeDetail();
+    }
+    void Move()
+    {
         if (moveState == 0)
         {
             offset = uf.GetOffsetOfMouse(this.gameObject);
@@ -69,6 +74,9 @@ public class CardScreen_HandCard : MonoBehaviour
             uf.MoveByMouse(this.gameObject, offset, 30);
             uf.ObjRotateByCenterByMouse(this.gameObject, avatar, 30, 3);
         }
+    }
+    void SeeDetail()
+    {
         if (tools_Trigger.ButtonClicked())
         {
             click_state = 1;

@@ -11,6 +11,7 @@ public struct BattleData
     public int heroLev;
     public int exp;
     public int gold;
+    public int mana;
     public int awardNum;
     public int treasureNum;
     public List<int> SkillList;

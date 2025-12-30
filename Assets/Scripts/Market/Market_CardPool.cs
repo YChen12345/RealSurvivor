@@ -32,7 +32,7 @@ public class Market_CardPool : MonoBehaviour
             cost-=data.bd.gold;
             GameObject p = GameObject.Instantiate(drawCardPage, canvas.transform);
             p.GetComponent<Market_DrawCard>().pid = pid;
-            p.GetComponent<Market_DrawCard>().cid = 0;///////////////////////////////
+            p.GetComponent<Market_DrawCard>().cid = Random.Range(0,data.cards.cards.Count);///////////////////////////////
             p.SetActive(true);
         }
     }

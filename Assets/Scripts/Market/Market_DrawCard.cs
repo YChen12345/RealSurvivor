@@ -58,9 +58,18 @@ public class Market_DrawCard : MonoBehaviour
     void Yes()
     {
         data.bd.cardList_Total.Add(cid);
-        data.bd.cardList_Weapon.Add(cid);
-        data.bd.cardList_Item.Add(cid);
-        data.bd.cardList_Scroll.Add(cid);
+        switch (data.cards.cards[cid].kind)
+        {
+            case 0:
+                data.bd.cardList_Weapon.Add(cid);
+                break;
+            case 1:
+                data.bd.cardList_Item.Add(cid);
+                break;
+            case 2:
+                data.bd.cardList_Scroll.Add(cid);
+                break;
+        }      
         Destroy(this.gameObject);
     }
     void No()

@@ -71,7 +71,7 @@ public class LoadingPage : MonoBehaviour
             }
             else
             {
-                loading.SetActive(true);
+                //loading.SetActive(true);
                 unscaleTimer += ts;
                
             }

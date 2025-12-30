@@ -54,13 +54,20 @@ public class Battle_Manager : MonoBehaviour
                 data.generation_t = 0;
                 float x = Random.Range(-data.map_width / 2, data.map_width / 2);
                 float y = Random.Range(-data.map_height / 2, data.map_height / 2);
-                int id = Random.Range(0, 6);
+                int id = Random.Range(0, data.enemies.enemies.Count);
                 GenSeed(new Vector2(x, y), id);
             }
         }
         else
         {
-            //data.bd.emyList.RemoveAt(0);
+            if (data.generation_t > 3*generateGapClock)
+            {
+                data.generation_t = 0;
+                float x = Random.Range(-data.map_width / 2, data.map_width / 2);
+                float y = Random.Range(-data.map_height / 2, data.map_height / 2);
+                int id = Random.Range(0, data.enemies.enemies.Count);
+                GenSeed(new Vector2(x, y), id);
+            }
         }
     }
     void EndControl()

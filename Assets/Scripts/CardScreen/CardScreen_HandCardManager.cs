@@ -48,20 +48,19 @@ public class CardScreen_HandCardManager : MonoBehaviour
                 c.GetComponent<CardScreen_HandCard>().index = i;
                 c.GetComponent<CardScreen_HandCard>().cid = cid;
                 data.cardScreen.handCard.Add(cid);
-                display_list.Add(c);
+                display_list.Add(c);                
                 c.SetActive(true);
             }         
         }
-        for(int i = 0; i < template.Count; i++)
+        for (int i = 0; i < data.cardScreen.handCard.Count; i++)
         {
-            if (data.cardScreen.remainCard.Count > 0)
-            {
-                data.cardScreen.remainCard.RemoveAt(0);
-            }
-            else
-            {
-                break;
-            }
+            int cid = data.cardScreen.handCard[i];
+            ////
+            data.cardScreen.remainCard.Remove(cid);
+            data.cardScreen.remainCard_weapon.Remove(cid);
+            data.cardScreen.remainCard_item.Remove(cid);
+            data.cardScreen.remainCard_scroll.Remove(cid);
+            ////
         }
     }
     public void ReSetHandCard()
@@ -89,16 +88,15 @@ public class CardScreen_HandCardManager : MonoBehaviour
                 c.SetActive(true);
             }
         }
-        for (int i = 0; i < template.Count; i++)
+        for (int i = 0; i < data.cardScreen.handCard.Count; i++)
         {
-            if (data.cardScreen.remainCard.Count > 0)
-            {
-                data.cardScreen.remainCard.RemoveAt(0);
-            }
-            else
-            {
-                break;
-            }
+            int cid = data.cardScreen.handCard[i];
+            ////
+            data.cardScreen.remainCard.Remove(cid);
+            data.cardScreen.remainCard_weapon.Remove(cid);
+            data.cardScreen.remainCard_item.Remove(cid);
+            data.cardScreen.remainCard_scroll.Remove(cid);
+            ////
         }
     }
 }

@@ -26,7 +26,7 @@ public class Battle_A_Award : MonoBehaviour
         {
             GameObject g = GameObject.Instantiate(gift, gift.transform.parent);
             g.transform.position = template[i].transform.position;
-            g.GetComponent<Battle_A_Gift>().gid = i;
+            g.GetComponent<Battle_A_Gift>().gid = Random.Range(0,data.skills.skills.Count);
             g.SetActive(true);
         }
     }
