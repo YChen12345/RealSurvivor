@@ -28,9 +28,9 @@ public class CardScreen_EmyDetail : MonoBehaviour
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
         enemy.Init();
-        text_name.text = "";
-        text_enemyLV.text = "";
-        text_description.text = "";
+        text_name.text = data.d_enemy.enemyDesList[eid].emy_name;
+        text_enemyLV.text = "等级："+(data.bd.wave+1);
+        text_description.text = data.d_enemy.enemyDesList[eid].emy_description;
         blood.text = "生命："+enemy.blood;
         defence.text = "护甲：" + enemy.defence;
         hurt.text = "伤害：" + enemy.attack;
@@ -40,7 +40,6 @@ public class CardScreen_EmyDetail : MonoBehaviour
         atkdistance.text = "攻击距离：" + enemy.atkdistance;
         emy_avatar.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("EmyCard/Emy", eid);
         button_close.GetComponent<Button>().onClick.AddListener(Close);
-
     }
     // Update is called once per frame
     void Close()

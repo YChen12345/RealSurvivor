@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Battle_Info : MonoBehaviour
@@ -11,12 +12,22 @@ public class Battle_Info : MonoBehaviour
     public Config_Level levels;
     public Config_Drop drops;
     public Config_Skill skills;
+    public Config_Boss bossList;
+    public Config_D_boss d_boss;
+    public Config_D_enemy d_enemy;
+    public Config_D_card d_card;
+    public Config_D_hero d_hero;
+    public Config_D_cardpool d_cardpool;
+    public Config_D_weapon d_weapon;
+    public Config_D_skill d_skill;
+
 
     public BattleData bd;
     public HeroData hd;
     public float totaltime;
     public float generation_t;
     public float clock;
+    public float generateGapClock;
     public float map_width;
     public float map_height;
     public int maxEmyInScreen;
@@ -25,12 +36,14 @@ public class Battle_Info : MonoBehaviour
     public int settlement;
     public int dead;
     public int settlement_state;
+    public int genIndex;
+    public List<int> emyList = new List<int>();
     void Awake()
     {
         uf = new Functions();
-        clock = 20;
         totaltime = 0;
         generation_t = 0;
+        genIndex = 0;
         //Save();
         LoadConfig();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");     
@@ -39,8 +52,22 @@ public class Battle_Info : MonoBehaviour
         bd.player = GameObject.Find("Player");
         map_width = 10.35f * 2;
         map_height = 7.54f * 2;
-        maxEmyInScreen = 10;
-        
+        ////
+        clock = levels.levels[bd.wave].clock;
+        maxEmyInScreen = levels.levels[bd.wave].maxEmyInScreen;
+        //generateGapClock = levels.levels[bd.wave].generateGapClock;
+        for(int i = 0; i < levels.levels[bd.wave].enemyid.Count; i++)
+        {
+            if(i< levels.levels[bd.wave].enemynum.Count)
+            {
+                for (int j = 0; j < levels.levels[bd.wave].enemynum[i]; j++)
+                {
+                    emyList.Add(levels.levels[bd.wave].enemyid[i]);
+                }
+            }       
+        }
+        emyList = new List<int>(emyList.OrderBy(x => Random.value).ToList());
+        generateGapClock = clock / emyList.Count;
     }
     void ComputeHeroFeature()
     {
@@ -67,6 +94,14 @@ public class Battle_Info : MonoBehaviour
         levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
+        bossList = uf.LoadStructFromJson<Config_Boss>("Config/Config_Boss");
+        d_boss = uf.LoadStructFromJson<Config_D_boss>("Config/D/Config_D_boss");
+        d_enemy = uf.LoadStructFromJson<Config_D_enemy>("Config/D/Config_D_enemy");
+        d_card = uf.LoadStructFromJson<Config_D_card>("Config/D/Config_D_card");
+        d_hero = uf.LoadStructFromJson<Config_D_hero>("Config/D/Config_D_hero");
+        d_cardpool = uf.LoadStructFromJson<Config_D_cardpool>("Config/D/Config_D_cardpool");
+        d_weapon = uf.LoadStructFromJson<Config_D_weapon>("Config/D/Config_D_weapon");
+        d_skill = uf.LoadStructFromJson<Config_D_skill>("Config/D/Config_D_skill");
     }
     void Save()
     {
@@ -77,11 +112,27 @@ public class Battle_Info : MonoBehaviour
         levels.Init();
         drops.Init();
         skills.Init();
+        bossList.Init();
+        d_boss.Init();
+        d_card.Init();
+        d_cardpool.Init();
+        d_enemy.Init();
+        d_hero.Init();
+        d_skill.Init();
+        d_weapon.Init();
+        Enemy e = new Enemy();
         HeroData h = new HeroData();
         Level l = new Level();
         l.Init();
         Drop d = new Drop();
         Skill s = new Skill();
+        BossDescription db = new BossDescription();
+        CardDescription dc = new CardDescription();
+        CardPoolDescription dp = new CardPoolDescription();
+        EnemyDescription de = new EnemyDescription();
+        HeroDescription dh = new HeroDescription();
+        SkillDescription ds = new SkillDescription();
+        WeaponDescription dw = new WeaponDescription();
         heros.heros.Add(h);
         heros.heros.Add(h);
         levels.levels.Add(l);
@@ -90,12 +141,36 @@ public class Battle_Info : MonoBehaviour
         drops.drops.Add(d);
         skills.skills.Add(s);
         skills.skills.Add(s);
+        bossList.bossList.Add(e);
+        bossList.bossList.Add(e);
+        d_boss.bossDesList.Add(db);
+        d_boss.bossDesList.Add(db);
+        d_enemy.enemyDesList.Add(de);
+        d_enemy.enemyDesList.Add(de);
+        d_card.cardDesList.Add(dc);
+        d_card.cardDesList.Add(dc);
+        d_hero.heroDesList.Add(dh);
+        d_hero.heroDesList.Add(dh);
+        d_cardpool.cardPoolDesList.Add(dp);
+        d_cardpool.cardPoolDesList.Add(dp);
+        d_weapon.weaponDesList.Add(dw);
+        d_weapon.weaponDesList.Add(dw);
+        d_skill.skillDesList.Add(ds);
+        d_skill.skillDesList.Add(ds);
         //uf.SaveStructToJson<Config_Enemy>(enemies, "Config/Config_Enemy");
         //uf.SaveStructToJson<Config_Weapon>(weapons, "Config/Config_Weapon");
         //uf.SaveStructToJson<Config_Card>(cards, "Config/Config_Card");
         //uf.SaveStructToJson<Config_Hero>(heros, "Config/Config_Hero");
         //uf.SaveStructToJson<Config_Level>(levels, "Config/Config_Level");
         //uf.SaveStructToJson<Config_Drop>(drops, "Config/Config_Drop");
-        uf.SaveStructToJson<Config_Skill>(skills, "Config/Config_Skill");
+        //uf.SaveStructToJson<Config_Skill>(skills, "Config/Config_Skill");
+        uf.SaveStructToJson<Config_Boss>(bossList, "Config/Config_Boss");
+        uf.SaveStructToJson<Config_D_boss>(d_boss, "Config/D/Config_D_boss");
+        uf.SaveStructToJson<Config_D_enemy>(d_enemy, "Config/D/Config_D_enemy");
+        uf.SaveStructToJson<Config_D_card>(d_card, "Config/D/Config_D_card");
+        uf.SaveStructToJson<Config_D_hero>(d_hero, "Config/D/Config_D_hero");
+        uf.SaveStructToJson<Config_D_cardpool>(d_cardpool, "Config/D/Config_D_cardpool");
+        uf.SaveStructToJson<Config_D_weapon>(d_weapon, "Config/D/Config_D_weapon");
+        uf.SaveStructToJson<Config_D_skill>(d_skill, "Config/D/Config_D_skill");
     }
 }

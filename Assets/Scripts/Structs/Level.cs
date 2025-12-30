@@ -5,7 +5,9 @@ public struct Level
 {
     public int id;
     public int difficulty;
-    public float totaltime;
+    public float clock;
+    public int maxEmyInScreen;
+    public float generateGapClock;
     public int bossid;
     public List<int> enemyid;
     public List<int> enemynum;

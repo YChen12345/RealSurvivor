@@ -16,9 +16,9 @@ public class Battle_Manager : MonoBehaviour
     void Start()
     {       
         stop = 0;
-        generateGapClock = 1;
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
+        generateGapClock = data.generateGapClock;
         player = data.bd.player;
         WAITINGPAGE.SetActive(false);
     }
@@ -47,28 +47,33 @@ public class Battle_Manager : MonoBehaviour
     void EmyGenControl()
     {
         data.generation_t += Time.deltaTime;
-        if (data.bd.emyList.Count < data.maxEmyInScreen)
+        if(data.genIndex< data.emyList.Count)
         {
-            if (data.generation_t > generateGapClock)
+            if (data.bd.emyList.Count < data.maxEmyInScreen)
             {
-                data.generation_t = 0;
-                float x = Random.Range(-data.map_width / 2, data.map_width / 2);
-                float y = Random.Range(-data.map_height / 2, data.map_height / 2);
-                int id = Random.Range(0, data.enemies.enemies.Count);
-                GenSeed(new Vector2(x, y), id);
+                if (data.generation_t > generateGapClock)
+                {
+                    data.generation_t = 0;
+                    float x = Random.Range(-data.map_width / 2, data.map_width / 2);
+                    float y = Random.Range(-data.map_height / 2, data.map_height / 2);
+                    int id = data.emyList[data.genIndex];
+                    data.genIndex++;
+                    GenSeed(new Vector2(x, y), id);
+                }
             }
-        }
-        else
-        {
-            if (data.generation_t > 3*generateGapClock)
+            else
             {
-                data.generation_t = 0;
-                float x = Random.Range(-data.map_width / 2, data.map_width / 2);
-                float y = Random.Range(-data.map_height / 2, data.map_height / 2);
-                int id = Random.Range(0, data.enemies.enemies.Count);
-                GenSeed(new Vector2(x, y), id);
+                if (data.generation_t > 3 * generateGapClock)
+                {
+                    data.generation_t = 0;
+                    float x = Random.Range(-data.map_width / 2, data.map_width / 2);
+                    float y = Random.Range(-data.map_height / 2, data.map_height / 2);
+                    int id = data.emyList[data.genIndex];
+                    data.genIndex++;
+                    GenSeed(new Vector2(x, y), id);
+                }
             }
-        }
+        }      
     }
     void EndControl()
     {

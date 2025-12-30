@@ -29,6 +29,11 @@ public class Market_CardRemove : MonoBehaviour
             }       
             if (Input.GetMouseButtonUp(0))
             {
+                if (state == 1)
+                {
+                    state = 0;
+                    removePlace.GetComponent<Market_RemovePlace>().state--;
+                }
                 GameObject r = GameObject.Instantiate(removePage, canvas.transform);
                 r.GetComponent<Market_RemovePage>().rid = GetComponent<Market_Card>().cid;
                 r.SetActive(true);

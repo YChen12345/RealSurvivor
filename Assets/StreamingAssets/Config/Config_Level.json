@@ -1,1 +1,214 @@
-{"levels":[{"id":0,"difficulty":0,"totaltime":0.0,"bossid":0,"enemyid":[],"enemynum":[]},{"id":0,"difficulty":0,"totaltime":0.0,"bossid":0,"enemyid":[],"enemynum":[]}]}
+{
+  "levels": [
+    {
+      "id": 0,
+      "difficulty": 0,
+      "clock": 20.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0 ],
+      "enemynum": [ 10 ]
+    },
+    {
+      "id": 1,
+      "difficulty": 0,
+      "clock": 25.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 2,
+      "difficulty": 0,
+      "clock": 30.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 3,
+      "difficulty": 0,
+      "clock": 35.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 4,
+      "difficulty": 0,
+      "clock": 40.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 5,
+      "difficulty": 0,
+      "clock": 45.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 6,
+      "difficulty": 0,
+      "clock": 50.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 7,
+      "difficulty": 0,
+      "clock": 55.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 8,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 9,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 10,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 11,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 12,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 13,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 14,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 15,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 16,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 17,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 18,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 19,
+      "difficulty": 0,
+      "clock": 60.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    },
+    {
+      "id": 20,
+      "difficulty": 0,
+      "clock": 90.0,
+      "maxEmyInScreen": 10,
+      "generateGapClock": 1.0,
+      "bossid": -1,
+      "enemyid": [ 0, 1 ],
+      "enemynum": [ 10, 10 ]
+    }
+  ]
+}

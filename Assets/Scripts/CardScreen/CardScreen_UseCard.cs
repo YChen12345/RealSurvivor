@@ -29,6 +29,11 @@ public class CardScreen_UseCard : MonoBehaviour
             }
             if (Input.GetMouseButtonUp(0))
             {
+                if (state == 1)
+                {
+                    state = 0;
+                    usePlace.GetComponent<CardScreen_UseCardPlace>().state--;
+                }
                 this.gameObject.transform.position = originPosition;
                 int cid = GetComponent<CardScreen_HandCard>().cid;
                 if (data.cards.cards[cid].cost <= data.hd.mana)

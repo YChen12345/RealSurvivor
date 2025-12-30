@@ -8,8 +8,10 @@ public class CardScreen_EquippedCard : MonoBehaviour
     public int cid;
     public GameObject canvas;
     IUF uf = new UIFunctions();
+    IUITools tools_parent = new UITools();
     IUITools tools_Card = new UITools();
     IUITools tools_Trigger = new UITools();
+    public GameObject parent;
     public GameObject avatar;
     public GameObject front;
     public GameObject back;
@@ -32,6 +34,7 @@ public class CardScreen_EquippedCard : MonoBehaviour
         tools_Trigger.AddButtonClick(trigger);
         originPos = transform.position;
         tools_Card.RecordSiblingIndex(this.gameObject);
+        tools_parent.RecordSiblingIndex(parent);
     }
 
     // Update is called once per frame
@@ -62,12 +65,14 @@ public class CardScreen_EquippedCard : MonoBehaviour
             {
                 moveState = 1;
                 tools_Card.SetAsLastSibling(this.gameObject);
+                tools_parent.SetAsLastSibling(parent);
             }
         }
         if (Input.GetMouseButtonUp(0))
         {
             moveState = 0;
             tools_Card.SetSiblingBack(this.gameObject);
+            tools_parent.SetSiblingBack(parent);
         }
         if (moveState == 1)
         {
@@ -97,7 +102,7 @@ public class CardScreen_EquippedCard : MonoBehaviour
             {
                 click_state = 0;
                 GameObject d = GameObject.Instantiate(detail, canvas.transform);
-                d.GetComponent<Market_CardDetail>().cid = cid;
+                d.GetComponent<CardScreen_CardDetail>().cid = cid;
                 d.SetActive(true);
             }
         }

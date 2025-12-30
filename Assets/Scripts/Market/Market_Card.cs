@@ -66,12 +66,19 @@ public class Market_Card : MonoBehaviour
             uf.MoveByMouse(this.gameObject, offset, 30);
             uf.ObjRotateByCenterByMouse(this.gameObject, avatar, 30, 3);
         }
-        if (tools_Trigger.ButtonClicked())
+        SeeDetail();
+    }
+    void SeeDetail()
+    {
+        if (click_state == 0)
         {
-            click_state = 1;
-            click_timer = 0;
+            if (tools_Trigger.ButtonClicked())
+            {
+                click_state = 1;
+                click_timer = 0;
+            }
         }
-        if (click_state == 1)
+        else if (click_state == 1)
         {
             click_timer += Time.deltaTime;
             if (click_timer > 0.3f)
@@ -79,15 +86,12 @@ public class Market_Card : MonoBehaviour
                 click_timer = 0;
                 click_state = 0;
             }
-            if (Input.GetMouseButtonDown(0))
+            if (tools_Trigger.ButtonClicked())
             {
-                if (uf.Distance2(this.gameObject, originPos) < 0.5f)
-                {
-                    click_state = 0;
-                    GameObject d = GameObject.Instantiate(detail, canvas.transform);
-                    d.GetComponent<Market_CardDetail>().cid = cid;
-                    d.SetActive(true);
-                }              
+                click_state = 0;
+                GameObject d = GameObject.Instantiate(detail, canvas.transform);
+                d.GetComponent<Market_CardDetail>().cid = cid;
+                d.SetActive(true);
             }
         }
     }

@@ -4928,9 +4928,12 @@ MonoBehaviour:
   index: 0
   cid: 0
   cost: 0
+  canvas: {fileID: 340753665}
   button_buy: {fileID: 1646568257}
   tip_sellout: {fileID: 990123866}
   data: {fileID: 0}
+  trigger: {fileID: 1251194412}
+  detail: {fileID: 1526275464}
 --- !u!1 &234361184
 GameObject:
   m_ObjectHideFlags: 0
@@ -7522,6 +7525,7 @@ MonoBehaviour:
     heroLev: 0
     exp: 0
     gold: 0
+    mana: 0
     awardNum: 0
     treasureNum: 0
     SkillList: 
@@ -7563,6 +7567,34 @@ MonoBehaviour:
     card_cost: 
     stuff_cost: 
     draw_unlockCost: 
+  enemies:
+    enemies: []
+  weapons:
+    weapons: []
+  cards:
+    cards: []
+  heros:
+    heros: []
+  levels:
+    levels: []
+  skills:
+    skills: []
+  bossList:
+    bossList: []
+  d_boss:
+    bossDesList: []
+  d_enemy:
+    enemyDesList: []
+  d_card:
+    cardDesList: []
+  d_hero:
+    heroDesList: []
+  d_cardpool:
+    cardPoolDesList: []
+  d_weapon:
+    weaponDesList: []
+  d_skill:
+    skillDesList: []
 --- !u!1 &343851801
 GameObject:
   m_ObjectHideFlags: 0

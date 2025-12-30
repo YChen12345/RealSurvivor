@@ -20,7 +20,7 @@ public struct CardScreen
         remainCard_scroll = new List<int>();
         handCard = new List<int>();
         emylist = new List<int>() { 0, 0, 0 };
-        boss = 0;
+        boss = -1;
         cardUsed_thisRound = 0;
     }
 }
