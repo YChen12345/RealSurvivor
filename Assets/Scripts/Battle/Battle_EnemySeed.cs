@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Battle_EnemySeed : MonoBehaviour
 {
     public int sid;
+    public int boss;
     public GameObject enemy;
     public GameObject avatar;
     public GameObject black;
@@ -17,13 +18,24 @@ public class Battle_EnemySeed : MonoBehaviour
     {
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
-        Sprite sprite = uf.LoadResource<Sprite>("Emy/EmySeed", sid);
-        avatar.GetComponent<SpriteRenderer>().sprite = sprite;
-        black.GetComponent<SpriteRenderer>().sprite = sprite;
-        data.bd.seedList.Add(this.gameObject);
-        player = data.bd.player;
-        t = 0;
-        generationTime = 0.8f;
+        if (boss == 1)
+        {
+            GameObject emy = GameObject.Instantiate(enemy, this.gameObject.transform.position, Quaternion.identity);
+            emy.GetComponent<Battle_Enemy>().eid = sid;
+            emy.SetActive(true);
+            data.bd.boss = emy;
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Sprite sprite = uf.LoadResource<Sprite>("Emy/EmySeed", sid);
+            avatar.GetComponent<SpriteRenderer>().sprite = sprite;
+            black.GetComponent<SpriteRenderer>().sprite = sprite;
+            data.bd.seedList.Add(this.gameObject);
+            player = data.bd.player;
+            t = 0;
+            generationTime = 0.8f;
+        }     
     }
 
     // Update is called once per frame

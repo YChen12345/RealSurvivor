@@ -72,6 +72,7 @@ public class CardScreen_RemoveEquip : MonoBehaviour
                         data.bd.ScrollCardList.Remove(cid);
                         break;
                 }
+                data.ComputeHeroFeature();
                 Destroy(this.gameObject);
             }
         }

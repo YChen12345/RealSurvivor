@@ -77,6 +77,7 @@ public class CardScreen_UseCard : MonoBehaviour
                             data.bd.ScrollCardList.Add(cid);
                             break;
                     }
+                    data.ComputeHeroFeature();
                     Destroy(this.gameObject);
                 }
             }

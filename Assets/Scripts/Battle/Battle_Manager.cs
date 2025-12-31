@@ -21,6 +21,7 @@ public class Battle_Manager : MonoBehaviour
         generateGapClock = data.generateGapClock;
         player = data.bd.player;
         WAITINGPAGE.SetActive(false);
+        BossGen();
     }
 
     // Update is called once per frame
@@ -42,6 +43,16 @@ public class Battle_Manager : MonoBehaviour
         if (data.settlement_state == 1)
         {
             SettlementControl();
+        }
+    }
+    void BossGen()
+    {
+        int bossid = data.levels.levels[data.bd.wave].bossid;
+        if (bossid >= 0)
+        {
+            float x = Random.Range(-data.map_width / 2, data.map_width / 2);
+            float y = Random.Range(-data.map_height / 2, data.map_height / 2);
+            GenSeed(new Vector2(x, y), bossid,1);
         }
     }
     void EmyGenControl()
@@ -120,10 +131,11 @@ public class Battle_Manager : MonoBehaviour
             }
         }
     }
-    void GenSeed(Vector2 pos,int id)
+    void GenSeed(Vector2 pos,int id, int boss=0)
     {
         GameObject s = GameObject.Instantiate(emyseed,pos,Quaternion.identity);
         s.GetComponent<Battle_EnemySeed>().sid = id;
+        s.GetComponent<Battle_EnemySeed>().boss = boss; 
         s.SetActive(true);
     }
     void PlayerLV()

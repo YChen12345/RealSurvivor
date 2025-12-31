@@ -12,8 +12,6 @@ public class Battle_Info : MonoBehaviour
     public Config_Level levels;
     public Config_Drop drops;
     public Config_Skill skills;
-    public Config_Boss bossList;
-    public Config_D_boss d_boss;
     public Config_D_enemy d_enemy;
     public Config_D_card d_card;
     public Config_D_hero d_hero;
@@ -69,7 +67,7 @@ public class Battle_Info : MonoBehaviour
         emyList = new List<int>(emyList.OrderBy(x => Random.value).ToList());
         generateGapClock = clock / emyList.Count;
     }
-    void ComputeHeroFeature()
+    public void ComputeHeroFeature()
     {
         hd = heros.heros[bd.heroID];
         for(int i = 0; i < bd.ItemCardList.Count; i++)
@@ -94,8 +92,6 @@ public class Battle_Info : MonoBehaviour
         levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
-        bossList = uf.LoadStructFromJson<Config_Boss>("Config/Config_Boss");
-        d_boss = uf.LoadStructFromJson<Config_D_boss>("Config/D/Config_D_boss");
         d_enemy = uf.LoadStructFromJson<Config_D_enemy>("Config/D/Config_D_enemy");
         d_card = uf.LoadStructFromJson<Config_D_card>("Config/D/Config_D_card");
         d_hero = uf.LoadStructFromJson<Config_D_hero>("Config/D/Config_D_hero");
@@ -112,8 +108,6 @@ public class Battle_Info : MonoBehaviour
         levels.Init();
         drops.Init();
         skills.Init();
-        bossList.Init();
-        d_boss.Init();
         d_card.Init();
         d_cardpool.Init();
         d_enemy.Init();
@@ -126,7 +120,6 @@ public class Battle_Info : MonoBehaviour
         l.Init();
         Drop d = new Drop();
         Skill s = new Skill();
-        BossDescription db = new BossDescription();
         CardDescription dc = new CardDescription();
         CardPoolDescription dp = new CardPoolDescription();
         EnemyDescription de = new EnemyDescription();
@@ -141,10 +134,6 @@ public class Battle_Info : MonoBehaviour
         drops.drops.Add(d);
         skills.skills.Add(s);
         skills.skills.Add(s);
-        bossList.bossList.Add(e);
-        bossList.bossList.Add(e);
-        d_boss.bossDesList.Add(db);
-        d_boss.bossDesList.Add(db);
         d_enemy.enemyDesList.Add(de);
         d_enemy.enemyDesList.Add(de);
         d_card.cardDesList.Add(dc);
@@ -164,8 +153,6 @@ public class Battle_Info : MonoBehaviour
         //uf.SaveStructToJson<Config_Level>(levels, "Config/Config_Level");
         //uf.SaveStructToJson<Config_Drop>(drops, "Config/Config_Drop");
         //uf.SaveStructToJson<Config_Skill>(skills, "Config/Config_Skill");
-        uf.SaveStructToJson<Config_Boss>(bossList, "Config/Config_Boss");
-        uf.SaveStructToJson<Config_D_boss>(d_boss, "Config/D/Config_D_boss");
         uf.SaveStructToJson<Config_D_enemy>(d_enemy, "Config/D/Config_D_enemy");
         uf.SaveStructToJson<Config_D_card>(d_card, "Config/D/Config_D_card");
         uf.SaveStructToJson<Config_D_hero>(d_hero, "Config/D/Config_D_hero");

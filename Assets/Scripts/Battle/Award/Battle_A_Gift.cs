@@ -38,6 +38,7 @@ public class Battle_A_Gift : MonoBehaviour
             data.page_state = 0;
             data.settlement = 3;
         }
+        data.ComputeHeroFeature();
         Destroy(page);
     }
 }

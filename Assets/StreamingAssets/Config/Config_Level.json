@@ -6,7 +6,7 @@
       "clock": 20.0,
       "maxEmyInScreen": 10,
       "generateGapClock": 1.0,
-      "bossid": -1,
+      "bossid": 8,
       "enemyid": [ 0 ],
       "enemynum": [ 10 ]
     },

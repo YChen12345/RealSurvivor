@@ -39,6 +39,15 @@ public class Battle_PlayerBullet : MonoBehaviour
             }
             else 
             {
+                if (data.bd.boss != null)
+                {
+                    if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range)
+                    {
+                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
+                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        cross++;
+                    }
+                }
                 for (int i = 0; i < data.bd.emyList.Count; i++)
                 {
                     if (uf.Distance2(this.gameObject, data.bd.emyList[i]) < playerBullet.range)
@@ -64,7 +73,16 @@ public class Battle_PlayerBullet : MonoBehaviour
             {
                 atk_t = 0;
                 num = 0;
-                for(int i = 0; i < data.bd.emyList.Count; i++)
+                if (data.bd.boss != null)
+                {
+                    if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range)
+                    {
+                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
+                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        num++;
+                    }
+                }
+                for (int i = 0; i < data.bd.emyList.Count; i++)
                 {
                     if(uf.Distance2(this.gameObject, data.bd.emyList[i]) < playerBullet.range)
                     {
