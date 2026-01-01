@@ -8,6 +8,7 @@ public class WeaponChoose_Hero : MonoBehaviour
     public TextMeshProUGUI hero_content;
     GameObject image;
     IUF uf;
+    IAnim anim = new UIAnimationPlayer();
     BattleData bd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,5 +18,11 @@ public class WeaponChoose_Hero : MonoBehaviour
         heroID = bd.heroID;
         image = this.gameObject;
         image.GetComponent<Image>().sprite= uf.LoadResource<Sprite>("HeroCard", heroID);
+        anim.SetFrameTime(0.1f);
+        anim.SetSprites("HeroCardAnim/" + heroID);
+    }
+    private void Update()
+    {
+        anim.AnimPlay(this.gameObject, 0, Time.deltaTime);
     }
 }

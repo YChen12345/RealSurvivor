@@ -48,7 +48,7 @@ public class CardScreen_RemainCard_Card : MonoBehaviour
             {
                 click_state = 0;
                 GameObject d = GameObject.Instantiate(detail, canvas.transform);
-                d.GetComponent<Market_CardDetail>().cid = cid;
+                d.GetComponent<CardScreen_CardDetail>().cid = cid;
                 d.SetActive(true);
             }
         }

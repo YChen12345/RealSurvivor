@@ -66,6 +66,7 @@ public class Battle_Info : MonoBehaviour
         }
         emyList = new List<int>(emyList.OrderBy(x => Random.value).ToList());
         generateGapClock = clock / emyList.Count;
+        bd.mana = hd.mana;
     }
     public void ComputeHeroFeature()
     {

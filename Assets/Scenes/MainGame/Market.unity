@@ -7277,7 +7277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58e314f51baeb04d9d9f35c44a04b2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3b216ab2d5816f44b86c8170454a6ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -7579,10 +7579,6 @@ MonoBehaviour:
     levels: []
   skills:
     skills: []
-  bossList:
-    bossList: []
-  d_boss:
-    bossDesList: []
   d_enemy:
     enemyDesList: []
   d_card:
@@ -9491,7 +9487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46053cf771d628a4cabd05446c087f7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78f8875d1cdc72246ae23583e3263484, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -22614,7 +22610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d327945f45c3b24aad0c1a6ebbb1fc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42cd4432321a50743890556ac50aef58, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -24843,7 +24839,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d327945f45c3b24aad0c1a6ebbb1fc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42cd4432321a50743890556ac50aef58, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -24918,7 +24914,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58e314f51baeb04d9d9f35c44a04b2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3b216ab2d5816f44b86c8170454a6ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -27172,7 +27168,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58e314f51baeb04d9d9f35c44a04b2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3b216ab2d5816f44b86c8170454a6ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -27667,7 +27663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d327945f45c3b24aad0c1a6ebbb1fc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42cd4432321a50743890556ac50aef58, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -27788,7 +27784,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46053cf771d628a4cabd05446c087f7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78f8875d1cdc72246ae23583e3263484, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -35609,7 +35605,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46053cf771d628a4cabd05446c087f7f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78f8875d1cdc72246ae23583e3263484, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -44238,8 +44234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015258789, y: -0.00012207031}
-  m_SizeDelta: {x: 390, y: 640}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 410, y: 663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2051799441
 MonoBehaviour:
@@ -44261,7 +44257,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e58e314f51baeb04d9d9f35c44a04b2b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3b216ab2d5816f44b86c8170454a6ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -45380,7 +45376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: afce8d3cd0f1a314f869a07f91a85a2c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97db04263bafca144bf8dc82728aa40c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

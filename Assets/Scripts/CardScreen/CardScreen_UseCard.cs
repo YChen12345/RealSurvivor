@@ -36,7 +36,7 @@ public class CardScreen_UseCard : MonoBehaviour
                 }
                 this.gameObject.transform.position = originPosition;
                 int cid = GetComponent<CardScreen_HandCard>().cid;
-                if (data.cards.cards[cid].cost <= data.hd.mana)
+                if (data.cards.cards[cid].cost <= data.bd.mana)
                 {
                     switch (data.cards.cards[cid].kind)
                     {
@@ -59,7 +59,7 @@ public class CardScreen_UseCard : MonoBehaviour
                             }
                             break;
                     }
-                    data.hd.mana-=data.cards.cards[cid].cost;
+                    data.bd.mana-=data.cards.cards[cid].cost;
                     ////
                     data.cardScreen.cardUsed_thisRound++;
                     data.cardScreen.handCard[GetComponent<CardScreen_HandCard>().index] = -1;

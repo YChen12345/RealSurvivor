@@ -42,7 +42,7 @@ public class Battle_A_HeroFeature : MonoBehaviour
                     break;
                 case 1:
                     feature_name.text = "能量";
-                    feature_value.text = "" + data.hd.mana;
+                    feature_value.text = "" + data.bd.mana;
                     break;
             }
         }
@@ -52,56 +52,64 @@ public class Battle_A_HeroFeature : MonoBehaviour
             switch (fid)
             {
                 case 0:
+                    feature_name.text = "等级";
+                    feature_value.text = "" + data.bd.heroLev;
+                    break;
+                case 1:
                     feature_name.text = "生命";
                     feature_value.text = "" + data.hd.blood;
                     break;
-                case 1:
+                case 2:
                     feature_name.text = "速度";
                     feature_value.text = "" + data.hd.speed;
                     break;
-                case 2:
+                case 3:
                     feature_name.text = "护甲";
                     feature_value.text = "" + data.hd.defence;
                     break;
-                case 3:
+                case 4:
                     feature_name.text = "攻击速度";
                     feature_value.text = "" + (int)(data.hd.atkspeed * 100) + "%";
                     break;
-                case 4:
+                case 5:
                     feature_name.text = "物理攻击";
                     feature_value.text = "" + data.hd.phurt;
                     break;
-                case 5:
+                case 6:
                     feature_name.text = "法术攻击";
                     feature_value.text = "" + data.hd.mhurt;
                     break;
-                case 6:
+                case 7:
                     feature_name.text = "破甲";
                     feature_value.text = "" + data.hd.trans;
                     break;
-                case 7:
+                case 8:
                     feature_name.text = "暴击率";
                     feature_value.text = "" + (int)(data.hd.critical * 100) + "%";
                     break;
-                case 8:
+                case 9:
                     feature_name.text = "闪避";
                     feature_value.text = "" + (int)(data.hd.dodge * 100) + "%";
                     break;
-                case 9:
+                case 10:
                     feature_name.text = "额外金币";
                     feature_value.text = "" + data.hd.extramoney;
                     break;
-                case 10:
+                case 11:
                     feature_name.text = "额外经验";
                     feature_value.text = "" + data.hd.extraexp;
                     break;
-                case 11:
+                case 12:
                     feature_name.text = "击退";
                     feature_value.text = "" + data.hd.repel;
                     break;
-                case 12:
+                case 13:
                     feature_name.text = "额外伤害";
                     feature_value.text = "" + (int)(data.hd.extrahurt * 100) + "%";
+                    break;
+                case 14:
+                    feature_name.text = "下回合能量";
+                    feature_value.text = "" + data.hd.mana;
                     break;
             }
         }
@@ -116,7 +124,7 @@ public class Battle_A_HeroFeature : MonoBehaviour
                     feature_value.text = "" + data.bd.gold;
                     break;
                 case 1:
-                    feature_value.text = "" + data.hd.mana;
+                    feature_value.text = "" + data.bd.mana;
                     break;
             }
         }
@@ -125,43 +133,49 @@ public class Battle_A_HeroFeature : MonoBehaviour
             switch (fid)
             {
                 case 0:
-                    feature_value.text = "" + data.hd.blood;
+                    feature_value.text = "" + data.bd.heroLev;
                     break;
                 case 1:
-                    feature_value.text = "" + data.hd.speed;
+                    feature_value.text = "" + data.hd.blood;
                     break;
                 case 2:
-                    feature_value.text = "" + data.hd.defence;
+                    feature_value.text = "" + data.hd.speed;
                     break;
                 case 3:
-                    feature_value.text = "" + (int)(data.hd.atkspeed * 100) + "%";
+                    feature_value.text = "" + data.hd.defence;
                     break;
                 case 4:
-                    feature_value.text = "" + data.hd.phurt;
+                    feature_value.text = "" + (int)(data.hd.atkspeed * 100) + "%";
                     break;
                 case 5:
-                    feature_value.text = "" + data.hd.mhurt;
+                    feature_value.text = "" + data.hd.phurt;
                     break;
                 case 6:
-                    feature_value.text = "" + data.hd.trans;
+                    feature_value.text = "" + data.hd.mhurt;
                     break;
                 case 7:
-                    feature_value.text = "" + (int)(data.hd.critical * 100) + "%";
+                    feature_value.text = "" + data.hd.trans;
                     break;
                 case 8:
-                    feature_value.text = "" + (int)(data.hd.dodge * 100) + "%";
+                    feature_value.text = "" + (int)(data.hd.critical * 100) + "%";
                     break;
                 case 9:
-                    feature_value.text = "" + data.hd.extramoney;
+                    feature_value.text = "" + (int)(data.hd.dodge * 100) + "%";
                     break;
                 case 10:
-                    feature_value.text = "" + data.hd.extraexp;
+                    feature_value.text = "" + data.hd.extramoney;
                     break;
                 case 11:
-                    feature_value.text = "" + data.hd.repel;
+                    feature_value.text = "" + data.hd.extraexp;
                     break;
                 case 12:
+                    feature_value.text = "" + data.hd.repel;
+                    break;
+                case 13:
                     feature_value.text = "" + (int)(data.hd.extrahurt * 100) + "%";
+                    break;
+                case 14:
+                    feature_value.text = "" + data.hd.mana;
                     break;
             }
         }

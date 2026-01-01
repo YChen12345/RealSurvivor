@@ -41,7 +41,7 @@ public class Battle_A_HeroFigure_V : MonoBehaviour
         for (int i = 0; i < template_v.Count; i++)
         {
             int index = pageNum * template_v.Count + i;
-            if (index < 13)
+            if (index < 15)
             {
                 GameObject f = GameObject.Instantiate(feature_v, feature_v.transform.parent);
                 f.transform.position = template_v[i].transform.position;
@@ -58,7 +58,7 @@ public class Battle_A_HeroFigure_V : MonoBehaviour
     }
     void NextPage()
     {
-        if (pageNum < 13 / template_v.Count)
+        if (pageNum < 15 / template_v.Count)
         {
             pageNum++;
         }

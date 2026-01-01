@@ -35,6 +35,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainGame/Win.unity
     guid: ce1f949f14adf784baade995188a4c0b
+  - enabled: 1
+    path: Assets/Scenes/MainGame/Achievement.unity
+    guid: a9f8de99b5c5a7a4cb26613f25c9833c
+  - enabled: 1
+    path: Assets/Scenes/MainGame/Producer.unity
+    guid: c30eb3f50489cba43bb70bc05d7b1b7b
+  - enabled: 1
+    path: Assets/Scenes/MainGame/SettingScreen.unity
+    guid: a7597c5eba797ee4caf2a0ae6b911c94
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

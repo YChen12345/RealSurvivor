@@ -7,6 +7,7 @@ public class HeroChoose_Hero : MonoBehaviour
     public int heroID;
     GameObject image;
     IUF uf;
+    IAnim anim = new UIAnimationPlayer();
     BattleData bd;
     PlayerData pd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,6 +18,8 @@ public class HeroChoose_Hero : MonoBehaviour
         GetComponent<Button>().onClick.AddListener(ChooseHero);
         image = this.gameObject;
         image.GetComponent<Image>().sprite= uf.LoadResource<Sprite>("HeroCard", heroID);
+        anim.SetFrameTime(0.1f);
+        anim.SetSprites("HeroCardAnim/" + heroID);
         pd = uf.LoadStructFromJson<PlayerData>("Data/PlayerData");
         if (!pd.heroList.Contains(heroID))
         {
@@ -24,6 +27,10 @@ public class HeroChoose_Hero : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        anim.AnimPlay(this.gameObject, 0, Time.deltaTime);
+    }
     void ChooseHero()
     {
         bd.Init();
