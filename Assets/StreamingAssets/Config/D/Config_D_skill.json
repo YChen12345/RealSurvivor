@@ -1,1 +1,69 @@
-{"skillDesList":[{"id":0,"skill_name":"","skill_description":""},{"id":0,"skill_name":"","skill_description":""}]}
+{
+  "skillDesList": [
+    {
+      "id": 0,
+      "skill_name": "生命",
+      "skill_description": ""
+    },
+    {
+      "id": 1,
+      "skill_name": "护甲",
+      "skill_description": ""
+    },
+    {
+      "id": 2,
+      "skill_name": "移速",
+      "skill_description": ""
+    },
+    {
+      "id": 3,
+      "skill_name": "额外金币",
+      "skill_description": ""
+    },
+    {
+      "id": 4,
+      "skill_name": "额外经验",
+      "skill_description": ""
+    },
+    {
+      "id": 5,
+      "skill_name": "能量",
+      "skill_description": ""
+    },
+    {
+      "id": 6,
+      "skill_name": "破甲",
+      "skill_description": ""
+    },
+    {
+      "id": 7,
+      "skill_name": "物理攻击",
+      "skill_description": ""
+    },
+    {
+      "id": 8,
+      "skill_name": "法术攻击",
+      "skill_description": ""
+    },
+    {
+      "id": 9,
+      "skill_name": "攻击速度",
+      "skill_description": ""
+    },
+    {
+      "id": 10,
+      "skill_name": "额外伤害",
+      "skill_description": ""
+    },
+    {
+      "id": 11,
+      "skill_name": "暴击率",
+      "skill_description": ""
+    },
+    {
+      "id": 12,
+      "skill_name": "闪避",
+      "skill_description": ""
+    }
+  ]
+}

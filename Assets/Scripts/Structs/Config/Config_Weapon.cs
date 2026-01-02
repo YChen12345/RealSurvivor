@@ -4,10 +4,10 @@ using UnityEngine;
 
 public struct Config_Weapon
 {
-    public List<WeaponData> weapons;
+    public List<Weapon> weapons;
 
     public void Init()
     {
-        weapons = new List<WeaponData>();
+        weapons = new List<Weapon>();
     }
 }

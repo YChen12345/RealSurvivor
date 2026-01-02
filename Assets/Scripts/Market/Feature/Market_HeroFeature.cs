@@ -99,8 +99,8 @@ public class Market_HeroFeature : MonoBehaviour
                     feature_value.text = "" + data.hd.extraexp;
                     break;
                 case 12:
-                    feature_name.text = "击退";
-                    feature_value.text = "" + data.hd.repel;
+                    feature_name.text = "减速";
+                    feature_value.text = "" + data.hd.repel + "%";
                     break;
                 case 13:
                     feature_name.text = "额外伤害";
@@ -168,7 +168,7 @@ public class Market_HeroFeature : MonoBehaviour
                     feature_value.text = "" + data.hd.extraexp;
                     break;
                 case 12:
-                    feature_value.text = "" + data.hd.repel;
+                    feature_value.text = "" + data.hd.repel + "%";
                     break;
                 case 13:
                     feature_value.text = "" + (int)(data.hd.extrahurt * 100) + "%";

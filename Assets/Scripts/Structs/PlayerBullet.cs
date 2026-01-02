@@ -11,6 +11,8 @@ public struct PlayerBullet
     public float atkgap;
     public float lasttime;
     public int maxaim;
+    public float repel;
+    public float critical;
 
     public void Init()
     {
@@ -23,6 +25,8 @@ public struct PlayerBullet
         atkgap = 1;
         lasttime = 0;
         maxaim = 1;
+        repel = 0;
+        critical = 0;
     }
     public void Set(WeaponData wd)
     {
@@ -35,5 +39,7 @@ public struct PlayerBullet
         atkgap = wd.atkgap;
         lasttime = wd.lasttime;
         maxaim = wd.maxaim;
+        repel = wd.repel;
+        critical = wd.critical;
     }
 }

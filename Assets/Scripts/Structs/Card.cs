@@ -8,9 +8,9 @@ public struct Card
     public int kind;
     public int rare;
     public int cost;
-    public WeaponData weapondata;
-    public ItemData itemdata;
-    public ScrollData scrolldata;
+    public Weapon weapon;
+    public Item item;
+    public Scroll scroll;
 
     public void Init()
     {

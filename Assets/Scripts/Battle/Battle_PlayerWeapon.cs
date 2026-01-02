@@ -22,14 +22,16 @@ public class Battle_PlayerWeapon : MonoBehaviour
         if (kind == 0)
         {
             avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("PlayerWeapon", weaponID);
+            wd.Equal(data.weapons.weapons[weaponID], data.hd);
         }
         else if(kind == 1) 
         {
             avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("Card", weaponID);
-        }
-       
+            wd.Equal(data.cards.cards[weaponID].weapon, data.hd);
+        }      
         player = data.bd.player;
-        wd.Init();
+        
+        //wd.Init();
     }
 
     // Update is called once per frame

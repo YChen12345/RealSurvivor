@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public struct ScrollData
+public struct Scroll
 {
     public int blood;
     public int mana;

@@ -21,6 +21,10 @@ public class Battle_BattleDataDisplay : MonoBehaviour
     public TextMeshProUGUI countBack;
     public TextMeshProUGUI heroGold;
     public TextMeshProUGUI heroLev;
+    ////
+    public GameObject boss_blood_line;
+    public GameObject boss_defence_line;
+    public TextMeshProUGUI boss_name;
     GameObject player;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +45,26 @@ public class Battle_BattleDataDisplay : MonoBehaviour
     }
     void Display()
     {
+        if (data.bd.boss != null)
+        {
+            if (data.bd.boss.GetComponent<Battle_Enemy>().enemyfigure.blood > 0)
+            {
+                boss_blood_line.GetComponent<Slider>().value =
+               (float)data.bd.boss.GetComponent<Battle_Enemy>().enemy.blood / (float)data.bd.boss.GetComponent<Battle_Enemy>().enemyfigure.blood;
+                boss_defence_line.GetComponent<Slider>().value =
+                   (float)data.bd.boss.GetComponent<Battle_Enemy>().enemy.defence / (float)data.bd.boss.GetComponent<Battle_Enemy>().enemyfigure.defence;
+                boss_name.text = data.d_enemy.enemyDesList[data.levels.levels[data.bd.wave].bossid].emy_name;
+                boss_blood_line.SetActive(true);
+                boss_defence_line.SetActive(true);
+                boss_name.gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            boss_blood_line.SetActive(false);
+            boss_defence_line.SetActive(false);
+            boss_name.gameObject.SetActive(false);
+        }   
         blood_line.GetComponent <Slider>().value = 
             (float)player.GetComponent<Battle_Player>().hd_.blood/(float)player.GetComponent<Battle_Player>().hd.blood;
         defence_line.GetComponent<Slider>().value =

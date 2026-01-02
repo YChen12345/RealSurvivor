@@ -9,10 +9,12 @@ public class Battle_Manager : MonoBehaviour
     public GameObject emyseed;
     public GameObject treasurePage;
     public GameObject awardPage;
+    public GameObject displayPage;
     IUF uf;
     int stop;
     float generateGapClock;
     public int win;
+    public int hasboss;
     void Start()
     {       
         stop = 0;
@@ -53,6 +55,7 @@ public class Battle_Manager : MonoBehaviour
             float x = Random.Range(-data.map_width / 2, data.map_width / 2);
             float y = Random.Range(-data.map_height / 2, data.map_height / 2);
             GenSeed(new Vector2(x, y), bossid,1);
+            hasboss = 1;
         }
     }
     void EmyGenControl()
@@ -88,8 +91,20 @@ public class Battle_Manager : MonoBehaviour
     }
     void EndControl()
     {
-        if (data.totaltime > data.clock)
+        if (hasboss == 1)
         {
+            if (data.totaltime > 3)
+            {
+                if (data.bd.boss == null)
+                {
+                    data.totaltime = data.clock;
+                    hasboss = 0;
+                }
+            }
+        }
+        if (data.totaltime >= data.clock)
+        {
+            displayPage.SetActive(false);
             if (data.settlement_state == 0)
             {
                 data.settlement_state = 1;

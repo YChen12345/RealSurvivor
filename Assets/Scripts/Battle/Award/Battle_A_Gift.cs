@@ -19,8 +19,8 @@ public class Battle_A_Gift : MonoBehaviour
     {
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         button_gain.GetComponent<Button>().onClick.AddListener(GainGift);
-        text_name.text = "";
-        text_description.text = "";
+        text_name.text = data.d_skill.skillDesList[gid].skill_name;
+        text_description.text = data.d_skill.skillDesList[gid].skill_description;
         icon.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("HeroGift", gid);
     }
 

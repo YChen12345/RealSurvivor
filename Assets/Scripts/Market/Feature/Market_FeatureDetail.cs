@@ -71,7 +71,7 @@ public class Market_FeatureDetail : MonoBehaviour
                     content.text = "下一回合结束后获得额外经验数";
                     break;
                 case 12:
-                    content.text = "攻击会击退敌人";
+                    content.text = "攻击对敌人的减速效果，减速上限为90%";
                     break;
                 case 13:
                     content.text = "攻击对敌人护甲和生命造成的额外伤害";

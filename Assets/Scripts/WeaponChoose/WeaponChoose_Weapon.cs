@@ -5,7 +5,7 @@ public class WeaponChoose_Weapon : MonoBehaviour
 {
     public GameObject loadingPage;
     public int index;
-    int weaponID;
+    public int weaponID;
     IUF uf;
     BattleData bd;
     PlayerData pd;

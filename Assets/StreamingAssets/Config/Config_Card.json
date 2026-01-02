@@ -5,22 +5,26 @@
       "kind": 0,
       "rare": 0,
       "cost": 0,
-      "weapondata": {
+      "weapon": {
         "id": 0,
-        "atkgap": 0.0,
-        "triggerdistance": 0.0,
-        "mode": 0,
-        "hurt": 0,
-        "trans": 0,
-        "speed": 0.0,
-        "flydistance": 0.0,
+        "atkgap": 1.0,
+        "triggerdistance": 6.0,
+        "mode": 3,
+        "basichurt": 1,
+        "hurt_p": 0.0,
+        "hurt_m": 0.0,
+        "basictrans": 3,
+        "trans_t": 0.0,
+        "speed": 6.0,
+        "flydistance": 9.0,
         "lasttime": 0.0,
-        "hurtgap": 0.0,
-        "atkrange": 0.0,
+        "hurtgap": 1.0,
+        "atkrange": 0.5,
         "maxaim": 0,
-        "maxcross": 0
+        "maxcross": 0,
+        "repel": 0.0
       },
-      "itemdata": {
+      "item": {
         "blood": 0,
         "mana": 0,
         "speed": 0.0,
@@ -36,7 +40,7 @@
         "repel": 0,
         "extrahurt": 0.0
       },
-      "scrolldata": {
+      "scroll": {
         "blood": 0,
         "mana": 0,
         "speed": 0.0,
@@ -58,22 +62,26 @@
       "kind": 0,
       "rare": 0,
       "cost": 0,
-      "weapondata": {
+      "weapon": {
         "id": 0,
-        "atkgap": 0.0,
-        "triggerdistance": 0.0,
-        "mode": 0,
-        "hurt": 0,
-        "trans": 0,
-        "speed": 0.0,
-        "flydistance": 0.0,
+        "atkgap": 1.0,
+        "triggerdistance": 6.0,
+        "mode": 3,
+        "basichurt": 1,
+        "hurt_p": 0.0,
+        "hurt_m": 0.0,
+        "basictrans": 3,
+        "trans_t": 0.0,
+        "speed": 6.0,
+        "flydistance": 9.0,
         "lasttime": 0.0,
-        "hurtgap": 0.0,
-        "atkrange": 0.0,
+        "hurtgap": 1.0,
+        "atkrange": 0.5,
         "maxaim": 0,
-        "maxcross": 0
+        "maxcross": 0,
+        "repel": 0.0
       },
-      "itemdata": {
+      "item": {
         "blood": 0,
         "mana": 0,
         "speed": 0.0,
@@ -89,7 +97,7 @@
         "repel": 0,
         "extrahurt": 0.0
       },
-      "scrolldata": {
+      "scroll": {
         "blood": 0,
         "mana": 0,
         "speed": 0.0,

@@ -43,8 +43,7 @@ public class Battle_PlayerBullet : MonoBehaviour
                 {
                     if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range)
                     {
-                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
-                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        HurtEmy(data.bd.boss);
                         cross++;
                     }
                 }
@@ -52,8 +51,7 @@ public class Battle_PlayerBullet : MonoBehaviour
                 {
                     if (uf.Distance2(this.gameObject, data.bd.emyList[i]) < playerBullet.range)
                     {
-                        data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
-                        data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        HurtEmy(data.bd.emyList[i]);
                         cross++;
                         break;
                     }
@@ -77,8 +75,7 @@ public class Battle_PlayerBullet : MonoBehaviour
                 {
                     if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range)
                     {
-                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
-                        data.bd.boss.GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        HurtEmy(data.bd.boss);
                         num++;
                     }
                 }
@@ -86,8 +83,7 @@ public class Battle_PlayerBullet : MonoBehaviour
                 {
                     if(uf.Distance2(this.gameObject, data.bd.emyList[i]) < playerBullet.range)
                     {
-                        data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack;
-                        data.bd.emyList[i].GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans;
+                        HurtEmy(data.bd.emyList[i]);
                         num++;
                     }
                     if (num > playerBullet.maxaim)
@@ -100,6 +96,48 @@ public class Battle_PlayerBullet : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
+        }
+    }
+    void HurtEmy(GameObject e)
+    {
+        int k = 1;
+        if (Random.Range(0f, 1f) < playerBullet.critical)
+        {
+            k = 2;
+        }
+        if (e.GetComponent<Battle_Enemy>().enemy.defence > 0)
+        {
+            e.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack*k;
+            e.GetComponent<Battle_Enemy>().enemy.defence -= playerBullet.trans*k;
+        }
+        else
+        {
+            e.GetComponent<Battle_Enemy>().enemy.blood -= playerBullet.attack*2*k;
+        }
+        if (e.GetComponent<Battle_Enemy>().enemy.defence < 0)
+        {
+            e.GetComponent<Battle_Enemy>().enemy.defence = 0;
+        }
+        //HitBack(e);
+        SpeedDown(e);
+    }
+    void HitBack(GameObject e)
+    {
+        if (playerBullet.repel > 0.1f)
+        {
+            if (e.GetComponent<Battle_Enemy>().hitBack_timer <= 0)
+            {
+                e.GetComponent<Battle_Enemy>().hitBack_timer = 0.3f;
+                e.GetComponent<Battle_Enemy>().hitBack_speed = playerBullet.repel;
+            }
+        }    
+    }
+    void SpeedDown(GameObject e)
+    {
+        if (e.GetComponent<Battle_Enemy>().speedDown_timer <= 0)
+        {
+            e.GetComponent<Battle_Enemy>().speedDown_timer = 0.3f;
+            e.GetComponent<Battle_Enemy>().speed_debuff = playerBullet.repel/100;
         }
     }
 }

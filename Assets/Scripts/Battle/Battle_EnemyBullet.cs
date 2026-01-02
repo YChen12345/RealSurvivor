@@ -28,8 +28,7 @@ public class Battle_EnemyBullet : MonoBehaviour
         s = GetComponent<Rigidbody2D>().linearVelocity.magnitude * t;
         if (uf.Distance2(this.gameObject, player) < enemyBullet.range)
         {
-            player.GetComponent<Battle_Player>().hd_.blood -= enemyBullet.attack;
-            player.GetComponent<Battle_Player>().hd_.defence -= enemyBullet.trans;
+            HurtPlayer();
             Destroy(this.gameObject);
         }
         if (s > enemyBullet.distance)
@@ -39,6 +38,22 @@ public class Battle_EnemyBullet : MonoBehaviour
         if (data.state == 1)
         {
             Destroy(this.gameObject);
+        }
+    }
+    void HurtPlayer()
+    {
+        if (player.GetComponent<Battle_Player>().hd_.defence > 0)
+        {
+            player.GetComponent<Battle_Player>().hd_.blood -= enemyBullet.attack;
+            player.GetComponent<Battle_Player>().hd_.defence -= enemyBullet.trans;
+        }
+        else
+        {
+            player.GetComponent<Battle_Player>().hd_.blood -= enemyBullet.attack*2;
+        }
+        if (player.GetComponent<Battle_Player>().hd_.defence < 0)
+        {
+            player.GetComponent<Battle_Player>().hd_.defence = 0;
         }
     }
 }

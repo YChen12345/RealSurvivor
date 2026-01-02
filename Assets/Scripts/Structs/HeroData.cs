@@ -71,37 +71,37 @@ public struct HeroData
     }
     public void PlusItem(Card c)
     {
-        blood += c.itemdata.blood;
-        mana += c.itemdata.mana;
-        speed += c.itemdata.speed;
-        defence += c.itemdata.defence;
-        atkspeed += c.itemdata.atkspeed;
-        phurt += c.itemdata.phurt;
-        mhurt += c.itemdata.mhurt;
-        trans += c.itemdata.trans;
-        critical += c.itemdata.critical;
-        dodge += c.itemdata.dodge;
-        extramoney += c.itemdata.extramoney;
-        extraexp += c.itemdata.extraexp;
-        repel += c.itemdata.repel;
-        extrahurt += c.itemdata.extrahurt;
+        blood += c.item.blood;
+        mana += c.item.mana;
+        speed += c.item.speed;
+        defence += c.item.defence;
+        atkspeed += c.item.atkspeed;
+        phurt += c.item.phurt;
+        mhurt += c.item.mhurt;
+        trans += c.item.trans;
+        critical += c.item.critical;
+        dodge += c.item.dodge;
+        extramoney += c.item.extramoney;
+        extraexp += c.item.extraexp;
+        repel += c.item.repel;
+        extrahurt += c.item.extrahurt;
     }
     public void PlusScroll(Card c)
     {
-        blood += c.scrolldata.blood;
-        mana += c.scrolldata.mana;
-        speed += c.scrolldata.speed;
-        defence += c.scrolldata.defence;
-        atkspeed += c.scrolldata.atkspeed;
-        phurt += c.scrolldata.phurt;
-        mhurt += c.scrolldata.mhurt;
-        trans += c.scrolldata.trans;
-        critical += c.scrolldata.critical;
-        dodge += c.scrolldata.dodge;
-        extramoney += c.scrolldata.extramoney;
-        extraexp += c.scrolldata.extraexp;
-        repel += c.scrolldata.repel;
-        extrahurt += c.scrolldata.extrahurt;
+        blood += c.scroll.blood;
+        mana += c.scroll.mana;
+        speed += c.scroll.speed;
+        defence += c.scroll.defence;
+        atkspeed += c.scroll.atkspeed;
+        phurt += c.scroll.phurt;
+        mhurt += c.scroll.mhurt;
+        trans += c.scroll.trans;
+        critical += c.scroll.critical;
+        dodge += c.scroll.dodge;
+        extramoney += c.scroll.extramoney;
+        extraexp += c.scroll.extraexp;
+        repel += c.scroll.repel;
+        extrahurt += c.scroll.extrahurt;
     }
     public void PlusSkill(Skill s)
     {

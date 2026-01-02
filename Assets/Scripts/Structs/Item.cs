@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public struct ItemData
+public struct Item
 {
     public int blood;
     public int mana;

@@ -26,6 +26,11 @@ public class Battle_Enemy : MonoBehaviour
     int atk_state;
     float hurt_timer;
     int behurt;
+    public float hitBack_timer;
+    public float hitBack_speed;
+    public float speedDown_timer;
+    public float speed_debuff;
+
     void Start()
     {
         uf = new Functions();
@@ -52,8 +57,9 @@ public class Battle_Enemy : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {     
-        Move();
+    {
+        MoveAndHitBack();
+        //Move();
         Anim();
         BeHurt();
         BeHeal();
@@ -257,5 +263,27 @@ public class Battle_Enemy : MonoBehaviour
         GameObject b = GameObject.Instantiate(blood_dead, this.gameObject.transform.position, Quaternion.identity);
         b.transform.parent = null;
         b.SetActive(true);
+    }
+    void MoveAndHitBack()
+    {
+        if (hitBack_timer > 0)
+        {
+            hitBack_timer -= Time.deltaTime;
+            GetComponent<Rigidbody2D>().linearVelocity = uf.Direction2(player, this.gameObject)*hitBack_speed;
+        }
+        else
+        {
+            MoveAndSpeedDown();
+        }
+    }
+    void MoveAndSpeedDown()
+    {
+        speedDown_timer -= Time.deltaTime;
+        if (speedDown_timer < 0)
+        {
+            speed_debuff = 0;
+        }
+        enemy.speed = enemyfigure.speed * (1-Mathf.Max(speed_debuff,0.9f));
+        Move();
     }
 }
