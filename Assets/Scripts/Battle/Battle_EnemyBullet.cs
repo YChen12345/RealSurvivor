@@ -6,7 +6,7 @@ public class Battle_EnemyBullet : MonoBehaviour
     public Vector2 dir;
     GameObject player;
     Battle_Info data;
-    EnemyBullet enemyBullet;
+    public EnemyBullet enemyBullet;
     public GameObject avatar;
     IUF uf;
     float s;
@@ -17,7 +17,7 @@ public class Battle_EnemyBullet : MonoBehaviour
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("EnemyBullet", bid);
         player = data.bd.player;
-        enemyBullet.Init();
+        //enemyBullet.Init();
     }
 
     // Update is called once per frame
@@ -25,10 +25,17 @@ public class Battle_EnemyBullet : MonoBehaviour
     {
         t += Time.deltaTime;
         GetComponent<Rigidbody2D>().linearVelocity = dir*enemyBullet.speed;
-        s = GetComponent<Rigidbody2D>().linearVelocity.magnitude * t;
+        s = enemyBullet.speed * t;
         if (uf.Distance2(this.gameObject, player) < enemyBullet.range)
         {
-            HurtPlayer();
+            if(Random.Range(0f,1f)< player.GetComponent<Battle_Player>().hd_.dodge)
+            {
+                player.GetComponent<Battle_Player>().beDodge = 1;
+            }
+            else
+            {
+                HurtPlayer();
+            }
             Destroy(this.gameObject);
         }
         if (s > enemyBullet.distance)

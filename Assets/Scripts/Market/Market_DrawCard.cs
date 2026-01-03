@@ -40,7 +40,7 @@ public class Market_DrawCard : MonoBehaviour
         {
             uf.EraseTexture(cover, range);
         }
-        else if (range < 0.6f)
+        else if (range < 0.4f)
         {          
             uf.EraseTexture(cover, range);
             button_yes.SetActive(true);

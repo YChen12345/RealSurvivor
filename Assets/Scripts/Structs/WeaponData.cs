@@ -40,7 +40,7 @@ public struct WeaponData
         atkgap = wp.atkgap;
         triggerdistance = wp.triggerdistance;
         mode = wp.mode;
-        hurt = (int)((wp.basichurt + (wp.hurt_p*hd.phurt) + (wp.hurt_m*hd.mhurt))*(hd.extrahurt+1));
+        hurt = Mathf.Max(1,(int)((wp.basichurt + (wp.hurt_p*hd.phurt) + (wp.hurt_m*hd.mhurt))*(hd.extrahurt+1)));
         trans = (int)((wp.basictrans+(wp.trans_t*hd.trans)) * (hd.extrahurt + 1));
         speed = wp.speed;
         flydistance = wp.flydistance;

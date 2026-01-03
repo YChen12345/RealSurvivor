@@ -24,6 +24,16 @@ public class CardScreen_HandCard : MonoBehaviour
     public int moveState;
     int click_state;
     float click_timer;
+    CardScreen_Info data;
+    private void OnEnable()
+    {
+        data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
+        CardPage cp = GetComponent<CardPage>();
+        cp.cid = cid;
+        cp.cards = data.cards;
+        cp.d_card = data.d_card;
+        cp.ShowMessage();
+    }
     void Start()
     {
         front.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("Card", cid);

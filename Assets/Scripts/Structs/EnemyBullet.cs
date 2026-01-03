@@ -16,4 +16,12 @@ public struct EnemyBullet
         speed = 2;
         range = 0.3f;
     }
+    public void Set(Enemy e)
+    {
+        attack = e.attack;
+        trans = e.trans;
+        distance = e.bulletdistance;
+        speed = e.bulletspeed;
+        range = e.bulletrange;
+    }
 }

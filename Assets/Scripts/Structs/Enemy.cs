@@ -13,6 +13,9 @@ public struct Enemy
     public int mode_move;
     public int mode_atk;
     public float atkdistance;
+    public float bulletdistance;
+    public float bulletspeed;
+    public float bulletrange;
     public int dropid;
     public void Init()
     {
@@ -25,6 +28,8 @@ public struct Enemy
         mode_move = 0;
         mode_atk = 0;
         atkdistance = 3;
+        bulletdistance=6;
+        bulletrange=0.4f;
         dropid = 1;
     }
 }

@@ -59,7 +59,7 @@ public class Battle_A_HeroFeatureDetail : MonoBehaviour
                     content.text = "破甲用于击破敌人护甲，对护甲为0的敌人会造成双倍伤害";
                     break;
                 case 8:
-                    content.text = "攻击造成暴击的概率，暴击会造成对生命的双倍伤害";
+                    content.text = "攻击造成暴击的概率，暴击时对目标的生命和护甲造成双倍伤害";
                     break;
                 case 9:
                     content.text = "有概率闪避攻击(上限为90%)";

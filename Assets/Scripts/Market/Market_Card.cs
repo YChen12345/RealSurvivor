@@ -19,6 +19,16 @@ public class Market_Card : MonoBehaviour
     int click_state;
     float click_timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    Market_Info data;
+    private void OnEnable()
+    {
+        data = GameObject.Find("Market").GetComponent<Market_Info>();
+        CardPage cp = GetComponent<CardPage>();
+        cp.cid = cid;
+        cp.cards = data.cards;
+        cp.d_card = data.d_card;
+        cp.ShowMessage();
+    }
     void Start()
     {
         front.GetComponent<Image>().sprite=uf.LoadResource<Sprite>("Card", cid);

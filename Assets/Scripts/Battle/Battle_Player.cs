@@ -19,6 +19,7 @@ public class Battle_Player : MonoBehaviour
     float dis;
     
     public List<float> weapon_cd=new List<float>() {1,1,1,1,1,1 };
+    public int beDodge;
     void Start()
     {
         dis = 0.5f;
@@ -48,6 +49,7 @@ public class Battle_Player : MonoBehaviour
     {
         Move();
         Dead();
+        BeDodge();
         BeHurt();
         BeHeal();
     }
@@ -69,11 +71,34 @@ public class Battle_Player : MonoBehaviour
     {
         if (hd_last.blood > hd_.blood)
         {
-            int hurtvlaue = hd_last.blood - hd_.blood;
+            int hurtvalue = hd_last.blood - hd_.blood;
+            int hurtvalue_1 = hd_last.defence - hd_.defence;
+            int df = hd_last.defence;
             hd_last.blood = hd_.blood;
+            hd_last.defence = hd_.defence;
             GameObject f = GameObject.Instantiate(effectFigure, effectFigure.transform.position, Quaternion.identity);
             f.transform.parent = null;
-            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvalue;
+            if (df > 0)
+            {
+                f.GetComponent<Battle_EffectFigure>().value_1 = hurtvalue_1;
+                f.GetComponent<Battle_EffectFigure>().mode = 0;
+            }
+            else
+            {
+                f.GetComponent<Battle_EffectFigure>().mode = 2;
+            }
+            f.SetActive(true);
+        }
+    }
+    void BeDodge()
+    {
+        if (beDodge==1)
+        {
+            beDodge = 0;
+            GameObject f = GameObject.Instantiate(effectFigure, effectFigure.transform.position, Quaternion.identity);
+            f.transform.parent = null;
+            f.GetComponent<Battle_EffectFigure>().isDodge = 1;
             f.SetActive(true);
         }
     }

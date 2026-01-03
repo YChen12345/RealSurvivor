@@ -30,7 +30,7 @@ public class Battle_Enemy : MonoBehaviour
     public float hitBack_speed;
     public float speedDown_timer;
     public float speed_debuff;
-
+    public int beCritical;
     void Start()
     {
         uf = new Functions();
@@ -181,6 +181,7 @@ public class Battle_Enemy : MonoBehaviour
         GameObject p = GameObject.Instantiate(bullet, this.gameObject.transform.position, Quaternion.identity);
         p.GetComponent<Battle_EnemyBullet>().bid = eid;
         p.GetComponent<Battle_EnemyBullet>().dir = dir;
+        p.GetComponent<Battle_EnemyBullet>().enemyBullet.Set(enemy);
         p.SetActive(true);
     }
     void BeHurt()
@@ -203,13 +204,39 @@ public class Battle_Enemy : MonoBehaviour
         }
         if (enemy_last.blood > enemy.blood)
         {
-            int hurtvlaue = enemy_last.blood - enemy.blood;
+            int hurtvalue = enemy_last.blood - enemy.blood;
+            int hurtvalue_1 = enemy_last.defence - enemy.defence;
+            int df = enemy_last.defence;
             enemy_last.blood = enemy.blood;
+            enemy_last.defence = enemy.defence;
             behurt = 1;
             Effect_blood_hurt();
             GameObject f = GameObject.Instantiate(effectFigure, display.transform.position, Quaternion.identity);
             f.transform.parent = null;
-            f.GetComponent<Battle_EffectFigure>().value = hurtvlaue;
+            f.GetComponent<Battle_EffectFigure>().value = hurtvalue;
+            if (df > 0)
+            {
+                f.GetComponent<Battle_EffectFigure>().value_1 = hurtvalue_1;
+                if (beCritical == 0)
+                {
+                    f.GetComponent<Battle_EffectFigure>().mode = 0;
+                }
+                else
+                {
+                    f.GetComponent<Battle_EffectFigure>().mode = 1;
+                }
+            }
+            else
+            {
+                if (beCritical == 0)
+                {
+                    f.GetComponent<Battle_EffectFigure>().mode = 2;
+                }
+                else
+                {
+                    f.GetComponent<Battle_EffectFigure>().mode = 3;
+                }
+            }
             f.SetActive(true);
         }
     }

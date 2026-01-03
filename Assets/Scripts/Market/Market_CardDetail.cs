@@ -8,5 +8,6 @@ public class Market_CardDetail : MonoBehaviour
     void Start()
     {
         card.GetComponent<Market_CardDisplay>().cid = cid;
+        card.SetActive(true);
     }
 }

@@ -19,7 +19,7 @@ public class Battle_PlayerBullet : MonoBehaviour
         uf = new Functions();
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         avatar.GetComponent<SpriteRenderer>().sprite = uf.LoadResource<Sprite>("PlayerBullet", bid);
-        playerBullet.Init();
+        //playerBullet.Init();
     }
 
     // Update is called once per frame
@@ -31,7 +31,7 @@ public class Battle_PlayerBullet : MonoBehaviour
         }
         if (state == 0)
         {
-            s += GetComponent<Rigidbody2D>().linearVelocity.magnitude*Time.deltaTime;
+            s += playerBullet.speed * Time.deltaTime;
             GetComponent<Rigidbody2D>().linearVelocity = dir * playerBullet.speed;
             if (s > playerBullet.distance)
             {
@@ -104,6 +104,7 @@ public class Battle_PlayerBullet : MonoBehaviour
         if (Random.Range(0f, 1f) < playerBullet.critical)
         {
             k = 2;
+            e.GetComponent<Battle_Enemy>().beCritical = 1;
         }
         if (e.GetComponent<Battle_Enemy>().enemy.defence > 0)
         {

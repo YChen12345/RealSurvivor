@@ -1446,6 +1446,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
+  value_1: 0
+  mode: 0
+  isDodge: 0
   text_value: {fileID: 406608133}
   timer: 0
 --- !u!1 &81157478
@@ -4821,7 +4824,6 @@ MonoBehaviour:
   weaponID: 0
   kind: 0
   wd:
-    id: 0
     atkgap: 0
     triggerdistance: 0
     mode: 0
@@ -4834,6 +4836,8 @@ MonoBehaviour:
     atkrange: 0
     maxaim: 0
     maxcross: 0
+    repel: 0
+    critical: 0
 --- !u!1 &284324290
 GameObject:
   m_ObjectHideFlags: 0
@@ -4868,7 +4872,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000015258789, y: -0.00012207031}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 410, y: 663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &284324292
@@ -5394,7 +5398,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -409.6639}
+  m_AnchoredPosition: {x: -10, y: -425.7835}
   m_SizeDelta: {x: 238.04, y: 69.1244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &329097667
@@ -8047,6 +8051,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
+  value_1: 0
+  mode: 0
+  isDodge: 0
   text_value: {fileID: 1267935103}
   timer: 0
 --- !u!114 &435280398
@@ -8401,7 +8408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &453459013
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8419,7 +8426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.74, y: -355.09}
+  m_AnchoredPosition: {x: 4.74, y: -397}
   m_SizeDelta: {x: 330.75, y: 106.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453459014
@@ -14134,6 +14141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 788991308}
   - component: {fileID: 788991309}
+  - component: {fileID: 788991310}
   m_Layer: 5
   m_Name: "\u5361\u724C"
   m_TagString: Untagged
@@ -14150,7 +14158,7 @@ RectTransform:
   m_GameObject: {fileID: 788991307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1252618427}
@@ -14160,7 +14168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -225, y: 336}
+  m_AnchoredPosition: {x: -206, y: 317}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &788991309
@@ -14178,6 +14186,31 @@ MonoBehaviour:
   cid: 0
   front: {fileID: 1252618426}
   back: {fileID: 1536684513}
+--- !u!114 &788991310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788991307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 397e073f48c7ff443ba5df24b760c24b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cid: 0
+  cards:
+    cards: []
+  d_card:
+    cardDesList: []
+  front_card_name: {fileID: 2011951938}
+  front_card_cost: {fileID: 1593276301}
+  front_card_category: {fileID: 1872143078}
+  back_card_name: {fileID: 1309822532}
+  back_card_rare: {fileID: 279376807}
+  back_card_content: {fileID: 233980845}
+  back_card_cost: {fileID: 1770955535}
+  back_card_category: {fileID: 1810021344}
 --- !u!1 &789840772
 GameObject:
   m_ObjectHideFlags: 0
@@ -15151,8 +15184,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 428, y: 569}
+  m_AnchoredPosition: {x: 371, y: 2.7}
+  m_SizeDelta: {x: 61, y: 61}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &820695948
 MonoBehaviour:
@@ -15225,14 +15258,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d327945f45c3b24aad0c1a6ebbb1fc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 791d68d82a2996f449ffbb59432e6c00, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -15441,7 +15474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -19704,6 +19737,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bid: 0
   dir: {x: 0, y: 0}
+  enemyBullet:
+    attack: 0
+    trans: 0
+    distance: 0
+    speed: 0
+    range: 0
   avatar: {fileID: 459249629}
 --- !u!1 &1063490414
 GameObject:
@@ -20623,14 +20662,14 @@ RectTransform:
   m_GameObject: {fileID: 1102871185}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 4.2, y: 4.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 822770354}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 70.3323}
+  m_AnchoredPosition: {x: -8, y: 48}
   m_SizeDelta: {x: 115.3693, y: 156.0801}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1102871187
@@ -20647,13 +20686,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a92480a89e96244296d2c329fa1fe93, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 739ccf3334554984a88abb25b13fee7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -26187,7 +26226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -313.8804}
+  m_AnchoredPosition: {x: -10, y: -330}
   m_SizeDelta: {x: 238.04, y: 71.2636}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425624145
@@ -27573,6 +27612,8 @@ MonoBehaviour:
     atkgap: 0
     lasttime: 0
     maxaim: 0
+    repel: 0
+    critical: 0
   avatar: {fileID: 1910725482}
 --- !u!1 &1469538551
 GameObject:
@@ -28665,7 +28706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1d327945f45c3b24aad0c1a6ebbb1fc8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42cd4432321a50743890556ac50aef58, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -29665,7 +29706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -132.703, y: 243.5691}
+  m_AnchoredPosition: {x: -147.8, y: 271.2}
   m_SizeDelta: {x: 79.547, y: 81.862}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1593276301
@@ -30203,6 +30244,7 @@ MonoBehaviour:
   - 1
   - 1
   - 1
+  beDodge: 0
 --- !u!1 &1617556379
 GameObject:
   m_ObjectHideFlags: 0
@@ -34887,7 +34929,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.6589966, y: -256.95996}
+  m_AnchoredPosition: {x: -0.6589966, y: -291}
   m_SizeDelta: {x: 137.482, y: 55.081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872143078
@@ -35148,6 +35190,9 @@ MonoBehaviour:
     mode_move: 0
     mode_atk: 0
     atkdistance: 0
+    bulletdistance: 0
+    bulletspeed: 0
+    bulletrange: 0
     dropid: 0
   enemy_last:
     id: 0
@@ -35160,6 +35205,9 @@ MonoBehaviour:
     mode_move: 0
     mode_atk: 0
     atkdistance: 0
+    bulletdistance: 0
+    bulletspeed: 0
+    bulletrange: 0
     dropid: 0
   enemy:
     id: 0
@@ -35172,7 +35220,15 @@ MonoBehaviour:
     mode_move: 0
     mode_atk: 0
     atkdistance: 0
+    bulletdistance: 0
+    bulletspeed: 0
+    bulletrange: 0
     dropid: 0
+  hitBack_timer: 0
+  hitBack_speed: 0
+  speedDown_timer: 0
+  speed_debuff: 0
+  beCritical: 0
 --- !u!114 &1873217121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37148,7 +37204,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 44.419006, y: 245.63}
+  m_AnchoredPosition: {x: 44, y: 270}
   m_SizeDelta: {x: 252.377, y: 77.738}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011951938

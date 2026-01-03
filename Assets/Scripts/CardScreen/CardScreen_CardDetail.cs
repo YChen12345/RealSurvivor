@@ -8,5 +8,6 @@ public class CardScreen_CardDetail : MonoBehaviour
     void Start()
     {
         card.GetComponent<CardScreen_CardDisplay>().cid = cid;
+        card.SetActive(true);
     }
 }

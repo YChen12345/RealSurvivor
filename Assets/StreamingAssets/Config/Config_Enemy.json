@@ -6,11 +6,14 @@
       "speed": 1.0,
       "defence": 3,
       "atkgap": 1.0,
-      "attack": 0,
+      "attack": 1,
       "trans": 0,
       "mode_move": 0,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -19,11 +22,14 @@
       "speed": 1.0,
       "defence": 3,
       "atkgap": 1.0,
-      "attack": 0,
-      "trans": 0,
+      "attack": 1,
+      "trans": 3,
       "mode_move": 1,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -37,6 +43,9 @@
       "mode_move": 2,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -50,6 +59,9 @@
       "mode_move": 3,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -63,6 +75,9 @@
       "mode_move": 0,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -76,6 +91,9 @@
       "mode_move": 1,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -89,6 +107,9 @@
       "mode_move": 2,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -102,6 +123,9 @@
       "mode_move": 3,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -115,6 +139,9 @@
       "mode_move": 0,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -128,6 +155,9 @@
       "mode_move": 1,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -141,6 +171,9 @@
       "mode_move": 2,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -154,6 +187,9 @@
       "mode_move": 3,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -167,6 +203,9 @@
       "mode_move": 0,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -180,6 +219,9 @@
       "mode_move": 1,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -193,6 +235,9 @@
       "mode_move": 2,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -206,6 +251,9 @@
       "mode_move": 3,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -219,6 +267,9 @@
       "mode_move": 0,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -232,6 +283,9 @@
       "mode_move": 1,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     },
     {
@@ -245,6 +299,9 @@
       "mode_move": 2,
       "mode_atk": 0,
       "atkdistance": 3.0,
+      "bulletdistance": 6.0,
+      "bulletspeed": 5.0,
+      "bulletrange": 0.4,
       "dropid": 1
     }
   ]
