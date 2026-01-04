@@ -37,9 +37,9 @@ public class Battle_Manager : MonoBehaviour
         {
             data.totaltime = data.clock;
         }
-        EmyGenControl();
-        PlayerLV();
+        EmyGenControl();     
         EndControl();
+        PlayerLV();
         Stop();
         GameOver();
         if (data.settlement_state == 1)
@@ -105,6 +105,8 @@ public class Battle_Manager : MonoBehaviour
         if (data.totaltime >= data.clock)
         {
             displayPage.SetActive(false);
+            data.bd.exp += data.hd.extraexp;
+            data.bd.gold += data.hd.extramoney;
             if (data.settlement_state == 0)
             {
                 data.settlement_state = 1;

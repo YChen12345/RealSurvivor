@@ -60,7 +60,7 @@ public class Market_HeroFeature : MonoBehaviour
                     break;
                 case 2:
                     feature_name.text = "速度";
-                    feature_value.text = "" + data.hd.speed;
+                    feature_value.text = "" + data.hd.speed * 100;
                     break;
                 case 3:
                     feature_name.text = "护甲";
@@ -138,7 +138,7 @@ public class Market_HeroFeature : MonoBehaviour
                     feature_value.text = "" + data.hd.blood;
                     break;
                 case 2:
-                    feature_value.text = "" + data.hd.speed;
+                    feature_value.text = "" + data.hd.speed * 100;
                     break;
                 case 3:
                     feature_value.text = "" + data.hd.defence;

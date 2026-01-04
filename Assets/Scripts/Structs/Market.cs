@@ -7,6 +7,7 @@ public struct Market
     public List<int> card_cost;
     public List<int> stuff_cost;
     public List<int> draw_unlockCost;
+    public int refreshMarketCard_cost;
 
     public void Init()
     {
@@ -14,5 +15,6 @@ public struct Market
         card_cost = new List<int>(){ 0, 0, 0, 0};
         stuff_cost = new List<int>() { 0, 0, 0 };
         draw_unlockCost = new List<int>() {0,0,0,0,0 };
+        refreshMarketCard_cost = 0;
     }
 }

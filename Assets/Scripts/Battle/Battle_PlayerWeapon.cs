@@ -60,31 +60,37 @@ public class Battle_PlayerWeapon : MonoBehaviour
             }
             if (wd.mode == 1)
             {
-                FireBullet(dir, 1);
+                FireBullet(uf.RotatedVector2(dir, -20), 1);
+                FireBullet(uf.RotatedVector2(dir, 0), 1);
+                FireBullet(uf.RotatedVector2(dir, 20), 1);
             }
             if (wd.mode == 2)
             {
-                FireBullet(uf.RotatedVector2(dir, -40),1);
-                FireBullet(uf.RotatedVector2(dir, -20),1);
-                FireBullet(uf.RotatedVector2(dir, 0),1);
-                FireBullet(uf.RotatedVector2(dir, 20),1);
-                FireBullet(uf.RotatedVector2(dir, 40),1);
+                FireBullet(uf.RotatedVector2(dir, -40),2);
+                FireBullet(uf.RotatedVector2(dir, -20),2);
+                FireBullet(uf.RotatedVector2(dir, 0),2);
+                FireBullet(uf.RotatedVector2(dir, 20),2);
+                FireBullet(uf.RotatedVector2(dir, 40),2);
             }
             if (wd.mode == 3)
             {
-                int num = 8;//¿ÅÊý
+                int num = 3;//¿ÅÊý
                 for (int i = 0; i < num; i++)
                 {
-                    FireBullet(uf.RotatedVector2(dir, (360 / num) * i),1);
+                    FireBullet(uf.RotatedVector2(dir, (360 / num) * i),3);
                 }
             }
             if (wd.mode == 4)
             {
-                FireBullet(dir, 2);
+                int num = 5;//¿ÅÊý
+                for (int i = 0; i < num; i++)
+                {
+                    FireBullet(uf.RotatedVector2(dir, (360 / num) * i), 4);
+                }
             }
             if (wd.mode == 5)
             {
-                FireBullet(dir, 3);
+                FireBullet(dir, 5);
             }
         }
     }
