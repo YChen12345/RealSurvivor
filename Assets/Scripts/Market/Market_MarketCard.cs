@@ -15,12 +15,14 @@ public class Market_MarketCard : MonoBehaviour
     IUITools tools_Trigger = new UITools();
     public GameObject trigger;
     public GameObject detail;
+    public TextMeshProUGUI text_cost;
     int click_state;
     float click_timer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         data = GameObject.Find("Market").GetComponent<Market_Info>();
+        cost = (int)(data.market.card_cost[data.cards.cards[cid].rare]*(1+0.1f*data.bd.wave));
         tip_sellout.SetActive(false);
         button_buy.GetComponent<Button>().onClick.AddListener(Buy);
         tools_Trigger.AddButtonClick(trigger);
@@ -28,6 +30,7 @@ public class Market_MarketCard : MonoBehaviour
     private void Update()
     {
         SeeDetail();
+        text_cost.text = "" + cost;
     }
 
     // Update is called once per frame

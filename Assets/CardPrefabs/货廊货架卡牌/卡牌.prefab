@@ -1964,6 +1964,7 @@ MonoBehaviour:
   data: {fileID: 0}
   trigger: {fileID: 4463936692194037912}
   detail: {fileID: 0}
+  text_cost: {fileID: 6502176590834566749}
 --- !u!114 &7998912391939156101
 MonoBehaviour:
   m_ObjectHideFlags: 0

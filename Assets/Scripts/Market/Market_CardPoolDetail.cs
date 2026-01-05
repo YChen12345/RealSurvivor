@@ -12,6 +12,6 @@ public class Market_CardPoolDetail : MonoBehaviour
     void Start()
     {
         data = GameObject.Find("Market").GetComponent<Market_Info>();
-        text_content.text = "";
+        text_content.text = data.d_cardpool.cardPoolDesList[pid].cardpool_description;
     }
 }

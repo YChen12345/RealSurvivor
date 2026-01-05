@@ -6385,6 +6385,22 @@ MonoBehaviour:
     card_cost: 
     stuff_cost: 
     draw_unlockCost: 
+    refreshMarketCard_cost: 0
+    weaponCard_0: 
+    weaponCard_1: 
+    weaponCard_2: 
+    weaponCard_3: 
+    weaponCard_4: 
+    itemCard_0: 
+    itemCard_1: 
+    itemCard_2: 
+    itemCard_3: 
+    itemCard_4: 
+    scrollCard_0: 
+    scrollCard_1: 
+    scrollCard_2: 
+    scrollCard_3: 
+    scrollCard_4: 
   enemies:
     enemies: []
   weapons:
@@ -7692,8 +7708,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -10.2145, y: -0.000030517578}
-  m_SizeDelta: {x: -20.429, y: -0}
+  m_AnchoredPosition: {x: 0.0000076293945, y: -0.000030517578}
+  m_SizeDelta: {x: 0.000015259, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441022875
 MonoBehaviour:
@@ -18954,6 +18970,7 @@ MonoBehaviour:
   icon: {fileID: 2098677962}
   detail: {fileID: 1462199096}
   text_name: {fileID: 915863193}
+  text_cost: {fileID: 1875609495}
   button_buy: {fileID: 230711031}
   drawCardPage: {fileID: 1407667183}
   data: {fileID: 0}

@@ -30,6 +30,7 @@ public class Market_Info : MonoBehaviour
         market.Init();
         LoadConfig();
         ComputeHeroFeature();
+        ComputeMarketCard();
     }
     void LoadConfig()
     {
@@ -61,6 +62,74 @@ public class Market_Info : MonoBehaviour
         for (int i = 0; i < bd.SkillList.Count; i++)
         {
             hd.PlusSkill(skills.skills[bd.SkillList[i]]);
+        }
+    }
+    void ComputeMarketCard()
+    {
+        for(int i=0;i<cards.cards.Count;i++)
+        {
+            if (cards.cards[i].kind == 0)
+            {
+                switch (cards.cards[i].rare)
+                {
+                    case 0:
+                        market.weaponCard_0.Add(i);
+                        break;
+                    case 1:
+                        market.weaponCard_1.Add(i);
+                        break;
+                    case 2:
+                        market.weaponCard_2.Add(i);
+                        break;
+                    case 3:
+                        market.weaponCard_3.Add(i);
+                        break;
+                    case 4:
+                        market.weaponCard_4.Add(i);
+                        break;
+                }
+            }
+            else if(cards.cards[i].kind == 1){
+                switch(cards.cards[i].rare)
+                {
+                    case 0:
+                        market.itemCard_0.Add(i);
+                        break;
+                    case 1:
+                        market.itemCard_1.Add(i);
+                        break;
+                    case 2:
+                        market.itemCard_2.Add(i);
+                        break;
+                    case 3:
+                        market.itemCard_3.Add(i);
+                        break;
+                    case 4:
+                        market.itemCard_4.Add(i);
+                        break;
+                }
+            }
+            else if (cards.cards[i].kind == 1)
+            {
+                switch(cards.cards[i].rare)
+                {
+                    case 0:
+                        market.scrollCard_0.Add(i);
+                        break;
+                    case 1:
+                        market.scrollCard_1.Add(i);
+                        break;
+                    case 2:
+                        market.scrollCard_2.Add(i);
+                        break;
+                    case 3:
+                        market.scrollCard_3.Add(i);
+                        break;
+                    case 4:
+                        market.scrollCard_4.Add(i);
+                        break;
+                }
+            }
         }
     }
 }
