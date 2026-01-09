@@ -4177,6 +4177,7 @@ GameObject:
   - component: {fileID: 230711036}
   - component: {fileID: 230711035}
   - component: {fileID: 230711038}
+  - component: {fileID: 230711039}
   m_Layer: 5
   m_Name: "\u62BD\u5361"
   m_TagString: Untagged
@@ -4300,6 +4301,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: []
   mode: 0
+--- !u!114 &230711039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230711031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0a8fcd355e70c4982ade425a5e1e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 230711031}
+  trigger: {fileID: 230711031}
+  multi: 0
+  state: 0
+  timer: 0
 --- !u!1 &233498884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7950213923254600949, guid: 9741f749d10c3dc479ea8a348eff693e, type: 3}
@@ -12652,7 +12670,7 @@ GameObject:
   - component: {fileID: 771392928}
   - component: {fileID: 771392927}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: cost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21360,6 +21378,8 @@ MonoBehaviour:
   button_unlock: {fileID: 1456598643}
   button_refresh: {fileID: 1574280783}
   data: {fileID: 0}
+  refresh_cost: 0
+  text_refreshcost: {fileID: 771392927}
 --- !u!1 &1272030451
 GameObject:
   m_ObjectHideFlags: 0
@@ -26103,7 +26123,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464f1115d656c484e98bbd8e1b6049c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonText: []
+  buttonText:
+  - {fileID: 2124417944}
+  - {fileID: 771392927}
   mode: 0
 --- !u!114 &1574280793
 MonoBehaviour:

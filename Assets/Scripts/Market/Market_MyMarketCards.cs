@@ -13,6 +13,8 @@ public class Market_MyMarketCards : MonoBehaviour
     List<GameObject> display_list = new List<GameObject>();  
     public Market_Info data;
     IUF uf = new UIFunctions();
+    public int refresh_cost;
+    public TextMeshProUGUI text_refreshcost;
    
     void Start()
     {
@@ -20,6 +22,7 @@ public class Market_MyMarketCards : MonoBehaviour
         button_lock.GetComponent<Button>().onClick.AddListener(Lock);
         button_unlock.GetComponent<Button>().onClick.AddListener(UnLock);
         button_refresh.GetComponent<Button>().onClick.AddListener(Refresh);
+        refresh_cost = data.market.refreshMarketCard_cost;
         if (data.bd.market_lockCard_state == 1)
         {
             button_lock.SetActive(false);
@@ -31,6 +34,10 @@ public class Market_MyMarketCards : MonoBehaviour
             button_unlock.SetActive(false);
         }
         SetProduct();
+    }
+    private void Update()
+    {
+        text_refreshcost.text = "" + refresh_cost;
     }
     void SetProductList()
     {
@@ -94,25 +101,31 @@ public class Market_MyMarketCards : MonoBehaviour
     }
     void Refresh()
     {
-        SetProductList();
-        for (int i = 0; i < display_list.Count; i++)
+        if (data.bd.gold >= refresh_cost)
         {
-            if (display_list[i] != null)
+            data.bd.gold -= refresh_cost;
+            refresh_cost +=(int)(0.2f* data.market.refreshMarketCard_cost);
+            /////////////////
+            SetProductList();
+            for (int i = 0; i < display_list.Count; i++)
             {
-                Destroy(display_list[i]);
+                if (display_list[i] != null)
+                {
+                    Destroy(display_list[i]);
+                }
             }
-        }
-        display_list.Clear();
-        for (int i = 0; i < template.Count; i++)
-        {
-            GameObject p = GameObject.Instantiate(marketcard, marketcard.transform.parent);
-            p.transform.position = template[i].transform.position;
-            p.GetComponent<Market_CardDisplay>().cid = data.bd.market_Card[i];
-            p.GetComponent<Market_MarketCard>().cid = data.bd.market_Card[i];
-            p.GetComponent<Market_MarketCard>().index = i;
-            display_list.Add(p);
-            p.SetActive(true);
-        }
+            display_list.Clear();
+            for (int i = 0; i < template.Count; i++)
+            {
+                GameObject p = GameObject.Instantiate(marketcard, marketcard.transform.parent);
+                p.transform.position = template[i].transform.position;
+                p.GetComponent<Market_CardDisplay>().cid = data.bd.market_Card[i];
+                p.GetComponent<Market_MarketCard>().cid = data.bd.market_Card[i];
+                p.GetComponent<Market_MarketCard>().index = i;
+                display_list.Add(p);
+                p.SetActive(true);
+            }
+        }       
     }
     int RandomCard()
     {

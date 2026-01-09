@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 4758137784754368968}
   - component: {fileID: 5380339032486596075}
   - component: {fileID: 173591121973752320}
+  - component: {fileID: 2699471511230689985}
   m_Layer: 5
   m_Name: "\u8D2D\u4E70"
   m_TagString: Untagged
@@ -664,6 +665,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonText: []
   mode: 0
+--- !u!114 &2699471511230689985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3011676827467795557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d0a8fcd355e70c4982ade425a5e1e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj: {fileID: 3011676827467795557}
+  trigger: {fileID: 3011676827467795557}
+  multi: 0
+  state: 0
+  timer: 0
 --- !u!1 &3594666771814022749
 GameObject:
   m_ObjectHideFlags: 0

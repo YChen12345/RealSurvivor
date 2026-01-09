@@ -1,1 +1,29 @@
-{"cardPoolDesList":[{"id":0,"cardpool_name":"","cardpool_description":""},{"id":0,"cardpool_name":"","cardpool_description":""}]}
+{
+  "cardPoolDesList": [
+    {
+      "id": 0,
+      "cardpool_name": "普通卡包",
+      "cardpool_description": ""
+    },
+    {
+      "id": 1,
+      "cardpool_name": "高级卡包",
+      "cardpool_description": ""
+    },
+    {
+      "id": 2,
+      "cardpool_name": "史诗卡包",
+      "cardpool_description": ""
+    },
+    {
+      "id": 3,
+      "cardpool_name": "传说卡包",
+      "cardpool_description": ""
+    },
+    {
+      "id": 4,
+      "cardpool_name": "神话卡包",
+      "cardpool_description": ""
+    }
+  ]
+}

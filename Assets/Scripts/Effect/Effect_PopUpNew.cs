@@ -63,7 +63,7 @@ public class Effect_PopUpNew : MonoBehaviour
             if (state == 0 && state_pop == 0)
             {
                 timer += Time.deltaTime;
-                if (timer > 0.3f)
+                if (timer > 0.16f)
                 {
                     timer = 0;
                     Destroy(pop);

@@ -1,0 +1,29 @@
+{
+  "possiblity": [
+    {
+      "id": 0,
+      "possiblity_kind": [ 0.3, 0.6, 1.0 ],
+      "possiblity_rare": [ 1.0, 0.0, 0.0, 0.0, 0.0 ]
+    },
+    {
+      "id": 1,
+      "possiblity_kind": [ 0.3, 0.6, 1.0 ],
+      "possiblity_rare": [ 1.0, 0.4, 0.0, 0.0, 0.0 ]
+    },
+    {
+      "id": 2,
+      "possiblity_kind": [ 0.3, 0.6, 1.0 ],
+      "possiblity_rare": [ 1.0, 0.6, 0.2, 0.0, 0.0 ]
+    },
+    {
+      "id": 3,
+      "possiblity_kind": [ 0.3, 0.6, 1.0 ],
+      "possiblity_rare": [ 1.0, 0.8, 0.3, 0.1, 0.0 ]
+    },
+    {
+      "id": 4,
+      "possiblity_kind": [ 0.3, 0.6, 1.0 ],
+      "possiblity_rare": [ 1.0, 0.9, 0.4, 0.2, 0.1 ]
+    }
+  ]
+}

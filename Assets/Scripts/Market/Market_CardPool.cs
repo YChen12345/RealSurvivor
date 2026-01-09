@@ -47,327 +47,118 @@ public class Market_CardPool : MonoBehaviour
     {
         int cid = Random.Range(0, data.cards.cards.Count);///////////////////////
         float r = Random.value;
-        if (r < 0.3f)
+        MarketPossiblity mp = data.cardpools.possiblity[pid];
+        if (r < mp.possiblity_kind[0])
         {
-            if (pid==0)
+            if (true)
             {
                 if (data.market.weaponCard_0.Count > 0)
                 {
                     cid = data.market.weaponCard_0[Random.Range(0, data.market.weaponCard_0.Count)];
+                }
+            }               
+            if (uf.RandomRes(mp.possiblity_rare[1]))
+            {
+                if (data.market.weaponCard_1.Count > 0)
+                {
+                    cid = data.market.weaponCard_1[Random.Range(0, data.market.weaponCard_1.Count)];
                 }
             }
-            else if (pid == 1)
+            if (uf.RandomRes(mp.possiblity_rare[2]))
             {
-                if (data.market.weaponCard_0.Count > 0)
+                if (data.market.weaponCard_2.Count > 0)
                 {
-                    cid = data.market.weaponCard_0[Random.Range(0, data.market.weaponCard_0.Count)];
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.weaponCard_1.Count > 0)
-                    {
-                        cid = data.market.weaponCard_1[Random.Range(0, data.market.weaponCard_1.Count)];
-                    }
+                    cid = data.market.weaponCard_2[Random.Range(0, data.market.weaponCard_2.Count)];
                 }
             }
-            else if (pid == 2)
+            if (uf.RandomRes(mp.possiblity_rare[3]))
             {
-                if (data.market.weaponCard_0.Count > 0)
+                if (data.market.weaponCard_3.Count > 0)
                 {
-                    cid = data.market.weaponCard_0[Random.Range(0, data.market.weaponCard_0.Count)];
-                }
-                if (uf.RandomRes(0.6f))
-                {
-                    if (data.market.weaponCard_1.Count > 0)
-                    {
-                        cid = data.market.weaponCard_1[Random.Range(0, data.market.weaponCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.3f))
-                {
-                    if (data.market.weaponCard_2.Count > 0)
-                    {
-                        cid = data.market.weaponCard_2[Random.Range(0, data.market.weaponCard_2.Count)];
-                    }
+                    cid = data.market.weaponCard_3[Random.Range(0, data.market.weaponCard_3.Count)];
                 }
             }
-            else if(pid == 3)
+            if (uf.RandomRes(mp.possiblity_rare[4]))
             {
-                if (data.market.weaponCard_0.Count > 0)
+                if (data.market.weaponCard_4.Count > 0)
                 {
-                    cid = data.market.weaponCard_0[Random.Range(0, data.market.weaponCard_0.Count)];
-                }
-                if (uf.RandomRes(0.7f))
-                {
-                    if (data.market.weaponCard_1.Count > 0)
-                    {
-                        cid = data.market.weaponCard_1[Random.Range(0, data.market.weaponCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.weaponCard_2.Count > 0)
-                    {
-                        cid = data.market.weaponCard_2[Random.Range(0, data.market.weaponCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.1f))
-                {
-                    if (data.market.weaponCard_3.Count > 0)
-                    {
-                        cid = data.market.weaponCard_3[Random.Range(0, data.market.weaponCard_3.Count)];
-                    }
-                }
-            }
-            else if (pid == 4)
-            {
-                if (data.market.weaponCard_0.Count > 0)
-                {
-                    cid = data.market.weaponCard_0[Random.Range(0, data.market.weaponCard_0.Count)];
-                }
-                if (uf.RandomRes(0.8f))
-                {
-                    if (data.market.weaponCard_1.Count > 0)
-                    {
-                        cid = data.market.weaponCard_1[Random.Range(0, data.market.weaponCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.5f))
-                {
-                    if (data.market.weaponCard_2.Count > 0)
-                    {
-                        cid = data.market.weaponCard_2[Random.Range(0, data.market.weaponCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.2f))
-                {
-                    if (data.market.weaponCard_3.Count > 0)
-                    {
-                        cid = data.market.weaponCard_3[Random.Range(0, data.market.weaponCard_3.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.05f))
-                {
-                    if (data.market.weaponCard_4.Count > 0)
-                    {
-                        cid = data.market.weaponCard_4[Random.Range(0, data.market.weaponCard_4.Count)];
-                    }
+                    cid = data.market.weaponCard_4[Random.Range(0, data.market.weaponCard_4.Count)];
                 }
             }
         }
-        else if (r < 0.6f)
+        else if (r < mp.possiblity_kind[1])
         {
-            if (pid==0)
+            if (true)
             {
                 if (data.market.itemCard_0.Count > 0)
                 {
                     cid = data.market.itemCard_0[Random.Range(0, data.market.itemCard_0.Count)];
+                }
+            }         
+            if (uf.RandomRes(mp.possiblity_rare[1]))
+            {
+                if (data.market.itemCard_1.Count > 0)
+                {
+                    cid = data.market.itemCard_1[Random.Range(0, data.market.itemCard_1.Count)];
                 }
             }
-            else if (pid==1)
+            if (uf.RandomRes(mp.possiblity_rare[2]))
             {
-                if (data.market.itemCard_0.Count > 0)
+                if (data.market.itemCard_2.Count > 0)
                 {
-                    cid = data.market.itemCard_0[Random.Range(0, data.market.itemCard_0.Count)];
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.itemCard_1.Count > 0)
-                    {
-                        cid = data.market.itemCard_1[Random.Range(0, data.market.itemCard_1.Count)];
-                    }
+                    cid = data.market.itemCard_2[Random.Range(0, data.market.itemCard_2.Count)];
                 }
             }
-            else if (pid==2)
+            if (uf.RandomRes(mp.possiblity_rare[3]))
             {
-                if (data.market.itemCard_0.Count > 0)
+                if (data.market.itemCard_3.Count > 0)
                 {
-                    cid = data.market.itemCard_0[Random.Range(0, data.market.itemCard_0.Count)];
-                }
-                if (uf.RandomRes(0.6f))
-                {
-                    if (data.market.itemCard_1.Count > 0)
-                    {
-                        cid = data.market.itemCard_1[Random.Range(0, data.market.itemCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.2f))
-                {
-                    if (data.market.itemCard_2.Count > 0)
-                    {
-                        cid = data.market.itemCard_2[Random.Range(0, data.market.itemCard_2.Count)];
-                    }
+                    cid = data.market.itemCard_3[Random.Range(0, data.market.itemCard_3.Count)];
                 }
             }
-            else if(pid==3)
+            if (uf.RandomRes(mp.possiblity_rare[4]))
             {
-                if (data.market.itemCard_0.Count > 0)
+                if (data.market.itemCard_4.Count > 0)
                 {
-                    cid = data.market.itemCard_0[Random.Range(0, data.market.itemCard_0.Count)];
-                }
-                if (uf.RandomRes(0.7f))
-                {
-                    if (data.market.itemCard_1.Count > 0)
-                    {
-                        cid = data.market.itemCard_1[Random.Range(0, data.market.itemCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.itemCard_2.Count > 0)
-                    {
-                        cid = data.market.itemCard_2[Random.Range(0, data.market.itemCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.1f))
-                {
-                    if (data.market.itemCard_3.Count > 0)
-                    {
-                        cid = data.market.itemCard_3[Random.Range(0, data.market.itemCard_3.Count)];
-                    }
-                }
-            }
-            else if (pid == 4)
-            {
-                if (data.market.itemCard_0.Count > 0)
-                {
-                    cid = data.market.itemCard_0[Random.Range(0, data.market.itemCard_0.Count)];
-                }
-                if (uf.RandomRes(0.8f))
-                {
-                    if (data.market.itemCard_1.Count > 0)
-                    {
-                        cid = data.market.itemCard_1[Random.Range(0, data.market.itemCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.5f))
-                {
-                    if (data.market.itemCard_2.Count > 0)
-                    {
-                        cid = data.market.itemCard_2[Random.Range(0, data.market.itemCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.2f))
-                {
-                    if (data.market.itemCard_3.Count > 0)
-                    {
-                        cid = data.market.itemCard_3[Random.Range(0, data.market.itemCard_3.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.05f))
-                {
-                    if (data.market.itemCard_4.Count > 0)
-                    {
-                        cid = data.market.itemCard_4[Random.Range(0, data.market.itemCard_4.Count)];
-                    }
+                    cid = data.market.itemCard_4[Random.Range(0, data.market.itemCard_4.Count)];
                 }
             }
         }
         else
         {
-            if (pid==0)
+            if (true)
             {
                 if (data.market.scrollCard_0.Count > 0)
                 {
                     cid = data.market.scrollCard_0[Random.Range(0, data.market.scrollCard_0.Count)];
                 }
             }
-            else if (pid==1)
+            if (uf.RandomRes(mp.possiblity_rare[1]))
             {
-                if (data.market.scrollCard_0.Count > 0)
+                if (data.market.scrollCard_1.Count > 0)
                 {
-                    cid = data.market.scrollCard_0[Random.Range(0, data.market.scrollCard_0.Count)];
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.scrollCard_1.Count > 0)
-                    {
-                        cid = data.market.scrollCard_1[Random.Range(0, data.market.scrollCard_1.Count)];
-                    }
+                    cid = data.market.scrollCard_1[Random.Range(0, data.market.scrollCard_1.Count)];
                 }
             }
-            else if (pid==2)
+            if (uf.RandomRes(mp.possiblity_rare[2]))
             {
-                if (data.market.scrollCard_0.Count > 0)
+                if (data.market.scrollCard_2.Count > 0)
                 {
-                    cid = data.market.scrollCard_0[Random.Range(0, data.market.scrollCard_0.Count)];
-                }
-                if (uf.RandomRes(0.6f))
-                {
-                    if (data.market.scrollCard_1.Count > 0)
-                    {
-                        cid = data.market.scrollCard_1[Random.Range(0, data.market.scrollCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.2f))
-                {
-                    if (data.market.scrollCard_2.Count > 0)
-                    {
-                        cid = data.market.scrollCard_2[Random.Range(0, data.market.scrollCard_2.Count)];
-                    }
+                    cid = data.market.scrollCard_2[Random.Range(0, data.market.scrollCard_2.Count)];
                 }
             }
-            else if(pid==3)
+            if (uf.RandomRes(mp.possiblity_rare[3]))
             {
-                if (data.market.scrollCard_0.Count > 0)
+                if (data.market.scrollCard_3.Count > 0)
                 {
-                    cid = data.market.scrollCard_0[Random.Range(0, data.market.scrollCard_0.Count)];
-                }
-                if (uf.RandomRes(0.7f))
-                {
-                    if (data.market.scrollCard_1.Count > 0)
-                    {
-                        cid = data.market.scrollCard_1[Random.Range(0, data.market.scrollCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.4f))
-                {
-                    if (data.market.scrollCard_2.Count > 0)
-                    {
-                        cid = data.market.scrollCard_2[Random.Range(0, data.market.scrollCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.1f))
-                {
-                    if (data.market.scrollCard_3.Count > 0)
-                    {
-                        cid = data.market.scrollCard_3[Random.Range(0, data.market.scrollCard_3.Count)];
-                    }
+                    cid = data.market.scrollCard_3[Random.Range(0, data.market.scrollCard_3.Count)];
                 }
             }
-            else if (pid == 4)
+            if (uf.RandomRes(mp.possiblity_rare[4]))
             {
-                if (data.market.scrollCard_0.Count > 0)
+                if (data.market.scrollCard_4.Count > 0)
                 {
-                    cid = data.market.scrollCard_0[Random.Range(0, data.market.scrollCard_0.Count)];
-                }
-                if (uf.RandomRes(0.8f))
-                {
-                    if (data.market.scrollCard_1.Count > 0)
-                    {
-                        cid = data.market.scrollCard_1[Random.Range(0, data.market.scrollCard_1.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.5f))
-                {
-                    if (data.market.scrollCard_2.Count > 0)
-                    {
-                        cid = data.market.scrollCard_2[Random.Range(0, data.market.scrollCard_2.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.2f))
-                {
-                    if (data.market.scrollCard_3.Count > 0)
-                    {
-                        cid = data.market.scrollCard_3[Random.Range(0, data.market.scrollCard_3.Count)];
-                    }
-                }
-                if (uf.RandomRes(0.05f))
-                {
-                    if (data.market.scrollCard_4.Count > 0)
-                    {
-                        cid = data.market.scrollCard_4[Random.Range(0, data.market.scrollCard_4.Count)];
-                    }
+                    cid = data.market.scrollCard_4[Random.Range(0, data.market.scrollCard_4.Count)];
                 }
             }
         }
