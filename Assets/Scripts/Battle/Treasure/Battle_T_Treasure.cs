@@ -65,7 +65,144 @@ public class Battle_T_Treasure : MonoBehaviour
     // Update is called once per frame
     void SetTreasure()
     {
+        int lid = 0;
+        if (data.bd.wave < 4)
+        {
+            lid = 0;
+        }
+        else if (data.bd.wave < 8)
+        {
+            lid = 1;
+        }
+        else if (data.bd.wave < 12)
+        {
+            lid = 2;
+        }
+        else if (data.bd.wave < 16)
+        {
+            lid = 3;
+        }
+        else
+        {
+            lid = 4;
+        }
         cid = Random.Range(0, data.cards.cards.Count);
+        float r = Random.value;
+        MarketPossiblity mp = data.marketcards.possiblity[lid];
+        if (r < mp.possiblity_kind[0])
+        {
+            if (true)
+            {
+                if (data.cc.weaponCard_0.Count > 0)
+                {
+                    cid = data.cc.weaponCard_0[Random.Range(0, data.cc.weaponCard_0.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[1]))
+            {
+                if (data.cc.weaponCard_1.Count > 0)
+                {
+                    cid = data.cc.weaponCard_1[Random.Range(0, data.cc.weaponCard_1.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[2]))
+            {
+                if (data.cc.weaponCard_2.Count > 0)
+                {
+                    cid = data.cc.weaponCard_2[Random.Range(0, data.cc.weaponCard_2.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[3]))
+            {
+                if (data.cc.weaponCard_3.Count > 0)
+                {
+                    cid = data.cc.weaponCard_3[Random.Range(0, data.cc.weaponCard_3.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[4]))
+            {
+                if (data.cc.weaponCard_4.Count > 0)
+                {
+                    cid = data.cc.weaponCard_4[Random.Range(0, data.cc.weaponCard_4.Count)];
+                }
+            }
+        }
+        else if (r < mp.possiblity_kind[1])
+        {
+            if (true)
+            {
+                if (data.cc.itemCard_0.Count > 0)
+                {
+                    cid = data.cc.itemCard_0[Random.Range(0, data.cc.itemCard_0.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[1]))
+            {
+                if (data.cc.itemCard_1.Count > 0)
+                {
+                    cid = data.cc.itemCard_1[Random.Range(0, data.cc.itemCard_1.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[2]))
+            {
+                if (data.cc.itemCard_2.Count > 0)
+                {
+                    cid = data.cc.itemCard_2[Random.Range(0, data.cc.itemCard_2.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[3]))
+            {
+                if (data.cc.itemCard_3.Count > 0)
+                {
+                    cid = data.cc.itemCard_3[Random.Range(0, data.cc.itemCard_3.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[4]))
+            {
+                if (data.cc.itemCard_4.Count > 0)
+                {
+                    cid = data.cc.itemCard_4[Random.Range(0, data.cc.itemCard_4.Count)];
+                }
+            }
+        }
+        else
+        {
+            if (true)
+            {
+                if (data.cc.scrollCard_0.Count > 0)
+                {
+                    cid = data.cc.scrollCard_0[Random.Range(0, data.cc.scrollCard_0.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[1]))
+            {
+                if (data.cc.scrollCard_1.Count > 0)
+                {
+                    cid = data.cc.scrollCard_1[Random.Range(0, data.cc.scrollCard_1.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[2]))
+            {
+                if (data.cc.scrollCard_2.Count > 0)
+                {
+                    cid = data.cc.scrollCard_2[Random.Range(0, data.cc.scrollCard_2.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[3]))
+            {
+                if (data.cc.scrollCard_3.Count > 0)
+                {
+                    cid = data.cc.scrollCard_3[Random.Range(0, data.cc.scrollCard_3.Count)];
+                }
+            }
+            if (uf.RandomRes(mp.possiblity_rare[4]))
+            {
+                if (data.cc.scrollCard_4.Count > 0)
+                {
+                    cid = data.cc.scrollCard_4[Random.Range(0, data.cc.scrollCard_4.Count)];
+                }
+            }
+        }
         card.GetComponent<Battle_T_CardDisplay>().cid = cid;
         card.SetActive(true);
     }

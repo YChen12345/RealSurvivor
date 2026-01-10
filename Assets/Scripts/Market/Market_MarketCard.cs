@@ -9,6 +9,7 @@ public class Market_MarketCard : MonoBehaviour
     public int cid;
     public int cost;
     public GameObject canvas;
+    public GameObject lock_icon;
     public GameObject button_buy;
     public GameObject tip_sellout;
     public Market_Info data;
@@ -26,11 +27,27 @@ public class Market_MarketCard : MonoBehaviour
         tip_sellout.SetActive(false);
         button_buy.GetComponent<Button>().onClick.AddListener(Buy);
         tools_Trigger.AddButtonClick(trigger);
+        if (data.bd.market_lockCard_state == 1)
+        {
+            lock_icon.SetActive(true);
+        }
+        else
+        {
+            lock_icon.SetActive(false);
+        }
     }
     private void Update()
     {
         SeeDetail();
         text_cost.text = "" + cost;
+        if (data.bd.market_lockCard_state == 1)
+        {
+            lock_icon.SetActive(true);
+        }
+        else
+        {
+            lock_icon.SetActive(false);
+        }
     }
 
     // Update is called once per frame

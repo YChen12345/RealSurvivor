@@ -60,8 +60,8 @@ public struct BattleData
         
         player = null;
         marketLevel=0;
-        weaponLimit=2;
-        itemLimit=2;
+        weaponLimit=1;
+        itemLimit=1;
         market_lockCard_state = 0;
         market_sellCard_state = new List<int>() { 0, 0, 0 };
         market_Card = new List<int>() { 0, 0, 0 };

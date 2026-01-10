@@ -18,10 +18,12 @@ public class Battle_Info : MonoBehaviour
     public Config_D_cardpool d_cardpool;
     public Config_D_weapon d_weapon;
     public Config_D_skill d_skill;
+    public Config_MarketCardPossiblity marketcards;
 
 
     public BattleData bd;
     public HeroData hd;
+    public CardClassification cc;
     public float totaltime;
     public float generation_t;
     public float clock;
@@ -46,7 +48,9 @@ public class Battle_Info : MonoBehaviour
         LoadConfig();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");     
         bd.NewBattle();
+        cc.Init();
         ComputeHeroFeature();
+        ComputeCardClassification();
         bd.player = GameObject.Find("Player");
         map_width = 10.35f * 2;
         map_height = 7.54f * 2;
@@ -93,12 +97,82 @@ public class Battle_Info : MonoBehaviour
         levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
+        marketcards = uf.LoadStructFromJson<Config_MarketCardPossiblity>("Config/Config_MarketCard");
         d_enemy = uf.LoadStructFromJson<Config_D_enemy>("Config/D/Config_D_enemy");
         d_card = uf.LoadStructFromJson<Config_D_card>("Config/D/Config_D_card");
         d_hero = uf.LoadStructFromJson<Config_D_hero>("Config/D/Config_D_hero");
         d_cardpool = uf.LoadStructFromJson<Config_D_cardpool>("Config/D/Config_D_cardpool");
         d_weapon = uf.LoadStructFromJson<Config_D_weapon>("Config/D/Config_D_weapon");
         d_skill = uf.LoadStructFromJson<Config_D_skill>("Config/D/Config_D_skill");
+    }
+    void ComputeCardClassification()
+    {
+        for (int i = 0; i < cards.cards.Count; i++)
+        {
+            if (cards.cards[i].kind == 0)
+            {
+                switch (cards.cards[i].rare)
+                {
+                    case 0:
+                        cc.weaponCard_0.Add(i);
+                        break;
+                    case 1:
+                        cc.weaponCard_1.Add(i);
+                        break;
+                    case 2:
+                        cc.weaponCard_2.Add(i);
+                        break;
+                    case 3:
+                        cc.weaponCard_3.Add(i);
+                        break;
+                    case 4:
+                        cc.weaponCard_4.Add(i);
+                        break;
+                }
+            }
+            else if (cards.cards[i].kind == 1)
+            {
+                switch (cards.cards[i].rare)
+                {
+                    case 0:
+                        cc.itemCard_0.Add(i);
+                        break;
+                    case 1:
+                        cc.itemCard_1.Add(i);
+                        break;
+                    case 2:
+                        cc.itemCard_2.Add(i);
+                        break;
+                    case 3:
+                        cc.itemCard_3.Add(i);
+                        break;
+                    case 4:
+                        cc.itemCard_4.Add(i);
+                        break;
+                }
+            }
+            else if (cards.cards[i].kind == 1)
+            {
+                switch (cards.cards[i].rare)
+                {
+                    case 0:
+                        cc.scrollCard_0.Add(i);
+                        break;
+                    case 1:
+                        cc.scrollCard_1.Add(i);
+                        break;
+                    case 2:
+                        cc.scrollCard_2.Add(i);
+                        break;
+                    case 3:
+                        cc.scrollCard_3.Add(i);
+                        break;
+                    case 4:
+                        cc.scrollCard_4.Add(i);
+                        break;
+                }
+            }
+        }
     }
     void Save()
     {

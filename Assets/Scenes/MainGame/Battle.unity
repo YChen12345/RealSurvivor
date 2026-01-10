@@ -7294,8 +7294,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18497,6 +18497,8 @@ MonoBehaviour:
     heros: []
   levels:
     levels: []
+  drops:
+    drops: []
   skills:
     skills: []
   d_enemy:
@@ -18511,6 +18513,8 @@ MonoBehaviour:
     weaponDesList: []
   d_skill:
     skillDesList: []
+  marketcards:
+    possiblity: []
   bd:
     heroID: 0
     weaponID: 0
@@ -18557,6 +18561,22 @@ MonoBehaviour:
     extraexp: 0
     repel: 0
     extrahurt: 0
+  cc:
+    weaponCard_0: 
+    weaponCard_1: 
+    weaponCard_2: 
+    weaponCard_3: 
+    weaponCard_4: 
+    itemCard_0: 
+    itemCard_1: 
+    itemCard_2: 
+    itemCard_3: 
+    itemCard_4: 
+    scrollCard_0: 
+    scrollCard_1: 
+    scrollCard_2: 
+    scrollCard_3: 
+    scrollCard_4: 
   totaltime: 0
   generation_t: 0
   clock: 0
@@ -22614,8 +22634,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 64
+  m_fontSizeBase: 64
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -23,6 +23,7 @@ public class Market_Info : MonoBehaviour
     public Config_D_weapon d_weapon;
     public Config_D_skill d_skill;
     public Config_CardPoolPossibility cardpools;
+    public Config_MarketCardPossiblity marketcards;
     void Awake()
     {
         uf = new Functions();
@@ -43,6 +44,7 @@ public class Market_Info : MonoBehaviour
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
         cardpools = uf.LoadStructFromJson<Config_CardPoolPossibility>("Config/Config_CardPool");
+        marketcards = uf.LoadStructFromJson<Config_MarketCardPossiblity>("Config/Config_MarketCard");
         d_enemy = uf.LoadStructFromJson<Config_D_enemy>("Config/D/Config_D_enemy");
         d_card = uf.LoadStructFromJson<Config_D_card>("Config/D/Config_D_card");
         d_hero = uf.LoadStructFromJson<Config_D_hero>("Config/D/Config_D_hero");

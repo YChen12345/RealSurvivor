@@ -310,7 +310,7 @@ public class Battle_Enemy : MonoBehaviour
         {
             speed_debuff = 0;
         }
-        enemy.speed = enemyfigure.speed * (1-Mathf.Max(speed_debuff,0.9f));
+        enemy.speed = enemyfigure.speed * (1-Mathf.Min(speed_debuff,0.9f));
         Move();
     }
 }

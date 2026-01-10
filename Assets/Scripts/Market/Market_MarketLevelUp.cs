@@ -6,6 +6,7 @@ using TMPro;
 public class Market_MarketLevelUp : MonoBehaviour
 {
     public int cost;
+    public TextMeshProUGUI cost_text;
     public GameObject button_buy;
     public GameObject tip_sellout;
     public Market_Info data;
@@ -14,17 +15,25 @@ public class Market_MarketLevelUp : MonoBehaviour
     {
         data = GameObject.Find("Market").GetComponent<Market_Info>();
         button_buy.GetComponent<Button>().onClick.AddListener(Buy);
+        cost = data.market.draw_unlockCost[data.bd.marketLevel];
+        cost_text.text = "" + cost;
         tip_sellout.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        cost = data.market.draw_unlockCost[data.bd.marketLevel];
+        cost_text.text = "" + cost;
         if (data.bd.marketLevel >= 4)
         {
             button_buy.SetActive(false);
             tip_sellout.SetActive(true);
             this.gameObject.SetActive(false);///
+        }
+        else
+        {
+            button_buy.SetActive(true);
         }
     }
     void Buy()
@@ -37,5 +46,6 @@ public class Market_MarketLevelUp : MonoBehaviour
                 data.bd.marketLevel++;
             }
         }
+        button_buy.SetActive(false);
     }
 }
