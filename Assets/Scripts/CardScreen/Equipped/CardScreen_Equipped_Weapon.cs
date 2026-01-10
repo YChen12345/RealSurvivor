@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class CardScreen_Equipped_Weapon : MonoBehaviour
 {
     public GameObject card;
+    public GameObject frame;
+    public GameObject frame_lock;
     public List<GameObject> template;
     public List<GameObject> displayList;
     public CardScreen_Info data;
@@ -15,6 +17,7 @@ public class CardScreen_Equipped_Weapon : MonoBehaviour
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
         cards = new List<int>(data.bd.WeaponCardList);
+        DisplayFrame();
         DisplayCard();
     }
 
@@ -25,6 +28,24 @@ public class CardScreen_Equipped_Weapon : MonoBehaviour
         {
             cards = new List<int>(data.bd.WeaponCardList);
             DisplayCard();
+        }
+    }
+    void DisplayFrame()
+    {
+        for(int i = 0; i < 5; i++)
+        {
+            if(i< data.bd.weaponLimit)
+            {
+                GameObject f = GameObject.Instantiate(frame,frame.transform.parent);
+                f.transform.position = template[i].transform.position;
+                f.SetActive(true);
+            }
+            else
+            {
+                GameObject f = GameObject.Instantiate(frame_lock, frame_lock.transform.parent);
+                f.transform.position = template[i].transform.position;
+                f.SetActive(true);
+            }
         }
     }
     void DisplayCard()

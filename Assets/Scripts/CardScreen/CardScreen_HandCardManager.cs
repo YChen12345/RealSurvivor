@@ -6,16 +6,19 @@ using UnityEngine.UI;
 public class CardScreen_HandCardManager : MonoBehaviour
 {
     public List<GameObject> template;
+    public GameObject canvas;
+    public GameObject refreshPage;
     public List<GameObject> display_list = new List<GameObject>();
     public GameObject handcard;
     public GameObject button_refresh;
     public CardScreen_Info data;
+    public GameObject dealingArea;
     IUF uf = new UIFunctions();
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
-        button_refresh.GetComponent<Button>().onClick.AddListener(ReSetHandCard);
+        button_refresh.GetComponent<Button>().onClick.AddListener(RefreshHandCard);
         SetHandCard();
     }
 
@@ -25,6 +28,7 @@ public class CardScreen_HandCardManager : MonoBehaviour
         {
             button_refresh.SetActive(false);
         }
+        ReplenishCard();
     }
     // Update is called once per frame
     public void SetHandCard()
@@ -63,6 +67,11 @@ public class CardScreen_HandCardManager : MonoBehaviour
             ////
         }
     }
+    public void RefreshHandCard()
+    {
+        GameObject p = GameObject.Instantiate(refreshPage,canvas.transform);
+        p.SetActive(true);
+    }
     public void ReSetHandCard()
     {
         for (int i = 0; i < display_list.Count; i++)
@@ -98,5 +107,28 @@ public class CardScreen_HandCardManager : MonoBehaviour
             data.cardScreen.remainCard_scroll.Remove(cid);
             ////
         }
+    }
+    void ReplenishCard()
+    {
+        if (data.cardScreen.remainCard.Count > 0)
+        {
+            for (int i = 0; i < display_list.Count; i++)
+            {
+                if (display_list[i] == null)
+                {
+                    int cid = data.cardScreen.remainCard[Random.Range(0, data.cardScreen.remainCard.Count)];
+                    GameObject c = GameObject.Instantiate(handcard, handcard.transform.parent);
+                    c.transform.position = dealingArea.transform.position;
+                    c.GetComponent<CardScreen_HandCard>().originPos = template[i].transform.position;
+                    c.GetComponent<CardScreen_HandCard>().pos_state = 1;
+                   c.GetComponent<CardScreen_HandCard>().index = i;
+                    c.GetComponent<CardScreen_HandCard>().cid = cid;
+                    data.cardScreen.handCard[i]=cid;
+                    display_list.Add(c);
+                    c.SetActive(true);
+                    data.cardScreen.remainCard.Remove(cid);
+                }
+            }
+        }          
     }
 }

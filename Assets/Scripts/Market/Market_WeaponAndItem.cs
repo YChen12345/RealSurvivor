@@ -12,14 +12,14 @@ public class Market_WeaponAndItem : MonoBehaviour
     void Start()
     {
         data = GameObject.Find("Market").GetComponent<Market_Info>();
-        weaponBag.text = data.bd.weaponLimit+"/"+"5";
-        itemBag.text = data.bd.itemLimit + "/" + "5";
+        weaponBag.text = "*" + data.bd.weaponLimit;
+        itemBag.text = "*" + data.bd.itemLimit;
     }
 
     // Update is called once per frame
     void Update()
     {
-        weaponBag.text = data.bd.weaponLimit + "/" + "5";
-        itemBag.text = data.bd.itemLimit + "/" + "5";
+        weaponBag.text = "*" + data.bd.weaponLimit;
+        itemBag.text = "*" + data.bd.itemLimit;
     }
 }

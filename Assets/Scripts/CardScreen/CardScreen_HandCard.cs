@@ -8,7 +8,8 @@ public class CardScreen_HandCard : MonoBehaviour
     public int index;
     public int cid;
     public GameObject canvas;
-    Vector2 originPos;
+    public Vector2 originPos;
+    public int pos_state;
     IUF uf = new UIFunctions();
     IUITools tools_parent = new UITools();
     IUITools tools_Card = new UITools();
@@ -42,7 +43,11 @@ public class CardScreen_HandCard : MonoBehaviour
         tools_Trigger.AddEntryEvent(trigger);
         tools_Trigger.AddExitEvent(trigger);
         tools_Trigger.AddButtonClick(trigger);
-        originPos = transform.position;
+        if (pos_state == 0)
+        {
+            pos_state = 1;
+            originPos = transform.position;
+        }   
         tools_Card.RecordSiblingIndex(this.gameObject);
         tools_parent.RecordSiblingIndex(parent);
     }

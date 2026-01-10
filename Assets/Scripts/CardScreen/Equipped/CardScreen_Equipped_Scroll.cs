@@ -3,10 +3,13 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class CardScreen_Equipped_Scroll : MonoBehaviour
 {
     public GameObject card;
+    public GameObject frame;
+    public GameObject frame_lock;
     public List<GameObject> template;
     public List<GameObject> displayList;
     public CardScreen_Info data;
@@ -16,6 +19,7 @@ public class CardScreen_Equipped_Scroll : MonoBehaviour
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
         cards = new List<int>(data.bd.ScrollCardList);
+        DisplayFrame();
         DisplayCard();
     }
 
@@ -26,6 +30,15 @@ public class CardScreen_Equipped_Scroll : MonoBehaviour
         {
             cards = new List<int>(data.bd.ScrollCardList);
             DisplayCard();
+        }
+    }
+    void DisplayFrame()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            GameObject f = GameObject.Instantiate(frame, frame.transform.parent);
+            f.transform.position = template[i].transform.position;
+            f.SetActive(true);
         }
     }
     void DisplayCard()

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 public class CardScreen_RemoveEquipPlace : MonoBehaviour
 {
     IUF uf = new UIFunctions();
+    public GameObject active_icon;
     public GameObject image;
     public CardScreen_Info data;
     public int state;
@@ -21,6 +22,14 @@ public class CardScreen_RemoveEquipPlace : MonoBehaviour
         else
         {
             image.SetActive(false);
+        }
+        if (state == 1)
+        {
+            active_icon.SetActive(true);
+        }
+        else
+        {
+            active_icon.SetActive(false);
         }
     }
 }
