@@ -3,6 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public struct Drop
 {
+    public int id;
     public int mode;
     public float speed;
     public float distance;

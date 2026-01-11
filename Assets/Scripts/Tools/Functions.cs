@@ -393,7 +393,7 @@ public class Functions : IUF
         }
         else
         {
-            obj.transform.position += toVec3(Direction2((Vector2)obj.transform.position, pos) * speed * Time.unscaledDeltaTime);
+            obj.transform.position += toVec3(Direction2((Vector2)obj.transform.position, pos) * speed * Time.deltaTime);
         }
     }
     public void ObjRotateByCenter(GameObject obj, Vector2 dir, float theta, float t)

@@ -26,6 +26,7 @@ public class Market_Info : MonoBehaviour
     public Config_MarketCardPossiblity marketcards;
     void Awake()
     {
+        Time.timeScale = 1; 
         uf = new Functions();
         bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
         //hd = uf.LoadStructFromJson<HeroData>("Data/HeroData");
@@ -33,6 +34,8 @@ public class Market_Info : MonoBehaviour
         LoadConfig();
         ComputeHeroFeature();
         ComputeMarketCard();
+        PlayerPrefs.SetInt("State", 1);
+        PlayerPrefs.SetInt("Mana", bd.mana);
     }
     void LoadConfig()
     {

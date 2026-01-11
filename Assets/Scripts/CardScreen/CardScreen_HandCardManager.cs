@@ -121,12 +121,17 @@ public class CardScreen_HandCardManager : MonoBehaviour
                     c.transform.position = dealingArea.transform.position;
                     c.GetComponent<CardScreen_HandCard>().originPos = template[i].transform.position;
                     c.GetComponent<CardScreen_HandCard>().pos_state = 1;
-                   c.GetComponent<CardScreen_HandCard>().index = i;
+                    c.GetComponent<CardScreen_HandCard>().index = i;
                     c.GetComponent<CardScreen_HandCard>().cid = cid;
                     data.cardScreen.handCard[i]=cid;
-                    display_list.Add(c);
-                    c.SetActive(true);
+                    display_list[i] = c;
+                    c.SetActive(true);            
+                    ///
                     data.cardScreen.remainCard.Remove(cid);
+                    data.cardScreen.remainCard_weapon.Remove(cid);
+                    data.cardScreen.remainCard_item.Remove(cid);
+                    data.cardScreen.remainCard_scroll.Remove(cid);
+                    ///
                 }
             }
         }          

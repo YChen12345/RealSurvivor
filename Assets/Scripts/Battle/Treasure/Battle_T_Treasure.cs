@@ -25,7 +25,7 @@ public class Battle_T_Treasure : MonoBehaviour
     {
         data = GameObject.Find("Battle").GetComponent<Battle_Info>();
         SetTreasure();
-        text_remain.text = "剩余" + data.bd.awardNum + "个宝箱待开启";
+        text_remain.text = "剩余" + data.bd.treasureNum + "个宝箱待开启";
         button_open.GetComponent<Button>().onClick.AddListener(OpenTreasure);
         button_skip.GetComponent<Button>().onClick.AddListener(Skip);
         button_gain.GetComponent<Button>().onClick.AddListener(GainCard);
@@ -43,11 +43,11 @@ public class Battle_T_Treasure : MonoBehaviour
         {
             range += Time.deltaTime * 0.3f;
         }
-        if (range < 0.2f)
+        if (range < 0.14f)
         {
             uf.EraseTexture(cover, range);
         }
-        else if (range < 0.6f)
+        else if (range < 0.2f)
         {
             uf.EraseTexture(cover, range);
             button_gain.SetActive(true);
@@ -210,9 +210,18 @@ public class Battle_T_Treasure : MonoBehaviour
     {
         data.page_state = 0;
         data.bd.cardList_Total.Add(cid);
-        data.bd.cardList_Weapon.Add(cid);
-        data.bd.cardList_Item.Add(cid);
-        data.bd.cardList_Scroll.Add(cid);
+        switch (data.cards.cards[cid].kind)
+        {
+            case 0:
+                data.bd.cardList_Weapon.Add(cid);
+                break;
+            case 1:
+                data.bd.cardList_Item.Add(cid);
+                break;
+            case 2:
+                data.bd.cardList_Scroll.Add(cid);
+                break;
+        }
         if (data.bd.treasureNum <= 0)
         {
             data.settlement = 2;

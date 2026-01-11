@@ -8,6 +8,7 @@ public struct Level
     public float clock;
     public int maxEmyInScreen;
     public float generateGapClock;
+    public int boss_mode;
     public int bossid;
     public List<int> enemyid;
     public List<int> enemynum;

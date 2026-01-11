@@ -26,7 +26,7 @@ public class CardScreen_Equipped_Item : MonoBehaviour
     {
         if (cards.Count != data.bd.ItemCardList.Count)
         {
-            cards = new List<int>(data.bd.WeaponCardList);
+            cards = new List<int>(data.bd.ItemCardList);
             DisplayCard();
         }
     }

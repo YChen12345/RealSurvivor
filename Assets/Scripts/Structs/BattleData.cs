@@ -83,5 +83,19 @@ public struct BattleData
         ItemCardList = new List<int>();
         ScrollCardList = new List<int>();
     }
+    public void loadData()
+    {
+        awardNum = 0;
+        treasureNum = 0;
+        boss = null;
+        seedList = new List<GameObject>();
+        emyList = new List<GameObject>();
+        player = null;
+        cardList_Used = new List<int>();
+        WeaponCardList = new List<int>();
+        ItemCardList = new List<int>();
+        ScrollCardList = new List<int>();
+        mana = PlayerPrefs.GetInt("Mana");
+    }
 }
 

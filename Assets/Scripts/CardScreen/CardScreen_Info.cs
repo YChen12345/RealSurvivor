@@ -1,5 +1,6 @@
 using NUnit.Framework;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static UnityEngine.Rendering.GPUSort;
 
@@ -32,7 +33,7 @@ public class CardScreen_Info : MonoBehaviour
         cardScreen.Init();
         cardScreen.boss = levels.levels[bd.wave].bossid;
         cardScreen.emylist = new List<int>(levels.levels[bd.wave].enemyid);
-        cardScreen.remainCard = new List<int>(bd.cardList_Total);
+        cardScreen.remainCard = new List<int>(bd.cardList_Total.OrderBy(x => Random.value).ToList());
         cardScreen.remainCard_weapon = new List<int>(bd.cardList_Weapon);
         cardScreen.remainCard_item = new List<int>(bd.cardList_Item);
         cardScreen.remainCard_scroll = new List<int>(bd.cardList_Scroll);

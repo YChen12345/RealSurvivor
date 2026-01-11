@@ -15,6 +15,7 @@ public class Battle_Manager : MonoBehaviour
     float generateGapClock;
     public int win;
     public int hasboss;
+    int end_state;
     void Start()
     {       
         stop = 0;
@@ -50,7 +51,8 @@ public class Battle_Manager : MonoBehaviour
     void BossGen()
     {
         int bossid = data.levels.levels[data.bd.wave].bossid;
-        if (bossid >= 0)
+        int boss_mode = data.levels.levels[data.bd.wave].boss_mode;
+        if (boss_mode > 0)
         {
             float x = Random.Range(-data.map_width / 2, data.map_width / 2);
             float y = Random.Range(-data.map_height / 2, data.map_height / 2);
@@ -90,7 +92,7 @@ public class Battle_Manager : MonoBehaviour
         }      
     }
     void EndControl()
-    {
+    {       
         if (hasboss == 1)
         {
             if (data.totaltime > 3)
@@ -104,13 +106,22 @@ public class Battle_Manager : MonoBehaviour
         }
         if (data.totaltime >= data.clock)
         {
-            displayPage.SetActive(false);
-            data.bd.exp += data.hd.extraexp;
-            data.bd.gold += data.hd.extramoney;
-            if (data.settlement_state == 0)
+            BossEffect();
+            if (end_state == 0)////
+            {
+                end_state = 1;
+                data.state = 1;
+                displayPage.SetActive(false);
+                data.bd.exp += data.hd.extraexp;
+                data.bd.gold += data.hd.extramoney;
+            }         
+            if (data.unpicked > 0)
+            {
+                return;
+            }
+            else if (data.settlement_state == 0)
             {
                 data.settlement_state = 1;
-                data.state = 1;
                 if (data.bd.treasureNum > 0)
                 {
                     data.settlement = 1;
@@ -128,6 +139,25 @@ public class Battle_Manager : MonoBehaviour
                     data.settlement = 4;
                 }
             }
+        }
+    }
+    void BossEffect()
+    {
+        int boss_mode = data.levels.levels[data.bd.wave].boss_mode;
+        if (boss_mode == 2)
+        {
+            data.bd.mana = Mathf.Max(0, data.bd.mana - 5);
+        }
+        else if (boss_mode == 3)
+        {
+            data.bd.gold = 0;
+        }
+        else if (boss_mode == 4)
+        {
+            data.settlement_state = 2;
+            uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
+            loadingPage.SetActive(true);
+            loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";
         }
     }
     void Stop()

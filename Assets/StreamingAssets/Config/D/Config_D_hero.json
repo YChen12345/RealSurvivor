@@ -1,1 +1,24 @@
-{"heroDesList":[{"id":0,"hero_name":"","hero_description":""},{"id":0,"hero_name":"","hero_description":""}]}
+{
+  "heroDesList": [
+    {
+      "id": 0,
+      "hero_name": "隐鸦",
+      "hero_description": ""
+    },
+    {
+      "id": 1,
+      "hero_name": "吸血鬼伯爵",
+      "hero_description": ""
+    },
+    {
+      "id": 2,
+      "hero_name": "法师",
+      "hero_description": ""
+    },
+    {
+      "id": 3,
+      "hero_name": "幸运星",
+      "hero_description": ""
+    }
+  ]
+}

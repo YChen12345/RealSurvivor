@@ -529,6 +529,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingPage: {fileID: 1776293211}
   index: 1
+  weaponID: 0
+  weapon_name: {fileID: 891988635}
 --- !u!114 &398928471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -907,6 +909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingPage: {fileID: 1776293211}
   index: 2
+  weaponID: 0
+  weapon_name: {fileID: 1723614766}
 --- !u!114 &549762690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,8 +1359,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2219,6 +2223,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingPage: {fileID: 1776293211}
   index: 0
+  weaponID: 0
+  weapon_name: {fileID: 1688323764}
 --- !u!114 &970790691
 MonoBehaviour:
   m_ObjectHideFlags: 0

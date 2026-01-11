@@ -1,3 +1,4 @@
+﻿using TMPro;
 using UnityEngine;
 
 public class Win_Victory : MonoBehaviour
@@ -8,6 +9,7 @@ public class Win_Victory : MonoBehaviour
     int hid;
     int wid;
     int lid;
+    public TextMeshProUGUI reward_text;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,5 +31,6 @@ public class Win_Victory : MonoBehaviour
         {
             pd.levelList[hid] = lid + 1;
         }
+        reward_text.text = "获得钻石：666";
     }
 }

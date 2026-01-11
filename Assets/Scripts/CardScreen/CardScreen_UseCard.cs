@@ -26,6 +26,7 @@ public class CardScreen_UseCard : MonoBehaviour
             {
                 state = 1;
                 usePlace.GetComponent<CardScreen_UseCardPlace>().state++;
+                usePlace.GetComponent<CardScreen_UseCardPlace>().use_state = 0;
             }
             switch (data.cards.cards[cid].kind)
             {

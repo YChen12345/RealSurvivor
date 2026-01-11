@@ -38,9 +38,11 @@ public class Battle_Info : MonoBehaviour
     public int settlement_state;
     public int genIndex;
     public List<int> emyList = new List<int>();
+    public int unpicked;
     void Awake()
     {
         uf = new Functions();
+        unpicked = 0;
         totaltime = 0;
         generation_t = 0;
         genIndex = 0;

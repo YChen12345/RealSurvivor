@@ -1,10 +1,12 @@
-using UnityEngine;
-
+﻿using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 public class Lose_GameOver : MonoBehaviour
 {
     IUF uf;
     BattleData bd;
     PlayerData pd;
+    public TextMeshProUGUI reward_text;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,5 +21,6 @@ public class Lose_GameOver : MonoBehaviour
     void Reward()
     {
         pd.money += bd.wave * 10;
+        reward_text.text = "获得钻石：" + bd.wave * 10;
     }
 }
