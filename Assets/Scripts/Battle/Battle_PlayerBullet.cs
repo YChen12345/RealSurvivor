@@ -41,7 +41,7 @@ public class Battle_PlayerBullet : MonoBehaviour
             {
                 if (data.bd.boss != null)
                 {
-                    if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range)
+                    if (uf.Distance2(this.gameObject, data.bd.boss) < playerBullet.range*1.5f)
                     {
                         HurtEmy(data.bd.boss);
                         cross++;

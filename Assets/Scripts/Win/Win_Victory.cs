@@ -31,6 +31,10 @@ public class Win_Victory : MonoBehaviour
         {
             pd.levelList[hid] = lid + 1;
         }
+        if (pd.levelProgress < lid + 1)
+        {
+            pd.levelProgress = lid + 1;
+        }
         reward_text.text = "获得钻石：666";
     }
 }

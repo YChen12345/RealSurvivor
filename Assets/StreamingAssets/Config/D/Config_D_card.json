@@ -2,23 +2,308 @@
   "cardDesList": [
     {
       "id": 0,
-      "card_name": "小刀",
-      "card_description": "111"
+      "card_name": "飓风之杖",
+      "card_description": "武器"
     },
     {
       "id": 1,
-      "card_name": "大刀",
-      "card_description": "111"
+      "card_name": "风息拳套",
+      "card_description": "武器"
     },
     {
       "id": 2,
-      "card_name": "道具",
-      "card_description": "111"
+      "card_name": "微风回旋镖",
+      "card_description": "武器"
     },
     {
       "id": 3,
+      "card_name": "手里剑",
+      "card_description": "武器"
+    },
+    {
+      "id": 4,
+      "card_name": "破空钩链",
+      "card_description": "武器"
+    },
+    {
+      "id": 5,
+      "card_name": "幻月轻弩",
+      "card_description": "武器"
+    },
+    {
+      "id": 6,
+      "card_name": "水晶鞭",
+      "card_description": "武器"
+    },
+    {
+      "id": 7,
+      "card_name": "透骨弓",
+      "card_description": "武器"
+    },
+    {
+      "id": 8,
+      "card_name": "魔山重杵",
+      "card_description": "武器"
+    },
+    {
+      "id": 9,
+      "card_name": "暗裔巨剑",
+      "card_description": "武器"
+    },
+    {
+      "id": 10,
+      "card_name": "猩红毒瓶",
+      "card_description": "武器"
+    },
+    {
+      "id": 11,
+      "card_name": "贯血投矛",
+      "card_description": "武器"
+    },
+    {
+      "id": 12,
+      "card_name": "泣血弓",
+      "card_description": "武器"
+    },
+    {
+      "id": 13,
+      "card_name": "泣血大剑",
+      "card_description": "武器"
+    },
+    {
+      "id": 14,
+      "card_name": "泣血斧",
+      "card_description": "武器"
+    },
+    {
+      "id": 15,
+      "card_name": "梦魇血球",
+      "card_description": "武器"
+    },
+    {
+      "id": 16,
+      "card_name": "裂空弓",
+      "card_description": "武器"
+    },
+    {
+      "id": 17,
+      "card_name": "贯日弩",
+      "card_description": "武器"
+    },
+    {
+      "id": 18,
+      "card_name": "三叉重弩",
+      "card_description": "武器"
+    },
+    {
+      "id": 19,
+      "card_name": "和田玉佩",
+      "card_description": "道具"
+    },
+    {
+      "id": 20,
+      "card_name": "耳坠",
+      "card_description": "道具"
+    },
+    {
+      "id": 21,
+      "card_name": "追风足具",
+      "card_description": "道具"
+    },
+    {
+      "id": 22,
+      "card_name": "智慧指环",
+      "card_description": "道具"
+    },
+    {
+      "id": 23,
+      "card_name": "迅捷披风",
+      "card_description": "道具"
+    },
+    {
+      "id": 24,
+      "card_name": "启明吊坠",
+      "card_description": "道具"
+    },
+    {
+      "id": 25,
+      "card_name": "幻影胫甲",
+      "card_description": "道具"
+    },
+    {
+      "id": 26,
+      "card_name": "幻影",
+      "card_description": "道具"
+    },
+    {
+      "id": 27,
+      "card_name": "秘银钱袋",
+      "card_description": "道具"
+    },
+    {
+      "id": 28,
+      "card_name": "愈合金鳞",
+      "card_description": "道具"
+    },
+    {
+      "id": 29,
+      "card_name": "猩红獠牙",
+      "card_description": "道具"
+    },
+    {
+      "id": 30,
+      "card_name": "贪婪玺戒",
+      "card_description": "道具"
+    },
+    {
+      "id": 31,
+      "card_name": "穿甲重戟",
+      "card_description": "道具"
+    },
+    {
+      "id": 32,
+      "card_name": "碎钢臂铠",
+      "card_description": "道具"
+    },
+    {
+      "id": 33,
+      "card_name": "回春护符",
+      "card_description": "道具"
+    },
+    {
+      "id": 34,
+      "card_name": "血噬咒刃",
+      "card_description": "道具"
+    },
+    {
+      "id": 35,
+      "card_name": "世界树灵根",
+      "card_description": "道具"
+    },
+    {
+      "id": 36,
+      "card_name": "亡者之书",
+      "card_description": "道具"
+    },
+    {
+      "id": 37,
+      "card_name": "增伤",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 38,
+      "card_name": "迅捷",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 39,
+      "card_name": "盾印",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 40,
+      "card_name": "法术印记",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 41,
+      "card_name": "一闪",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 42,
+      "card_name": "光佑",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 43,
+      "card_name": "免伤",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 44,
+      "card_name": "破晓",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 45,
+      "card_name": "极致法强",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 46,
+      "card_name": "更肉",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 47,
+      "card_name": "攻速",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 48,
+      "card_name": "治愈",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 49,
+      "card_name": "碎星",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 50,
+      "card_name": "虚无",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 51,
+      "card_name": "赋能",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 52,
       "card_name": "卷轴",
-      "card_description": "111"
+      "card_description": "卷轴"
+    },
+    {
+      "id": 53,
+      "card_name": "大赋能",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 54,
+      "card_name": "退退退",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 55,
+      "card_name": "领悟",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 56,
+      "card_name": "恩赐",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 57,
+      "card_name": "极致物攻",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 58,
+      "card_name": "连击",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 59,
+      "card_name": "重击",
+      "card_description": "卷轴"
+    },
+    {
+      "id": 60,
+      "card_name": "暴击",
+      "card_description": "卷轴"
     }
   ]
 }

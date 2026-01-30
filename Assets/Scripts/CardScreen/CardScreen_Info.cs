@@ -32,12 +32,17 @@ public class CardScreen_Info : MonoBehaviour
         LoadConfig();
         cardScreen.Init();
         cardScreen.boss = levels.levels[bd.wave].bossid;
+        cardScreen.boss_mode = levels.levels[bd.wave].boss_mode;
         cardScreen.emylist = new List<int>(levels.levels[bd.wave].enemyid);
         cardScreen.remainCard = new List<int>(bd.cardList_Total.OrderBy(x => Random.value).ToList());
         cardScreen.remainCard_weapon = new List<int>(bd.cardList_Weapon);
         cardScreen.remainCard_item = new List<int>(bd.cardList_Item);
         cardScreen.remainCard_scroll = new List<int>(bd.cardList_Scroll);
         ComputeHeroFeature();
+        if (bd.wave > 0)
+        {
+            PlayerPrefs.SetInt("State", 1);
+        }
     }
 
     void LoadConfig()
@@ -46,7 +51,7 @@ public class CardScreen_Info : MonoBehaviour
         weapons = uf.LoadStructFromJson<Config_Weapon>("Config/Config_Weapon");
         cards = uf.LoadStructFromJson<Config_Card>("Config/Config_Card");
         heros = uf.LoadStructFromJson<Config_Hero>("Config/Config_Hero");
-        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
+        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level_" + bd.levelID);
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
         d_enemy = uf.LoadStructFromJson<Config_D_enemy>("Config/D/Config_D_enemy");
@@ -65,7 +70,7 @@ public class CardScreen_Info : MonoBehaviour
         }
         for (int i = 0; i < bd.ScrollCardList.Count; i++)
         {
-            hd.PlusItem(cards.cards[bd.ScrollCardList[i]]);
+            hd.PlusScroll(cards.cards[bd.ScrollCardList[i]]);
         }
         for (int i = 0; i < bd.SkillList.Count; i++)
         {

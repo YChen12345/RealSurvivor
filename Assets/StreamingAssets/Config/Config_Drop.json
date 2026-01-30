@@ -1,31 +1,31 @@
 {
-  "drops":[
+  "drops": [
     {
       "id": 0,
       "mode": 1,
-      "speed": 8,
-      "distance": 100,
+      "speed": 8.0,
+      "distance": 50.0,
       "heal": 0,
-      "gold": 0,
-      "treasure": 1
+      "gold": 1,
+      "treasure": 0
     },
     {
       "id": 1,
       "mode": 1,
-      "speed": 8,
-      "distance": 100,
-      "heal": 0,
+      "speed": 8.0,
+      "distance": 50.0,
+      "heal": 3,
       "gold": 0,
-      "treasure": 1
+      "treasure": 0
     },
     {
       "id": 2,
       "mode": 1,
-      "speed": 0,
-      "distance": 0,
+      "speed": 8.0,
+      "distance": 50.0,
       "heal": 0,
       "gold": 0,
-      "treasure": 0
+      "treasure": 1
     }
   ]
 }

@@ -3,62 +3,62 @@
     {
       "id": 0,
       "weapon_name": "飞羽",
-      "weapon_description": ""
+      "weapon_description": "飞羽"
     },
     {
       "id": 1,
       "weapon_name": "漩涡眼",
-      "weapon_description": ""
+      "weapon_description": "漩涡眼"
     },
     {
       "id": 2,
       "weapon_name": "散羽阵",
-      "weapon_description": ""
+      "weapon_description": "散羽阵"
     },
     {
       "id": 3,
       "weapon_name": "泣血",
-      "weapon_description": ""
+      "weapon_description": "泣血"
     },
     {
       "id": 4,
       "weapon_name": "血饮",
-      "weapon_description": ""
+      "weapon_description": "血饮"
     },
     {
       "id": 5,
       "weapon_name": "链刃",
-      "weapon_description": ""
+      "weapon_description": "链刃"
     },
     {
       "id": 6,
       "weapon_name": "星杖",
-      "weapon_description": ""
+      "weapon_description": "星杖"
     },
     {
       "id": 7,
       "weapon_name": "魔法勋章",
-      "weapon_description": ""
+      "weapon_description": "魔法勋章"
     },
     {
       "id": 8,
       "weapon_name": "魔导炮",
-      "weapon_description": ""
+      "weapon_description": "魔导炮"
     },
     {
       "id": 9,
       "weapon_name": "灵魂印章",
-      "weapon_description": ""
+      "weapon_description": "灵魂印章"
     },
     {
       "id": 10,
       "weapon_name": "灵刃",
-      "weapon_description": ""
+      "weapon_description": "灵刃"
     },
     {
       "id": 11,
       "weapon_name": "灵杖",
-      "weapon_description": ""
+      "weapon_description": "灵杖"
     }
   ]
 }

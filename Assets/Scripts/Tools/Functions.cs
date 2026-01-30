@@ -94,7 +94,7 @@ public class Functions : IUF
     }
     public bool RandomRes(float x)
     {
-        if (x < 0)
+        if (x <= 0)
         {
             return false;
         }

@@ -47,6 +47,14 @@ public class Battle_Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hd_.blood > hd.blood)
+        {
+            hd_.blood = hd.blood;
+        }
+        if(data.bd.mana > hd.mana)
+        {
+            data.bd.mana = hd.mana;
+        }
         Move();
         Dead();
         BeDodge();

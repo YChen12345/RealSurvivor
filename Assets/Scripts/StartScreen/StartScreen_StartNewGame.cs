@@ -13,6 +13,6 @@ public class StartScreen_StartNewGame : MonoBehaviour
     void StartNewGame()
     {
         loadingPage.SetActive(true);
-        loadingPage.GetComponent<LoadingPage>().sceneName = "HeroChoose";
+        loadingPage.GetComponent<LoadingPage>().sceneName = "LevelChoose";
     }
 }

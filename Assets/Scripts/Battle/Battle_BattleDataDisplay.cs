@@ -45,6 +45,14 @@ public class Battle_BattleDataDisplay : MonoBehaviour
     }
     void Display()
     {
+        if(data.levels.levels[data.bd.wave].boss_mode > 0)
+        {
+            countBack.gameObject.SetActive(false);
+        }
+        else
+        {
+            countBack.gameObject.SetActive(true);
+        }
         if (data.bd.boss != null)
         {
             if (data.bd.boss.GetComponent<Battle_Enemy>().enemyfigure.blood > 0)
@@ -57,6 +65,7 @@ public class Battle_BattleDataDisplay : MonoBehaviour
                 boss_blood_line.SetActive(true);
                 boss_defence_line.SetActive(true);
                 boss_name.gameObject.SetActive(true);
+                //countBack.gameObject.SetActive(false);
             }
         }
         else
@@ -64,6 +73,7 @@ public class Battle_BattleDataDisplay : MonoBehaviour
             boss_blood_line.SetActive(false);
             boss_defence_line.SetActive(false);
             boss_name.gameObject.SetActive(false);
+            //countBack.gameObject.SetActive(true);
         }   
         blood_line.GetComponent <Slider>().value = 
             (float)player.GetComponent<Battle_Player>().hd_.blood/(float)player.GetComponent<Battle_Player>().hd.blood;

@@ -10,6 +10,7 @@ public struct CardScreen
     public List<int> handCard;
     public List<int> emylist;
     public int boss;
+    public int boss_mode;
     public int cardUsed_thisRound;
 
     public void Init()

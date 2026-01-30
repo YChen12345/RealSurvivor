@@ -19,6 +19,6 @@ public class Win_NewGame : MonoBehaviour
         bd.Init();
         uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
         loadingPage.SetActive(true);
-        loadingPage.GetComponent<LoadingPage>().sceneName = "HeroChoose";
+        loadingPage.GetComponent<LoadingPage>().sceneName = "LevelChoose";
     }
 }

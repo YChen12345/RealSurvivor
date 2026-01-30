@@ -41,7 +41,7 @@ public class CardPage : MonoBehaviour
                 back_card_rare.text = "稀有度：" + "<color=#606060>普通</color>";
                 break;
             case 1:
-                back_card_rare.text = "稀有度：" + "<color=#00FFFF>稀有</color>";
+                back_card_rare.text = "稀有度：" + "<color=#4682B4>稀有</color>";
                 break;
             case 2:
                 back_card_rare.text = "稀有度：" + "<color=#FF00FF>史诗</color>";
@@ -63,18 +63,28 @@ public class CardPage : MonoBehaviour
         if (cards.cards[cid].kind == 0)
         {
             content += "武器效果：\n";
+            int hurt_i = 0;
+            string hurt_text="";
             if (cards.cards[cid].weapon.basichurt > 0)
             {
-                content += "伤害：" + cards.cards[cid].weapon.basichurt;
+                hurt_text += "伤害：" + cards.cards[cid].weapon.basichurt;
             }
+          
             if (cards.cards[cid].weapon.hurt_p > 0)
             {
-                content += "<color=#FF0000>+" + cards.cards[cid].weapon.hurt_p+ "*物攻</color>";
+                hurt_text += "<color=#FF0000>+" + cards.cards[cid].weapon.hurt_p+ "*物攻</color>";
+                hurt_i++;
             }
             if (cards.cards[cid].weapon.hurt_m > 0)
             {
-                content += "<color=#00FFFF>+" + cards.cards[cid].weapon.hurt_m + "*法攻</color>";
+                hurt_text += "<color=#00008B>+" + cards.cards[cid].weapon.hurt_m + "*法攻</color>";
+                hurt_i++;
             }
+            if (hurt_i > 1)
+            {
+                hurt_text = "<size=28>"+hurt_text+"</size>";
+            }
+            content += hurt_text;
             content += "\n";
             if (cards.cards[cid].weapon.basictrans > 0)
             {
@@ -86,7 +96,14 @@ public class CardPage : MonoBehaviour
             }
             else
             {
-                content += "破甲：无破甲效果";
+                if (cards.cards[cid].weapon.trans_t > 0)
+                {
+                    content += cards.cards[cid].weapon.trans_t + "*破甲";
+                }
+                else
+                {
+                    content += "破甲：无破甲效果";
+                }           
             }
             content += "\n";
             content += "基础攻击间隔：" + cards.cards[cid].weapon.atkgap + "秒";
@@ -105,13 +122,13 @@ public class CardPage : MonoBehaviour
                     content += "攻击模式：" + "高级散射";
                     break;
                 case 3:
-                    content += "攻击模式：" + "环形弹幕";
+                    content += "攻击模式：" + "弹幕";
                     break;
                 case 4:
-                    content += "攻击模式：" + "高级环形弹幕";
+                    content += "攻击模式：" + "高级弹幕";
                     break;
                 case 5:
-                    content += "攻击模式：" + "普通";
+                    content += "攻击模式：" + "究极弹幕";
                     break;
             }
             content += "\n";
@@ -136,58 +153,72 @@ public class CardPage : MonoBehaviour
             if (cards.cards[cid].item.blood > 0)
             {
                 content += "生命+" + cards.cards[cid].item.blood+"";
+                content += "\n";
             }
             if (cards.cards[cid].item.defence > 0)
             {
                 content += "护甲+" + cards.cards[cid].item.defence + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.speed > 0)
             {
                 content += "移动速度+" + cards.cards[cid].item.speed*100 + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.atkspeed > 0)
             {
                 content += "攻击速度+" + (int)(cards.cards[cid].item.atkspeed*100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].item.phurt > 0)
             {
                 content += "物理攻击+" + cards.cards[cid].item.phurt + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.mhurt > 0)
             {
                 content += "法术攻击+" + cards.cards[cid].item.mhurt + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.trans > 0)
             {
                 content += "破甲+" + cards.cards[cid].item.trans + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.extrahurt > 0)
             {
                 content += "额外伤害+" + (int)(cards.cards[cid].item.extrahurt*100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].item.critical > 0)
             {
                 content += "暴击率+" + (int)(cards.cards[cid].item.critical*100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].item.dodge > 0)
             {
                 content += "闪避+" + (int)(cards.cards[cid].item.dodge * 100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].item.repel > 0)
             {
                 content += "减速+" + cards.cards[cid].item.repel + "%";
+                content += "\n";
             }
             if (cards.cards[cid].item.extraexp > 0)
             {
                 content += "额外经验+" + cards.cards[cid].item.extraexp + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.extramoney > 0)
             {
                 content += "额外金币+" + cards.cards[cid].item.extramoney + "";
+                content += "\n";
             }
             if (cards.cards[cid].item.mana > 0)
             {
                 content += "下轮能量+" + cards.cards[cid].item.mana + "";
+                content += "\n";
             }
         }
         if (cards.cards[cid].kind == 2)
@@ -196,58 +227,72 @@ public class CardPage : MonoBehaviour
             if (cards.cards[cid].scroll.blood > 0)
             {
                 content += "生命+" + cards.cards[cid].scroll.blood + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.defence > 0)
             {
                 content += "护甲+" + cards.cards[cid].scroll.defence + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.speed > 0)
             {
                 content += "移动速度+" + cards.cards[cid].scroll.speed*100 + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.atkspeed > 0)
             {
                 content += "攻击速度+" + (int)(cards.cards[cid].scroll.atkspeed*100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.phurt > 0)
             {
                 content += "物理攻击+" + cards.cards[cid].scroll.phurt + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.mhurt > 0)
             {
                 content += "法术攻击+" + cards.cards[cid].scroll.mhurt + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.trans > 0)
             {
                 content += "破甲+" + cards.cards[cid].scroll.trans + "";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.extrahurt > 0)
             {
                 content += "额外伤害+" + (int)(cards.cards[cid].scroll.extrahurt*100) + "%";
+                content += "\n";
             }
             if (cards.cards[cid].scroll.critical > 0)
             {
                 content += "暴击率+" + (int)(cards.cards[cid].scroll.critical*100) + "%";
-            }
+                content += "\n";
+            }         
             if (cards.cards[cid].scroll.dodge > 0)
             {
                 content += "闪避+" + (int)(cards.cards[cid].scroll.dodge*100) + "%";
-            }
+                content += "\n";
+            }         
             if (cards.cards[cid].scroll.repel > 0)
             {
                 content += "减速+" + cards.cards[cid].scroll.repel + "%";
-            }
+                content += "\n";
+            }         
             if (cards.cards[cid].scroll.extraexp > 0)
             {
                 content += "额外经验+" + cards.cards[cid].scroll.extraexp + "";
-            }
+                content += "\n";
+            }          
             if (cards.cards[cid].scroll.extramoney > 0)
             {
                 content += "额外金币+" + cards.cards[cid].scroll.extramoney + "";
-            }          
+                content += "\n";
+            }
             if (cards.cards[cid].scroll.mana > 0)
             {
                 content += "下轮能量+" + cards.cards[cid].scroll.mana + "";
+                content += "\n";
             }
         }
         return content;

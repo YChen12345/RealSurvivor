@@ -12,6 +12,6 @@ public class CardScreen_WaveText : MonoBehaviour
     void Start()
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
-        text_wave.text = "第" + (data.bd.wave+1) + "波";
+        text_wave.text = "第" + (data.bd.wave+1) + "波"+"(共"+data.levels.levels.Count+"波)";
     }
 }

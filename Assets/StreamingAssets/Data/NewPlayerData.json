@@ -1,0 +1,11 @@
+{
+  "money": 100,
+  "heroList": [ 0 ],
+  "weaponList": [ 0, 3, 6, 9 ],
+  "levelList": [ 0, 0, 0, 0 ],
+  "volume": 0.6,
+  "sound": 0.6,
+  "fullscreen": true,
+  "resolution": 0,
+  "languageID": 0
+}

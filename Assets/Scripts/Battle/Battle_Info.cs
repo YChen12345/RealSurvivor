@@ -71,7 +71,8 @@ public class Battle_Info : MonoBehaviour
             }       
         }
         emyList = new List<int>(emyList.OrderBy(x => Random.value).ToList());
-        generateGapClock = clock / emyList.Count;
+        //generateGapClock = clock / emyList.Count;
+        generateGapClock = levels.levels[bd.wave].generateGapClock;
         bd.mana = hd.mana;
     }
     public void ComputeHeroFeature()
@@ -83,7 +84,7 @@ public class Battle_Info : MonoBehaviour
         }
         for (int i = 0; i < bd.ScrollCardList.Count; i++)
         {
-            hd.PlusItem(cards.cards[bd.ScrollCardList[i]]);
+            hd.PlusScroll(cards.cards[bd.ScrollCardList[i]]);
         }
         for (int i = 0; i < bd.SkillList.Count; i++)
         {
@@ -96,7 +97,7 @@ public class Battle_Info : MonoBehaviour
         weapons = uf.LoadStructFromJson<Config_Weapon>("Config/Config_Weapon");
         cards = uf.LoadStructFromJson<Config_Card>("Config/Config_Card");
         heros = uf.LoadStructFromJson<Config_Hero>("Config/Config_Hero");
-        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
+        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level_"+bd.levelID);
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
         marketcards = uf.LoadStructFromJson<Config_MarketCardPossiblity>("Config/Config_MarketCard");
@@ -153,7 +154,7 @@ public class Battle_Info : MonoBehaviour
                         break;
                 }
             }
-            else if (cards.cards[i].kind == 1)
+            else if (cards.cards[i].kind == 2)
             {
                 switch (cards.cards[i].rare)
                 {
@@ -176,7 +177,7 @@ public class Battle_Info : MonoBehaviour
             }
         }
     }
-    void Save()
+  /*  void Save()
     {
         enemies.Init();
         weapons.Init();
@@ -236,5 +237,5 @@ public class Battle_Info : MonoBehaviour
         uf.SaveStructToJson<Config_D_cardpool>(d_cardpool, "Config/D/Config_D_cardpool");
         uf.SaveStructToJson<Config_D_weapon>(d_weapon, "Config/D/Config_D_weapon");
         uf.SaveStructToJson<Config_D_skill>(d_skill, "Config/D/Config_D_skill");
-    }
+    }*/
 }

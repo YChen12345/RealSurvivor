@@ -9,13 +9,13 @@ public class WeaponChoose_Hero : MonoBehaviour
     GameObject image;
     IUF uf;
     IAnim anim = new UIAnimationPlayer();
-    BattleData bd;
+    public WeaponChoose_Info data;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         uf = new Functions();
-        bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
-        heroID = bd.heroID;
+        data = GameObject.Find("WeaponChoose").GetComponent<WeaponChoose_Info>();
+        heroID = data.bd.heroID;
         image = this.gameObject;
         image.GetComponent<Image>().sprite= uf.LoadResource<Sprite>("HeroCard", heroID);
         anim.SetFrameTime(0.1f);

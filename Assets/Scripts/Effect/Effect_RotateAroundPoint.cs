@@ -20,7 +20,7 @@ public class Effect_RotateAroundPoint : MonoBehaviour
     private void LateUpdate()
     {// 计算旋转角度
         float angle = rotationSpeed * Time.deltaTime;
-        transform.localPosition = localPos;
+        //transform.localPosition = localPos;
         pivotPoint = transform.position;
         // 使用Transform.RotateAround方法让物体绕指定点旋转
         transform.RotateAround(pivotPoint, rotationAxis, angle);

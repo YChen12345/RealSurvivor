@@ -27,7 +27,7 @@ public class CardScreen_EmyDetail : MonoBehaviour
     void Start()
     {
         data = GameObject.Find("CardScreen").GetComponent<CardScreen_Info>();
-        enemy.Init();
+        enemy = data.enemies.enemies[eid];
         text_name.text = data.d_enemy.enemyDesList[eid].emy_name;
         text_enemyLV.text = "等级："+(data.bd.wave+1);
         text_description.text = data.d_enemy.enemyDesList[eid].emy_description;

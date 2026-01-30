@@ -12,6 +12,6 @@ public class LevelChoose_Back : MonoBehaviour
     void Back()
     {
         loadingPage.SetActive(true);
-        loadingPage.GetComponent<LoadingPage>().sceneName = "WeaponChoose";
+        loadingPage.GetComponent<LoadingPage>().sceneName = "StartScreen";
     }
 }

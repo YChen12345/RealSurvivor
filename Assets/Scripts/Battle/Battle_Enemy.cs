@@ -123,30 +123,40 @@ public class Battle_Enemy : MonoBehaviour
         switch (enemy.mode_move)
         {
             case 0:
-                if (uf.Distance2(this.gameObject, player) < enemy.speed * 0.1f)
                 {
-                    uf.ObjMoveTo(this.gameObject, player.transform.position, enemy.speed);
-                }
-                else
-                {
-                    GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                }
+                    Vector2 dir00 = uf.Direction2(player, this.gameObject);
+                    Vector2 dir01 = uf.RotatedVector2(dir00, 90);
+                    Vector2 aim = dir00 * enemy.atkdistance * 0.6f + dir01;
+                    if (uf.Distance2(this.gameObject, player) > enemy.speed * 0.1f)
+                    {
+                        uf.ObjMoveTo(this.gameObject, player.transform.position, enemy.speed);
+                    }
+                    else
+                    {
+
+                        uf.ObjMoveTo(this.gameObject, aim, enemy.speed);
+                    }
+                }             
                 break;
             case 1:
-                if (uf.Distance2(this.gameObject, player) > enemy.atkdistance)
                 {
-                    uf.ObjMoveTo(this.gameObject, player.transform.position, enemy.speed);
+                    if (uf.Distance2(this.gameObject, player) > enemy.atkdistance)
+                    {
+                        uf.ObjMoveTo(this.gameObject, player.transform.position, enemy.speed);
+                    }
+                    else
+                    {
+                        GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+                    }
                 }
-                else
-                {
-                    GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                }    
                 break;
             case 2:
-                Vector2 dir00 = uf.Direction2(player, this.gameObject);
-                Vector2 dir01 = uf.RotatedVector2(dir00,90);
-                Vector2 aim = dir00*enemy.atkdistance*0.6f + dir01;
-                uf.ObjMoveTo(this.gameObject, aim, enemy.speed);
+                {
+                    Vector2 dir00 = uf.Direction2(player, this.gameObject);
+                    Vector2 dir01 = uf.RotatedVector2(dir00, 90);
+                    Vector2 aim = dir00 * enemy.atkdistance * 0.6f + dir01;
+                    uf.ObjMoveTo(this.gameObject, aim, enemy.speed);
+                }              
                 break;
             case 3:
                 break;
@@ -156,22 +166,45 @@ public class Battle_Enemy : MonoBehaviour
     }
     void Attack()
     {
+        Vector2 dir = uf.Direction2(this.gameObject, player);
         switch (enemy.mode_atk)
         {
             case 0:
-                FireBullet(uf.Direction2(this.gameObject, player));
+                FireBullet(dir);
                 break;
-            case 1:
-                FireBullet(uf.Direction2(this.gameObject, player));
+            case 1:              
+                FireBullet(uf.RotatedVector2(dir, -60));
+                FireBullet(uf.RotatedVector2(dir, -30));
+                FireBullet(uf.RotatedVector2(dir, 0));
+                FireBullet(uf.RotatedVector2(dir, 30));
+                FireBullet(uf.RotatedVector2(dir, 60));
                 break;
             case 2:
-                FireBullet(uf.Direction2(this.gameObject, player));
+                {
+                    int num = 6;//¿ÅÊý
+                    for (int i = 0; i < num; i++)
+                    {
+                        FireBullet(uf.RotatedVector2(dir, (360 / num) * i));
+                    }
+                }
                 break;
             case 3:
-                FireBullet(uf.Direction2(this.gameObject, player));
+                {
+                    int num = 8;//¿ÅÊý
+                    for (int i = 0; i < num; i++)
+                    {
+                        FireBullet(uf.RotatedVector2(dir, (360 / num) * i));
+                    }
+                }              
                 break;
             case 4:
-                FireBullet(uf.Direction2(this.gameObject, player));
+                {
+                    int num = 12;//¿ÅÊý
+                    for (int i = 0; i < num; i++)
+                    {
+                        FireBullet(uf.RotatedVector2(dir, (360 / num) * i));
+                    }
+                }               
                 break;
 
         }

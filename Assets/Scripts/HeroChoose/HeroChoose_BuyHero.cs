@@ -12,18 +12,18 @@ public class HeroChoose_BuyHero : MonoBehaviour
     public GameObject hero;
     public GameObject image;
     IUF uf;
-    PlayerData pd;
     Effect_ButtonText eft;
+    public HeroChoose_Info data;
     void Start()
     {
         uf = new Functions();
-        //bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
+        data = GameObject.Find("HeroChoose").GetComponent<HeroChoose_Info>();
         GetComponent<Button>().onClick.AddListener(BuyHero);
         image.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("HeroCard",heroID);
-        pd = uf.LoadStructFromJson<PlayerData>("Data/PlayerData");
         eft = GetComponent<Effect_ButtonText>();
-        tips_cost.text = "金币:" +cost;
-        if (pd.money >= cost)
+        cost = heroID * 200;
+        tips_cost.text = "钻石:" +cost;
+        if (data.pd.money >= cost)
         {
             if (state != 1)
             {
@@ -38,17 +38,17 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "金币不足";
+                tips.text = "钻石不足";
             }
         }
-        if (pd.heroList.Contains(heroID))
+        if (data.pd.heroList.Contains(heroID))
         {
             this.gameObject.SetActive(false);
         }
     }
     private void Update()
     {
-        if (pd.money >= cost)
+        if (data.pd.money >= cost)
         {
             if (state != 1)
             {
@@ -63,17 +63,17 @@ public class HeroChoose_BuyHero : MonoBehaviour
             {
                 state = 0;
                 eft.mode = 0;
-                tips.text = "金币不足";
+                tips.text = "钻石不足";
             }
         }
     }
     void BuyHero()
     {
-        if (pd.money >= cost)
+        if (data.pd.money >= cost)
         {
-            pd.money -= cost;
-            pd.heroList.Add(heroID);
-            uf.SaveStructToJson<PlayerData>(pd, "Data/PlayerData");
+            data.pd.money -= cost;
+            data.pd.heroList.Add(heroID);
+            uf.SaveStructToJson<PlayerData>(data.pd, "Data/PlayerData");
             hero.SetActive(true);
             this.gameObject.SetActive(false);
         }

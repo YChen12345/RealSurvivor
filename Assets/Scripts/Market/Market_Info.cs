@@ -34,7 +34,6 @@ public class Market_Info : MonoBehaviour
         LoadConfig();
         ComputeHeroFeature();
         ComputeMarketCard();
-        PlayerPrefs.SetInt("State", 1);
         PlayerPrefs.SetInt("Mana", bd.mana);
     }
     void LoadConfig()
@@ -43,7 +42,7 @@ public class Market_Info : MonoBehaviour
         weapons = uf.LoadStructFromJson<Config_Weapon>("Config/Config_Weapon");
         cards = uf.LoadStructFromJson<Config_Card>("Config/Config_Card");
         heros = uf.LoadStructFromJson<Config_Hero>("Config/Config_Hero");
-        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level");
+        levels = uf.LoadStructFromJson<Config_Level>("Config/Config_Level_" + bd.levelID);
         drops = uf.LoadStructFromJson<Config_Drop>("Config/Config_Drop");
         skills = uf.LoadStructFromJson<Config_Skill>("Config/Config_Skill");
         cardpools = uf.LoadStructFromJson<Config_CardPoolPossibility>("Config/Config_CardPool");
@@ -64,7 +63,7 @@ public class Market_Info : MonoBehaviour
         }
         for (int i = 0; i < bd.ScrollCardList.Count; i++)
         {
-            hd.PlusItem(cards.cards[bd.ScrollCardList[i]]);
+            hd.PlusScroll(cards.cards[bd.ScrollCardList[i]]);
         }
         for (int i = 0; i < bd.SkillList.Count; i++)
         {
@@ -116,7 +115,7 @@ public class Market_Info : MonoBehaviour
                         break;
                 }
             }
-            else if (cards.cards[i].kind == 1)
+            else if (cards.cards[i].kind == 2)
             {
                 switch(cards.cards[i].rare)
                 {

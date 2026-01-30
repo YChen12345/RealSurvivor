@@ -7,6 +7,7 @@ public struct PlayerData
     public List<int> heroList;
     public List<int> weaponList;
     public List<int> levelList;
+    public int levelProgress;
     /// <summary>
     public float volume;
     public float sound;

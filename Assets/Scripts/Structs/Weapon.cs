@@ -19,7 +19,7 @@ public struct Weapon
     public float atkrange;
     public int maxaim;
     public int maxcross;
-    public float repel;
+    public int repel;
 
     public void Init()
     {

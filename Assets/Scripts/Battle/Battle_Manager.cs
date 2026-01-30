@@ -32,7 +32,10 @@ public class Battle_Manager : MonoBehaviour
     {
         if (data.state == 0)
         {
-            data.totaltime += Time.deltaTime;
+            if (data.bd.boss == null)
+            {
+                data.totaltime += Time.deltaTime;
+            }
         }
         else
         {
@@ -70,8 +73,26 @@ public class Battle_Manager : MonoBehaviour
                 if (data.generation_t > generateGapClock)
                 {
                     data.generation_t = 0;
-                    float x = Random.Range(-data.map_width / 2, data.map_width / 2);
-                    float y = Random.Range(-data.map_height / 2, data.map_height / 2);
+                    float x = 0;
+                    float y = 0;
+                    x = Random.Range(0, data.map_width*4/6);
+                    y = Random.Range(0, data.map_height*4/6);
+                    if (x- data.map_width/2 < player.transform.position.x - data.map_width/ 6)
+                    {
+                        x = x - data.map_width / 2;
+                    }
+                    else
+                    {
+                        x = x - data.map_width / 6;
+                    }
+                    if (y - data.map_height / 2 < player.transform.position.y - data.map_height / 6)
+                    {
+                        y = y - data.map_height / 2;
+                    }
+                    else
+                    {
+                        y = y - data.map_height / 6;
+                    }
                     int id = data.emyList[data.genIndex];
                     data.genIndex++;
                     GenSeed(new Vector2(x, y), id);
@@ -92,18 +113,8 @@ public class Battle_Manager : MonoBehaviour
         }      
     }
     void EndControl()
-    {       
-        if (hasboss == 1)
-        {
-            if (data.totaltime > 3)
-            {
-                if (data.bd.boss == null)
-                {
-                    data.totaltime = data.clock;
-                    hasboss = 0;
-                }
-            }
-        }
+    {
+        Boss();
         if (data.totaltime >= data.clock)
         {
             BossEffect();
@@ -114,6 +125,7 @@ public class Battle_Manager : MonoBehaviour
                 displayPage.SetActive(false);
                 data.bd.exp += data.hd.extraexp;
                 data.bd.gold += data.hd.extramoney;
+                data.bd.gold += 25;
             }         
             if (data.unpicked > 0)
             {
@@ -134,31 +146,51 @@ public class Battle_Manager : MonoBehaviour
                 {
                     data.settlement = 3;
                 }
-                if (data.bd.wave == 19)
+                if (data.bd.wave == data.levels.levels.Count-1)
                 {
                     data.settlement = 4;
                 }
             }
         }
     }
+    void Boss()
+    {
+        if (data.levels.levels[data.bd.wave].boss_mode >0)//-------------------------------
+        {
+            if (hasboss == 1)
+            {
+                if (data.totaltime > 3)
+                {
+                    if (data.bd.boss == null)
+                    {
+                        data.totaltime = data.clock-3;
+                        hasboss = 0;
+                    }
+                }
+            }
+        }      
+    }
     void BossEffect()
     {
-        int boss_mode = data.levels.levels[data.bd.wave].boss_mode;
-        if (boss_mode == 2)
+        int boss_mode = data.levels.levels[data.bd.wave].boss_mode;      
+        if (data.bd.boss != null)
         {
-            data.bd.mana = Mathf.Max(0, data.bd.mana - 5);
-        }
-        else if (boss_mode == 3)
-        {
-            data.bd.gold = 0;
-        }
-        else if (boss_mode == 4)
-        {
-            data.settlement_state = 2;
-            uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
-            loadingPage.SetActive(true);
-            loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";
-        }
+            if (boss_mode == 2)
+            {
+                data.bd.mana = Mathf.Max(0, data.bd.mana - 5);
+            }
+            else if (boss_mode == 3)
+            {
+                data.bd.gold = 0;
+            }
+            else if (boss_mode == 4)
+            {
+                data.settlement_state = 2;
+                uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
+                loadingPage.SetActive(true);
+                loadingPage.GetComponent<LoadingPage>().sceneName = "Lose";
+            }
+        }      
     }
     void Stop()
     {
@@ -175,6 +207,13 @@ public class Battle_Manager : MonoBehaviour
                 stop = 0;
                 Time.timeScale = 1;
                 WAITINGPAGE.SetActive(false);
+            }
+        }
+        else
+        {
+            if (Time.timeScale == 1)
+            {
+                stop = 0;
             }
         }
     }

@@ -31,7 +31,7 @@ public class Battle_EffectFigure : MonoBehaviour
                     case 0:
                         if (value_1 > 0)
                         {
-                            text_value.text = "<color=#FF0000>-" + value + "</color><color=#00FFFF>-" + value_1 + "</color>";
+                            text_value.text = "<color=#FF0000>-" + value + "</color>\n<color=#00FFFF>-" + value_1 + "</color>";
                         }
                         else
                         {
@@ -41,7 +41,7 @@ public class Battle_EffectFigure : MonoBehaviour
                     case 1:
                         if (value_1 > 0)
                         {
-                            text_value.text = "<color=#FF0000>-" + value + "</color><color=#00FFFF>-" + value_1 + "</color>";
+                            text_value.text = "<color=#FF0000>-" + value + "</color>\n<color=#00FFFF>-" + value_1 + "</color>";
                         }
                         else
                         {

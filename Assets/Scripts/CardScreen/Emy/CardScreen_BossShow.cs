@@ -20,7 +20,7 @@ public class CardScreen_BossShow : MonoBehaviour
     // Update is called once per frame
     void ShowEmyCard()
     {
-        if (data.cardScreen.boss >= 0)
+        if (data.cardScreen.boss_mode > 0)
         {
             GameObject e = GameObject.Instantiate(emycard, emycard.transform.parent);
             e.transform.position = template.transform.position;

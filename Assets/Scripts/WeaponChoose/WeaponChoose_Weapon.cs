@@ -9,22 +9,20 @@ public class WeaponChoose_Weapon : MonoBehaviour
     public int weaponID;
     public TextMeshProUGUI weapon_name;
     IUF uf;
-    BattleData bd;
-    PlayerData pd;
     GameObject image;
+    public WeaponChoose_Info data;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         uf = new Functions();
-        bd = uf.LoadStructFromJson<BattleData>("Data/BattleData");
-        weaponID = bd.heroID * 3 + index;
+        data = GameObject.Find("WeaponChoose").GetComponent<WeaponChoose_Info>();
+        weaponID = data.bd.heroID * 3 + index;
         GetComponent<Button>().onClick.AddListener(ChooseWeapon);
         image = this.gameObject;
         image.GetComponent<Image>().sprite = uf.LoadResource<Sprite>("WeaponCard", weaponID);
-        pd = uf.LoadStructFromJson<PlayerData>("Data/PlayerData");
         Config_D_weapon d_weapon = uf.LoadStructFromJson<Config_D_weapon>("Config/D/Config_D_weapon");
         weapon_name.text = d_weapon.weaponDesList[weaponID].weapon_name;
-        if (!pd.weaponList.Contains(weaponID))
+        if (!data.pd.weaponList.Contains(weaponID))
         {
             this.gameObject.SetActive(false);
         }
@@ -32,9 +30,10 @@ public class WeaponChoose_Weapon : MonoBehaviour
 
     void ChooseWeapon()
     {
-        bd.weaponID = weaponID;
-        uf.SaveStructToJson<BattleData>(bd, "Data/BattleData");
+        data.bd.weaponID = weaponID;
+        PlayerPrefs.SetInt("State", 0);
+        uf.SaveStructToJson<BattleData>(data.bd, "Data/BattleData");
         loadingPage.SetActive(true);
-        loadingPage.GetComponent<LoadingPage>().sceneName = "LevelChoose";
+        loadingPage.GetComponent<LoadingPage>().sceneName = "Battle";
     }
 }

@@ -1,10 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Market_Mycard : MonoBehaviour
 {
     public int state;
     public int current_state;
+    public TextMeshProUGUI num;
     public GameObject card;
     public List<GameObject> template;
     public List<GameObject> displayList;
@@ -23,6 +25,7 @@ public class Market_Mycard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        num.text = "(共" + data.bd.cardList_Total.Count+ "张)";
         if(currentPage!=pageNum||cards.Count!= data.bd.cardList_Total.Count||current_state!=state)
         {
             currentPage = pageNum;

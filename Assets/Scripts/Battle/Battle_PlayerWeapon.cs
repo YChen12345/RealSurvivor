@@ -74,7 +74,7 @@ public class Battle_PlayerWeapon : MonoBehaviour
             }
             if (wd.mode == 3)
             {
-                int num = 3;//颗数
+                int num = 5;//颗数
                 for (int i = 0; i < num; i++)
                 {
                     FireBullet(uf.RotatedVector2(dir, (360 / num) * i),3);
@@ -82,7 +82,7 @@ public class Battle_PlayerWeapon : MonoBehaviour
             }
             if (wd.mode == 4)
             {
-                int num = 5;//颗数
+                int num = 8;//颗数
                 for (int i = 0; i < num; i++)
                 {
                     FireBullet(uf.RotatedVector2(dir, (360 / num) * i), 4);
@@ -90,7 +90,11 @@ public class Battle_PlayerWeapon : MonoBehaviour
             }
             if (wd.mode == 5)
             {
-                FireBullet(dir, 5);
+                int num = 12;//颗数
+                for (int i = 0; i < num; i++)
+                {
+                    FireBullet(uf.RotatedVector2(dir, (360 / num) * i), 4);
+                }
             }
         }
     }

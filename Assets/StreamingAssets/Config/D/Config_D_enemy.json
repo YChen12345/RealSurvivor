@@ -2,98 +2,88 @@
   "enemyDesList": [
     {
       "id": 0,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "小怪1",
+      "emy_description": ""
     },
     {
       "id": 1,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "小怪2",
+      "emy_description": ""
     },
     {
       "id": 2,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "小怪3",
+      "emy_description": ""
     },
     {
       "id": 3,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 4,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 5,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 6,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 7,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 8,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 9,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 10,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 11,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 12,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 13,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 14,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 15,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     },
     {
       "id": 16,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
-    },
-    {
-      "id": 17,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
-    },
-    {
-      "id": 18,
-      "emy_name": "敌人",
-      "emy_description": "敌人描述"
+      "emy_name": "BOSS",
+      "emy_description": ""
     }
   ]
 }

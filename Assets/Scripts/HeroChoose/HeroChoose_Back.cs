@@ -14,6 +14,6 @@ public class HeroChoose_Back : MonoBehaviour
     void Back()
     {
         loadingPage.SetActive(true);
-        loadingPage.GetComponent<LoadingPage>().sceneName = "StartScreen";
+        loadingPage.GetComponent<LoadingPage>().sceneName = "LevelChoose";
     }
 }

@@ -1,0 +1,87 @@
+{
+  "levels": [
+    {
+      "id": 0,
+      "difficulty": 0,
+      "clock": 20.0,
+      "maxEmyInScreen": 5,
+      "generateGapClock": 1.5,
+      "boss_mode": 0,
+      "bossid": 0,
+      "enemyid": [
+        0
+      ],
+      "enemynum": [
+        14
+      ]
+    },
+    {
+      "id": 1,
+      "difficulty": 0,
+      "clock": 25.0,
+      "maxEmyInScreen": 5,
+      "generateGapClock": 1.2,
+      "boss_mode": 0,
+      "bossid": 0,
+      "enemyid": [
+        0
+      ],
+      "enemynum": [
+        18
+      ]
+    },
+    {
+      "id": 2,
+      "difficulty": 0,
+      "clock": 30.0,
+      "maxEmyInScreen": 6,
+      "generateGapClock": 1.0,
+      "boss_mode": 0,
+      "bossid": 0,
+      "enemyid": [
+        0,
+        1
+      ],
+      "enemynum": [
+        20,
+        10
+      ]
+    },
+    {
+      "id": 3,
+      "difficulty": 0,
+      "clock": 35.0,
+      "maxEmyInScreen": 6,
+      "generateGapClock": 1.0,
+      "boss_mode": 0,
+      "bossid": 0,
+      "enemyid": [
+        0,
+        1
+      ],
+      "enemynum": [
+        25,
+        10
+      ]
+    },
+    {
+      "id": 4,
+      "difficulty": 0,
+      "clock": 6.0,
+      "maxEmyInScreen": 8,
+      "generateGapClock": 1.0,
+      "boss_mode": 1,
+      "bossid": 3,
+      "enemyid": [
+        0,
+        1,
+        2
+      ],
+      "enemynum": [
+        40,
+        25,
+        10
+      ]
+    }
+  ]
+}
